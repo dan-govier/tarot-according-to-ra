@@ -1,314 +1,191 @@
-// Tarot Card Data Structure
-const tarotData = {
+// Tarot Card Data Structure - will be enhanced by loading JSON
+let tarotData = {};
+
+// Image path configuration
+const imagePaths = {
     1: {
-        name: "The Magician",
-        cycle: "mind",
-        position: "matrix",
-        raName: "Matrix of the Mind",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/redrawn/magician.png",
-            rws: "/images/tarot/rws/magician.jpg",
-            thoth: "/images/tarot/thoth/magician.jpg"
-        },
-        framework: "The Matrix of the Mind represents the Conscious Mind - the actor, the doer, the part of self that reaches and grasps. It is the conscious awareness that seeks, questions, and explores. This archetype is the foundation of mental experience, the faculty through which we perceive and interact with our reality.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/magician.png",
+        rws: "/public/images/tarot/rws/magician.jpg",
+        thoth: "/public/images/tarot/thoth/magician.jpg"
     },
     2: {
-        name: "The High Priestess",
-        cycle: "mind",
-        position: "potentiator",
-        raName: "Potentiator of the Mind",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/redrawn/high-priestess.png",
-            rws: "/images/tarot/rws/high-priestess.jpg",
-            thoth: "/images/tarot/thoth/priestess.jpg"
-        },
-        framework: "The Potentiator of the Mind represents the Unconscious Mind - the vast reservoir of potential, intuition, and deeper knowing. It is that which the conscious mind may access but never fully grasp. The Potentiator holds all possibilities, waiting to be drawn forth by the Matrix.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/high-priestess.png",
+        rws: "/public/images/tarot/rws/high-priestess.jpg",
+        thoth: "/public/images/tarot/thoth/priestess.jpg"
     },
     3: {
-        name: "The Empress",
-        cycle: "mind",
-        position: "catalyst",
-        raName: "Catalyst of the Mind",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/redrawn/empress.png",
-            rws: "/images/tarot/rws/empress.jpg",
-            thoth: "/images/tarot/thoth/empress.jpg"
-        },
-        framework: "The Catalyst of the Mind represents all that the mind encounters - experiences, ideas, perceptions, and stimuli that prompt mental processing. Catalyst is the rich, unconsciously generated material that the conscious mind must work with and respond to.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/empress.png",
+        rws: "/public/images/tarot/rws/empress.jpg",
+        thoth: "/public/images/tarot/thoth/empress.jpg"
     },
     4: {
-        name: "The Emperor",
-        cycle: "mind",
-        position: "experience",
-        raName: "Experience of the Mind",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/redrawn/emperor.png",
-            rws: "/images/tarot/rws/emperor.jpg",
-            thoth: "/images/tarot/thoth/emperor.jpg"
-        },
-        framework: "The Experience of the Mind represents that which has been processed, understood, and integrated by the conscious mind working with catalyst. It is the result of mental engagement - the lessons learned, patterns recognized, and understandings achieved.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/emperor.png",
+        rws: "/public/images/tarot/rws/emperor.jpg",
+        thoth: "/public/images/tarot/thoth/emperor.jpg"
     },
     5: {
-        name: "The Hierophant",
-        cycle: "mind",
-        position: "significator",
-        raName: "Significator of the Mind",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/redrawn/heirophant.png",
-            rws: "/images/tarot/rws/hierophant.jpg",
-            thoth: "/images/tarot/thoth/hierophant.jpg"
-        },
-        framework: "The Significator of the Mind represents the complex of the mind itself - the entity who chooses, the self who experiences mental existence. It is both observer and participant, containing elements of both Matrix and Potentiator in balance.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/hierophant.png",
+        rws: "/public/images/tarot/rws/hierophant.jpg",
+        thoth: "/public/images/tarot/thoth/hierophant.jpg"
     },
     6: {
-        name: "The Two Paths",
-        cycle: "mind",
-        position: "transformation",
-        raName: "Transformation of the Mind",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/redrawn/lovers.png",
-            rws: "/images/tarot/rws/lovers.jpg",
-            thoth: "/images/tarot/thoth/art.jpg"
-        },
-        framework: "The Transformation of the Mind represents the moment of conscious choice between paths - the selection of how to use mind, whether in service to self or service to others. It is the archetype of free will in mental experience.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/lovers.png",
+        rws: "/public/images/tarot/rws/lovers.jpg",
+        thoth: "/public/images/tarot/thoth/lovers.jpg"
     },
     7: {
-        name: "The Chariot",
-        cycle: "mind",
-        position: "great-way",
-        raName: "Great Way of the Mind",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/redrawn/chariot.png",
-            rws: "/images/tarot/rws/chariot.jpg",
-            thoth: "/images/tarot/thoth/chariot.jpg"
-        },
-        framework: "The Great Way of the Mind represents the path of the adept - one who has mastered the mental faculties and uses them in service of the spiritual will. The chariot moves forward powered by balanced use of both conscious and unconscious mind.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/chariot.png",
+        rws: "/public/images/tarot/rws/chariot.jpg",
+        thoth: "/public/images/tarot/thoth/chariot.jpg"
     },
     8: {
-        name: "Justice",
-        cycle: "body",
-        position: "matrix",
-        raName: "Matrix of the Body",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/justice.png",
-            rws: "/images/tarot/rws/strength.jpg",
-            thoth: "/images/tarot/thoth/lust.jpg"
-        },
-        framework: "The Matrix of the Body represents the physical vehicle itself - the body in its totality as a complex instrument for experience in third density. It is the foundation of bodily experience.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/justice.png",
+        rws: "/public/images/tarot/rws/strength.jpg",
+        thoth: "/public/images/tarot/thoth/lust.jpg"
     },
     9: {
-        name: "The Sage",
-        cycle: "body",
-        position: "potentiator",
-        raName: "Potentiator of the Body",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/sage.png",
-            rws: "/images/tarot/rws/hermit.jpg",
-            thoth: "/images/tarot/thoth/hermit.jpg"
-        },
-        framework: "The Potentiator of the Body represents the unreached potential of the body - wisdom that comes through bodily experience, the disciplined use of the physical vehicle, and balanced functioning.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/sage.png",
+        rws: "/public/images/tarot/rws/hermit.jpg",
+        thoth: "/public/images/tarot/thoth/hermit.jpg"
     },
     10: {
-        name: "Wheel of Fortune",
-        cycle: "body",
-        position: "catalyst",
-        raName: "Catalyst of the Body",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/wheel.png",
-            rws: "/images/tarot/rws/wheel.jpg",
-            thoth: "/images/tarot/thoth/fortune.jpg"
-        },
-        framework: "The Catalyst of the Body represents physical experiences, sensations, and circumstances that engage the bodily complex. The wheel turns, bringing varied bodily experiences - pleasure, pain, health, illness.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/wheel.png",
+        rws: "/public/images/tarot/rws/wheel.jpg",
+        thoth: "/public/images/tarot/thoth/fortune.jpg"
     },
     11: {
-        name: "The Enchantress",
-        cycle: "body",
-        position: "experience",
-        raName: "Experience of the Body",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/enchantress.png",
-            rws: "/images/tarot/rws/justice.jpg",
-            thoth: "/images/tarot/thoth/adjustment.jpg"
-        },
-        framework: "The Experience of the Body represents the wisdom and understanding gained through bodily catalyst - the lessons of physical existence, the balanced use of the body, and embodied knowing.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/enchantress.png",
+        rws: "/public/images/tarot/rws/justice.jpg",
+        thoth: "/public/images/tarot/thoth/adjustment.jpg"
     },
     12: {
-        name: "The Martyr",
-        cycle: "body",
-        position: "significator",
-        raName: "Significator of the Body",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/hangedman.png",
-            rws: "/images/tarot/rws/hanged-man.jpg",
-            thoth: "/images/tarot/thoth/hanged-man.jpg"
-        },
-        framework: "The Significator of the Body represents the body complex in its role as vehicle for spiritual evolution - the body surrendered to higher purpose, positioned to receive illumination from spirit.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/hangedman.png",
+        rws: "/public/images/tarot/rws/hanged-man.jpg",
+        thoth: "/public/images/tarot/thoth/hanged-man.jpg"
     },
     13: {
-        name: "Death",
-        cycle: "body",
-        position: "transformation",
-        raName: "Transformation of the Body",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/death.png",
-            rws: "/images/tarot/rws/death.jpg",
-            thoth: "/images/tarot/thoth/death.jpg"
-        },
-        framework: "The Transformation of the Body represents physical transformation - the shedding of that which no longer serves, regeneration, and the body's role in spiritual transformation through death and rebirth.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/death.png",
+        rws: "/public/images/tarot/rws/death.jpg",
+        thoth: "/public/images/tarot/thoth/death.jpg"
     },
     14: {
-        name: "The Alchemist",
-        cycle: "body",
-        position: "great-way",
-        raName: "Great Way of the Body",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/alchemist.png",
-            rws: "/images/tarot/rws/temperance.jpg",
-            thoth: "/images/tarot/thoth/art.jpg"
-        },
-        framework: "The Great Way of the Body represents mastery of the physical vehicle - the body as instrument of alchemical transformation, perfectly balanced and aligned with spiritual purpose.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/alchemist.png",
+        rws: "/public/images/tarot/rws/temperance.jpg",
+        thoth: "/public/images/tarot/thoth/art.jpg"
     },
     15: {
-        name: "The Devil",
-        cycle: "spirit",
-        position: "matrix",
-        raName: "Matrix of the Spirit",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/devil.png",
-            rws: "/images/tarot/rws/devil.jpg",
-            thoth: "/images/tarot/thoth/devil.jpg"
-        },
-        framework: "The Matrix of the Spirit represents the Dark Night of the Soul - the experience of spiritual darkness, separation, or bondage that calls forth the seeking of spiritual light and freedom.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/devil.png",
+        rws: "/public/images/tarot/rws/devil.jpg",
+        thoth: "/public/images/tarot/thoth/devil.jpg"
     },
     16: {
-        name: "Lightning Struck Tower",
-        cycle: "spirit",
-        position: "potentiator",
-        raName: "Potentiator of the Spirit",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/lightning.png",
-            rws: "/images/tarot/rws/tower.jpg",
-            thoth: "/images/tarot/thoth/tower.jpg"
-        },
-        framework: "The Potentiator of the Spirit represents sudden spiritual illumination - the lightning flash of divine contact, the breakthrough that shatters limiting structures and reveals truth.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/lightning.png",
+        rws: "/public/images/tarot/rws/tower.jpg",
+        thoth: "/public/images/tarot/thoth/tower.jpg"
     },
     17: {
-        name: "The Star",
-        cycle: "spirit",
-        position: "catalyst",
-        raName: "Catalyst of the Spirit",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/faith.png",
-            rws: "/images/tarot/rws/star.jpg",
-            thoth: "/images/tarot/thoth/star.jpg"
-        },
-        framework: "The Catalyst of the Spirit represents faith, hope, and spiritual nourishment - experiences that catalyze spiritual growth and sustain the seeker on their path.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/star.png",
+        rws: "/public/images/tarot/rws/star.jpg",
+        thoth: "/public/images/tarot/thoth/star.jpg"
     },
     18: {
-        name: "The Moon",
-        cycle: "spirit",
-        position: "experience",
-        raName: "Experience of the Spirit",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/moon.png",
-            rws: "/images/tarot/rws/moon.jpg",
-            thoth: "/images/tarot/thoth/moon.jpg"
-        },
-        framework: "The Experience of the Spirit represents the spiritual journey through illusion and shadow - the testing of faith, confrontation with fears, and emergence into greater spiritual understanding.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/moon.png",
+        rws: "/public/images/tarot/rws/moon.jpg",
+        thoth: "/public/images/tarot/thoth/moon.jpg"
     },
     19: {
-        name: "The Sun",
-        cycle: "spirit",
-        position: "significator",
-        raName: "Significator of the Spirit",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/sun.png",
-            rws: "/images/tarot/rws/sun.jpg",
-            thoth: "/images/tarot/thoth/sun.jpg"
-        },
-        framework: "The Significator of the Spirit represents the spiritual self in its clarity and radiance - spirit connected to Source, illuminated and illuminating, free and joyful.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/sun.png",
+        rws: "/public/images/tarot/rws/sun.jpg",
+        thoth: "/public/images/tarot/thoth/sun.jpg"
     },
     20: {
-        name: "Awakening",
-        cycle: "spirit",
-        position: "transformation",
-        raName: "Transformation of the Spirit",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/judgment.png",
-            rws: "/images/tarot/rws/judgement.jpg",
-            thoth: "/images/tarot/thoth/aeon.jpg"
-        },
-        framework: "The Transformation of the Spirit represents spiritual rebirth - the awakening to one's true nature, resurrection into new spiritual understanding, and the call to higher service.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/judgment.png",
+        rws: "/public/images/tarot/rws/judgement.jpg",
+        thoth: "/public/images/tarot/thoth/aeon.jpg"
     },
     21: {
-        name: "The World",
-        cycle: "spirit",
-        position: "great-way",
-        raName: "Great Way of the Spirit",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/universe.png",
-            rws: "/images/tarot/rws/world.jpg",
-            thoth: "/images/tarot/thoth/universe.jpg"
-        },
-        framework: "The Great Way of the Spirit represents spiritual mastery and completion - the dancing adept in perfect harmony with All That Is, embodying divine will in the world.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/world.png",
+        rws: "/public/images/tarot/rws/world.jpg",
+        thoth: "/public/images/tarot/thoth/universe.jpg"
     },
     22: {
-        name: "The Fool",
-        cycle: "spirit",
-        position: "choice",
-        raName: "The Choice",
-        images: {
-            ra: "https://assets.llresearch.org/ra-contact/resources/tarot/royal-road/fool.png",
-            rws: "/images/tarot/rws/fool.jpg",
-            thoth: "/images/tarot/thoth/fool.jpg"
-        },
-        framework: "The Fool represents the Choice itself - the leap of faith, the beginning of the spiritual journey, and the essential innocence and openness required to walk the path of transformation. It stands outside the structured cycles yet encompasses them all.",
-        raQuotes: [],
-        symbols: []
+        ra: "/public/images/tarot/ra/fool.png",
+        rws: "/public/images/tarot/rws/fool.jpg",
+        thoth: "/public/images/tarot/thoth/fool.jpg"
     }
 };
+
+// Basic card names and positions (fallback if JSON doesn't load)
+const basicCardData = {
+    1: { name: "The Magician", raName: "Matrix of the Mind", cycle: "mind", position: "matrix" },
+    2: { name: "The High Priestess", raName: "Potentiator of the Mind", cycle: "mind", position: "potentiator" },
+    3: { name: "The Empress", raName: "Catalyst of the Mind", cycle: "mind", position: "catalyst" },
+    4: { name: "The Emperor", raName: "Experience of the Mind", cycle: "mind", position: "experience" },
+    5: { name: "The Hierophant", raName: "Significator of the Mind", cycle: "mind", position: "significator" },
+    6: { name: "The Two Paths", raName: "Transformation of the Mind", cycle: "mind", position: "transformation" },
+    7: { name: "The Chariot", raName: "Great Way of the Mind", cycle: "mind", position: "great-way" },
+    8: { name: "Justice", raName: "Matrix of the Body", cycle: "body", position: "matrix" },
+    9: { name: "The Sage", raName: "Potentiator of the Body", cycle: "body", position: "potentiator" },
+    10: { name: "Wheel of Fortune", raName: "Catalyst of the Body", cycle: "body", position: "catalyst" },
+    11: { name: "The Enchantress", raName: "Experience of the Body", cycle: "body", position: "experience" },
+    12: { name: "The Martyr", raName: "Significator of the Body", cycle: "body", position: "significator" },
+    13: { name: "Death", raName: "Transformation of the Body", cycle: "body", position: "transformation" },
+    14: { name: "The Alchemist", raName: "Great Way of the Body", cycle: "body", position: "great-way" },
+    15: { name: "The Devil", raName: "Matrix of the Spirit", cycle: "spirit", position: "matrix" },
+    16: { name: "Lightning Struck Tower", raName: "Potentiator of the Spirit", cycle: "spirit", position: "potentiator" },
+    17: { name: "The Star", raName: "Catalyst of the Spirit", cycle: "spirit", position: "catalyst" },
+    18: { name: "The Moon", raName: "Experience of the Spirit", cycle: "spirit", position: "experience" },
+    19: { name: "The Sun", raName: "Significator of the Spirit", cycle: "spirit", position: "significator" },
+    20: { name: "Awakening", raName: "Transformation of the Spirit", cycle: "spirit", position: "transformation" },
+    21: { name: "The World", raName: "Great Way of the Spirit", cycle: "spirit", position: "great-way" },
+    22: { name: "The Fool", raName: "The Choice", cycle: "spirit", position: "choice" }
+};
+
+// Load enhanced descriptions from JSON
+async function loadEnhancedData() {
+    try {
+        const response = await fetch('tarot_card_descriptions.json');
+        const enhancedData = await response.json();
+        
+        // Merge enhanced data with basic data and image paths
+        for (let num in basicCardData) {
+            tarotData[num] = {
+                ...basicCardData[num],
+                images: imagePaths[num],
+                framework: "",
+                character: "",
+                symbols: [],
+                levels: {},
+                raQuotes: []
+            };
+            
+            // If we have enhanced data for this card, merge it in
+            if (enhancedData[num]) {
+                tarotData[num] = {
+                    ...tarotData[num],
+                    ...enhancedData[num],
+                    images: imagePaths[num] // Keep image paths from our config
+                };
+            }
+        }
+        
+        console.log('Enhanced card data loaded successfully!');
+    } catch (error) {
+        console.error('Could not load enhanced descriptions, using basic data:', error);
+        // Use basic data as fallback
+        for (let num in basicCardData) {
+            tarotData[num] = {
+                ...basicCardData[num],
+                images: imagePaths[num],
+                framework: "Detailed description will be added soon.",
+                character: "",
+                symbols: [],
+                levels: {},
+                raQuotes: []
+            };
+        }
+    }
+}
 
 // Application State
 let currentView = 'grid';
@@ -317,7 +194,8 @@ let currentDeck = 0; // 0=Ra/Fathman, 1=RWS, 2=Thoth
 let previousView = null;
 
 // Initialize the app
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadEnhancedData();
     initializeEventListeners();
     showView('grid');
 });
@@ -338,19 +216,19 @@ function initializeEventListeners() {
         });
     });
 
-    // Column header clicks
+    // Column header clicks (now archetypal positions)
     document.querySelectorAll('.column-header').forEach((header, index) => {
-        header.addEventListener('click', () => {
-            const cycles = ['mind', 'body', 'spirit'];
-            showFocusedView('cycle', cycles[index]);
-        });
-    });
-
-    // Row header clicks
-    document.querySelectorAll('.row-header').forEach((header, index) => {
         header.addEventListener('click', () => {
             const positions = ['matrix', 'potentiator', 'catalyst', 'experience', 'significator', 'transformation', 'great-way'];
             showFocusedView('position', positions[index]);
+        });
+    });
+
+    // Row header clicks (now cycles)
+    document.querySelectorAll('.row-header').forEach((header, index) => {
+        header.addEventListener('click', () => {
+            const cycles = ['mind', 'body', 'spirit'];
+            showFocusedView('cycle', cycles[index]);
         });
     });
 
@@ -489,9 +367,16 @@ function showCardDetail(archetypeNum) {
     const card = tarotData[archetypeNum];
     
     document.getElementById('detail-title').textContent = card.raName;
-    document.getElementById('archetypal-framework').innerHTML = `<p>${card.framework}</p>`;
     
-    // Populate Ra quotes (will be filled in later)
+    // Framework
+    let frameworkHTML = `<p>${card.framework}</p>`;
+    if (card.character) {
+        frameworkHTML += `<h4 style="margin-top: 20px; color: var(--memphis-cyan);">Character: ${card.character.split(' - ')[0]}</h4>`;
+        frameworkHTML += `<p>${card.character.split(' - ').slice(1).join(' - ')}</p>`;
+    }
+    document.getElementById('archetypal-framework').innerHTML = frameworkHTML;
+    
+    // Ra quotes (will be filled in later)
     const quotesDiv = document.getElementById('ra-quotes');
     if (card.raQuotes && card.raQuotes.length > 0) {
         quotesDiv.innerHTML = card.raQuotes.map(quote => `<p>"${quote}"</p>`).join('');
@@ -499,10 +384,12 @@ function showCardDetail(archetypeNum) {
         quotesDiv.innerHTML = '<p><em>Ra quotes will be added from the Law of One material.</em></p>';
     }
     
-    // Populate symbolic elements (will be filled in later)
+    // Symbolic elements
     const symbolsDiv = document.getElementById('symbolic-elements');
     if (card.symbols && card.symbols.length > 0) {
-        symbolsDiv.innerHTML = '<ul>' + card.symbols.map(sym => `<li>${sym}</li>`).join('') + '</ul>';
+        symbolsDiv.innerHTML = '<ul style="list-style-position: inside; padding-left: 0;">' + 
+            card.symbols.map(sym => `<li style="margin-bottom: 12px;">${sym}</li>`).join('') + 
+            '</ul>';
     } else {
         symbolsDiv.innerHTML = '<p><em>Symbolic elements will be extracted from "The Tarot According to Ra".</em></p>';
     }
