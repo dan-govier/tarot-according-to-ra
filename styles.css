@@ -21,22 +21,118 @@
     --pastel-yellow: #FFF3B0;
     --pastel-purple: #E0BBE4;
     
+    /* Light mode (default) */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #E5E5E5;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --border-color: #1A1A1A;
+    
     /* Neutrals */
     --black: #1A1A1A;
     --white: #FFFFFF;
     --grey: #E5E5E5;
 }
 
+/* Dark mode colors */
+body.dark-mode {
+    --bg-primary: #1A1A2E;
+    --bg-secondary: #16213E;
+    --text-primary: #E8E8E8;
+    --text-secondary: #B8B8B8;
+    --border-color: #E8E8E8;
+}
+
 body {
     font-family: 'Arial', 'Helvetica', sans-serif;
-    background: var(--white);
+    background: var(--bg-primary);
     background-image: 
         repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 217, 255, 0.03) 10px, rgba(0, 217, 255, 0.03) 20px),
         repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255, 107, 157, 0.03) 10px, rgba(255, 107, 157, 0.03) 20px);
     min-height: 100vh;
-    padding: 20px;
+    padding: 80px 20px 20px 20px;
     position: relative;
     overflow-x: hidden;
+    transition: background 0.3s ease;
+}
+
+/* Header */
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: var(--bg-primary);
+    border-bottom: 4px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--text-primary);
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.header-button {
+    background: var(--memphis-pink);
+    border: 3px solid var(--border-color);
+    color: var(--border-color);
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 4px 4px 0 var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0 var(--border-color);
+    background: var(--memphis-cyan);
+}
+
+.home-icon {
+    font-size: 1.3rem;
+}
+
+.theme-toggle {
+    position: relative;
+    width: 60px;
+    padding: 12px;
+    background: var(--memphis-yellow);
+}
+
+.sun-icon,
+.moon-icon {
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+body:not(.dark-mode) .moon-icon {
+    display: none;
+}
+
+body.dark-mode .sun-icon {
+    display: none;
+}
+
+body.dark-mode .theme-toggle {
+    background: var(--memphis-purple);
 }
 
 /* Decorative Memphis Elements */
@@ -166,8 +262,8 @@ body::after {
 
 /* Grid View */
 #grid-view {
-    background: var(--white);
-    border: 5px solid var(--black);
+    background: var(--bg-primary);
+    border: 5px solid var(--border-color);
     padding: 30px;
     position: relative;
     box-shadow: 20px 20px 0 var(--memphis-purple);
@@ -182,7 +278,7 @@ body::after {
     top: -20px;
     right: 100px;
     border-radius: 50%;
-    border: 4px solid var(--black);
+    border: 4px solid var(--border-color);
 }
 
 #grid-view::after {
@@ -195,7 +291,7 @@ body::after {
     border-bottom: 70px solid var(--memphis-green);
     bottom: -30px;
     left: 120px;
-    filter: drop-shadow(3px 3px 0 var(--black));
+    filter: drop-shadow(3px 3px 0 var(--border-color));
 }
 
 .grid-header {
@@ -306,8 +402,8 @@ body::after {
 }
 
 .card-cell {
-    background: var(--white);
-    border: 4px solid var(--black);
+    background: var(--bg-primary);
+    border: 4px solid var(--border-color);
     padding: 12px;
     text-align: center;
     cursor: pointer;
@@ -350,7 +446,7 @@ body::after {
     position: absolute;
     width: 12px;
     height: 12px;
-    background: var(--black);
+    background: var(--border-color);
     top: -2px;
     left: -2px;
     border-radius: 50%;
@@ -361,7 +457,7 @@ body::after {
     position: absolute;
     width: 12px;
     height: 12px;
-    background: var(--black);
+    background: var(--border-color);
     bottom: -2px;
     right: -2px;
     border-radius: 50%;
@@ -369,13 +465,13 @@ body::after {
 
 .card-cell:hover {
     transform: translateY(-8px) rotate(-3deg);
-    box-shadow: 10px 10px 0 var(--black);
+    box-shadow: 10px 10px 0 var(--border-color);
 }
 
 .card-cell img {
     width: 100%;
     height: auto;
-    border: 2px solid var(--black);
+    border: 2px solid var(--border-color);
     margin-bottom: 10px;
 }
 
@@ -383,7 +479,7 @@ body::after {
     display: block;
     font-size: 0.85rem;
     font-weight: bold;
-    color: var(--black);
+    color: var(--text-primary);
     margin-top: 8px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -696,6 +792,27 @@ body::after {
 }
 
 @media (max-width: 768px) {
+    .app-header {
+        padding: 0 10px;
+    }
+
+    .app-title {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .home-text {
+        display: none;
+    }
+
+    .header-button {
+        padding: 10px 15px;
+    }
+
+    body {
+        padding: 70px 10px 10px 10px;
+    }
+
     .grid-content {
         grid-template-columns: 1fr;
         gap: 20px;

@@ -197,10 +197,31 @@ let previousView = null;
 document.addEventListener('DOMContentLoaded', async () => {
     await loadEnhancedData();
     initializeEventListeners();
+    initializeTheme();
     showView('grid');
 });
 
+function initializeTheme() {
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+}
+
 function initializeEventListeners() {
+    // Home button
+    document.getElementById('home-button').addEventListener('click', () => {
+        showView('grid');
+    });
+
+    // Theme toggle
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
     // Grid card clicks
     document.querySelectorAll('.card-cell').forEach(cell => {
         cell.addEventListener('click', (e) => {
