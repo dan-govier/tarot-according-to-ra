@@ -248,19 +248,40 @@ function initializeEventListeners() {
         }, true);
     });
 
-    // Column header clicks (now archetypal positions)
+    // Column header clicks (archetypal positions on desktop, cycles on mobile)
     document.querySelectorAll('.column-header').forEach((header, index) => {
         header.addEventListener('click', () => {
-            const positions = ['matrix', 'potentiator', 'catalyst', 'experience', 'significator', 'transformation', 'great-way'];
-            showFocusedView('position', positions[index]);
+            const isMobile = window.innerWidth <= 768;
+            
+            if (isMobile) {
+                // Mobile: columns are Mind/Body/Spirit
+                const cycles = ['mind', 'body', 'spirit'];
+                // Offset by 1 because first column is empty corner
+                if (index > 0 && index <= 3) {
+                    showFocusedView('cycle', cycles[index - 1]);
+                }
+            } else {
+                // Desktop: columns are Matrix/Potentiator/etc
+                const positions = ['matrix', 'potentiator', 'catalyst', 'experience', 'significator', 'transformation', 'great-way'];
+                showFocusedView('position', positions[index]);
+            }
         });
     });
 
-    // Row header clicks (now cycles)
+    // Row header clicks (cycles on desktop, positions on mobile)
     document.querySelectorAll('.row-header').forEach((header, index) => {
         header.addEventListener('click', () => {
-            const cycles = ['mind', 'body', 'spirit'];
-            showFocusedView('cycle', cycles[index]);
+            const isMobile = window.innerWidth <= 768;
+            
+            if (isMobile) {
+                // Mobile: rows are Matrix/Potentiator/etc
+                const positions = ['matrix', 'potentiator', 'catalyst', 'experience', 'significator', 'transformation', 'great-way'];
+                showFocusedView('position', positions[index]);
+            } else {
+                // Desktop: rows are Mind/Body/Spirit
+                const cycles = ['mind', 'body', 'spirit'];
+                showFocusedView('cycle', cycles[index]);
+            }
         });
     });
 
