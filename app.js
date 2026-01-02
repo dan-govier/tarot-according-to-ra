@@ -333,9 +333,34 @@ function showFocusedView(type, value) {
     
     focusedContent.innerHTML = '';
     
+    // Cycle and position descriptions
+    const cycleDescriptions = {
+        mind: "The Mind Cycle (Archetypes 1-7) explores consciousness and the relationship between the conscious and unconscious mind. These archetypes show how we think, process catalyst, and develop our mental frameworks for understanding reality. The mind must be initiated before body and spirit, making this the foundational cycle for spiritual evolution.",
+        body: "The Body Cycle (Archetypes 8-14) deals with action, manifestation, and how we interact with the physical illusion. While the mind processes internally, the body acts externally. These archetypes show how our mental processing manifests in physical reality and how we navigate the world of experience and consequence.",
+        spirit: "The Spirit Cycle (Archetypes 15-21) represents our connection to the One Infinite Creator and the shuttle or communicator between mind and body. Spirit is neither created nor destroyed but is the channel through which unity and love flow. These archetypes show our eternal nature and our journey back to Source."
+    };
+    
+    const positionDescriptions = {
+        matrix: "The Matrix is the foundation and stage upon which experience unfolds. It represents the conscious, active, masculine principle - full of desire but empty of content. The Matrix reaches toward the Potentiator seeking fulfillment, creating the initial conditions for consciousness to know itself.",
+        potentiator: "The Potentiator is the vast reservoir of potential - the unconscious, passive, feminine principle containing all that can be known but is not yet known. It awaits activation by the Matrix. The veiling process makes the Potentiator mysterious and hidden, requiring effort to access its riches.",
+        catalyst: "The Catalyst is the mind/body/spirit as potentiated - experiences and stimuli that prompt processing and response. Catalyst is unconsciously generated material that the Matrix must work with. It appears in shades of grey requiring moral interpretation, often with apparently negative catalyst polarizing toward service-to-others.",
+        experience: "The Experience is the mind/body/spirit's relation to itself after processing Catalyst. It records and integrates what has been learned, creating the foundation for further evolution. Experience shows us making sense of catalyst through our chosen moral framework, building our understanding incrementally.",
+        significator: "The Significator is the harvest of all previous incarnational biases - the total complex experiencing itself through the cyclical processes of Matrix, Potentiator, Catalyst, and Experience. It is both actor and acted upon, representing our complete being as it currently exists, shaped by all we have been.",
+        transformation: "The Transformation archetype emerges at the crossroads between two potential versions of the Significator. It represents the liminal state where choice determines moral polarity. These are moments of initiation where we must sacrifice one path to walk another, unable to move forward until a clear choice is made.",
+        'great-way': "The Great Way is the total environment within which evolution occurs. It depicts all coordinating elements in their large-scale relationships, showing the inescapable nature of the journey toward self-knowledge. Unlike other archetypes expressed periodically, the Great Way is always active for those pursuing inner evolution."
+    };
+    
     if (type === 'cycle') {
         const cycleNames = { mind: 'Mind', body: 'Body', spirit: 'Spirit' };
         focusedTitle.textContent = `The ${cycleNames[value]} Cycle`;
+        
+        // Add description
+        const descriptionDiv = document.createElement('div');
+        descriptionDiv.className = 'cycle-description';
+        descriptionDiv.style.cssText = 'background: var(--bg-secondary); border: 4px solid var(--border-color); padding: 25px; margin-bottom: 40px; line-height: 1.8; color: var(--text-primary); font-size: 1.1rem;';
+        descriptionDiv.innerHTML = `<p>${cycleDescriptions[value]}</p>`;
+        focusedContent.appendChild(descriptionDiv);
+        
         focusedContent.classList.add('cycle-view');
         focusedContent.classList.remove('position-view');
         
@@ -356,6 +381,14 @@ function showFocusedView(type, value) {
             'great-way': 'Great Way'
         };
         focusedTitle.textContent = `The ${positionNames[value]}`;
+        
+        // Add description
+        const descriptionDiv = document.createElement('div');
+        descriptionDiv.className = 'position-description';
+        descriptionDiv.style.cssText = 'background: var(--bg-secondary); border: 4px solid var(--border-color); padding: 25px; margin-bottom: 40px; line-height: 1.8; color: var(--text-primary); font-size: 1.1rem;';
+        descriptionDiv.innerHTML = `<p>${positionDescriptions[value]}</p>`;
+        focusedContent.appendChild(descriptionDiv);
+        
         focusedContent.classList.add('position-view');
         focusedContent.classList.remove('cycle-view');
         
@@ -413,6 +446,49 @@ function showCardDetail(archetypeNum) {
             '</ul>';
     } else {
         symbolsDiv.innerHTML = '<p><em>Symbolic elements will be extracted from "The Tarot According to Ra".</em></p>';
+    }
+    
+    // Levels of Expression
+    const levelsDiv = document.getElementById('levels-of-expression');
+    if (card.levels && (card.levels.personal || card.levels.interpersonal || card.levels.social)) {
+        let levelsHTML = '';
+        if (card.levels.personal) {
+            levelsHTML += `<h4 style="color: var(--memphis-pink); margin-top: 15px;">Personal Level</h4><p>${card.levels.personal}</p>`;
+        }
+        if (card.levels.interpersonal) {
+            levelsHTML += `<h4 style="color: var(--memphis-cyan); margin-top: 15px;">Interpersonal Level</h4><p>${card.levels.interpersonal}</p>`;
+        }
+        if (card.levels.social) {
+            levelsHTML += `<h4 style="color: var(--memphis-yellow); margin-top: 15px;">Social Level</h4><p>${card.levels.social}</p>`;
+        }
+        levelsDiv.innerHTML = levelsHTML;
+    } else {
+        levelsDiv.innerHTML = '<p><em>Levels of expression will be added.</em></p>';
+    }
+    
+    // Polarized Expressions
+    const polarizedDiv = document.getElementById('polarized-expressions');
+    if (card.polarized && (card.polarized.positive || card.polarized.negative)) {
+        let polarizedHTML = '';
+        if (card.polarized.positive) {
+            polarizedHTML += `<h4 style="color: var(--memphis-green); margin-top: 15px;">Service to Others (STO / Right-Hand Path)</h4><p>${card.polarized.positive}</p>`;
+        }
+        if (card.polarized.negative) {
+            polarizedHTML += `<h4 style="color: var(--memphis-red); margin-top: 15px;">Service to Self (STS / Left-Hand Path)</h4><p>${card.polarized.negative}</p>`;
+        }
+        polarizedDiv.innerHTML = polarizedHTML;
+    } else {
+        polarizedDiv.innerHTML = '<p><em>Polarized expressions will be added.</em></p>';
+    }
+    
+    // Distortions
+    const distortionsDiv = document.getElementById('distortions-section');
+    if (card.distortions && card.distortions.length > 0) {
+        distortionsDiv.innerHTML = '<ul style="list-style-position: inside; padding-left: 0;">' + 
+            card.distortions.map(dist => `<li style="margin-bottom: 12px;">${dist}</li>`).join('') + 
+            '</ul>';
+    } else {
+        distortionsDiv.innerHTML = '<p><em>Distortions will be added.</em></p>';
     }
     
     updateCardImage();
