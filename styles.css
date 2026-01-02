@@ -177,6 +177,11 @@ body::after {
     position: relative;
 }
 
+/* Hide the top Fool - keep only the bottom one as foundation */
+#fool-top {
+    display: none;
+}
+
 .fool-container::before {
     content: '';
     position: absolute;
@@ -976,9 +981,9 @@ body::after {
     /* Header with Mind/Body/Spirit as columns */
     .grid-header {
         display: grid !important;
-        grid-template-columns: 100px repeat(3, 1fr);
-        gap: 6px;
-        margin-bottom: 8px;
+        grid-template-columns: 80px repeat(3, 1fr);
+        gap: 4px;
+        margin-bottom: 6px;
     }
     
     .grid-header .spacer {
@@ -987,29 +992,32 @@ body::after {
     
     .grid-header .column-header {
         writing-mode: horizontal-tb;
-        padding: 12px 8px;
+        padding: 8px 4px;
         min-height: auto;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
     }
     
     /* Grid content: 7 rows (positions) x 4 columns (header + 3 cycles) */
     .grid-content.mobile-rebuilt {
         display: grid;
-        grid-template-columns: 100px repeat(3, 1fr);
+        grid-template-columns: 80px repeat(3, 1fr);
         grid-auto-rows: auto;
-        gap: 6px;
+        gap: 4px;
     }
     
     /* Row headers (positions) */
     .row-header.mobile-position {
         writing-mode: horizontal-tb;
-        font-size: 0.7rem;
-        padding: 8px 4px;
+        font-size: 0.55rem;
+        padding: 6px 2px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         line-height: 1.1;
+        word-break: break-word;
+        hyphens: auto;
     }
     
     /* Mobile row header colors - override nth-of-type which doesn't work with 4-column grid */
@@ -1073,23 +1081,63 @@ body::after {
         max-width: 100%;
     }
     
+    /* Deck selector - compact for mobile */
+    .deck-selector {
+        padding: 12px 10px;
+        margin-bottom: 15px;
+    }
+    
+    .deck-selector::before {
+        display: none; /* Hide decorative circle on mobile */
+    }
+    
+    .deck-selector label {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+    }
+    
     #deck-slider {
-        width: 280px;
+        width: 100%;
+        max-width: 250px;
+        margin: 8px auto;
     }
     
     .deck-labels {
-        max-width: 280px;
-        font-size: 0.85rem;
+        max-width: 250px;
+        font-size: 0.7rem;
+        margin-top: 8px;
     }
     
+    /* Navigation - all on one line */
     .detail-navigation {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
     }
     
     #detail-title {
-        order: 1;
-        font-size: 1.8rem;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        order: 0;
+        flex: 1;
+        text-align: center;
+        margin: 0 5px;
+    }
+    
+    .nav-arrow {
+        padding: 8px 12px;
+        font-size: 1.2rem;
+        box-shadow: 3px 3px 0 var(--border-color);
+    }
+    
+    /* Back button - smaller on mobile */
+    #back-from-detail {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        box-shadow: 3px 3px 0 var(--border-color);
     }
     
     #focused-title {
