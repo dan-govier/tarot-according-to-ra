@@ -198,8 +198,128 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadEnhancedData();
     initializeEventListeners();
     initializeTheme();
+    handleMobileGrid();
     showView('grid');
+    
+    // Re-handle mobile grid on resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            handleMobileGrid();
+        }, 250);
+    });
 });
+
+function initializeTheme() {
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+}
+
+function handleMobileGrid() {
+    const isMobile = window.innerWidth <= 768;
+    const gridHeader = document.querySelector('.grid-header');
+    const gridContent = document.querySelector('.grid-content');
+    
+    if (!gridHeader || !gridContent) return;
+    
+    if (isMobile && !gridContent.classList.contains('mobile-rebuilt')) {
+        // Mark as rebuilt to avoid duplicate work
+        gridContent.classList.add('mobile-rebuilt');
+        
+        // Rebuild header: empty corner + Mind/Body/Spirit
+        gridHeader.innerHTML = `
+            <div class="spacer"></div>
+            <div class="column-header mobile-cycle" data-cycle="mind">MIND</div>
+            <div class="column-header mobile-cycle" data-cycle="body">BODY</div>
+            <div class="column-header mobile-cycle" data-cycle="spirit">SPIRIT</div>
+        `;
+        
+        // Rebuild grid content with 7 position rows
+        const positions = [
+            { name: 'MATRIX', key: 'matrix' },
+            { name: 'POTENTIATOR', key: 'potentiator' },
+            { name: 'CATALYST', key: 'catalyst' },
+            { name: 'EXPERIENCE', key: 'experience' },
+            { name: 'SIGNIFICATOR', key: 'significator' },
+            { name: 'TRANSFORMATION', key: 'transformation' },
+            { name: 'GREAT WAY', key: 'great-way' }
+        ];
+        
+        const cycles = ['mind', 'body', 'spirit'];
+        let gridHTML = '';
+        
+        positions.forEach((pos, rowIndex) => {
+            // Add position row header
+            gridHTML += `<div class="row-header mobile-position" data-position="${pos.key}">${pos.name}</div>`;
+            
+            // Add cards for each cycle in this position
+            cycles.forEach(cycle => {
+                const card = Object.entries(tarotData).find(([num, data]) => 
+                    data.cycle === cycle && data.position === pos.key && num !== '22'
+                );
+                
+                if (card) {
+                    const [num, data] = card;
+                    gridHTML += `
+                        <div class="card-cell mobile-card" data-archetype="${num}" data-cycle="${cycle}" data-position="${pos.key}">
+                            <img src="${data.images.ra}" alt="${data.name}">
+                            <span class="card-name">${data.name}</span>
+                        </div>
+                    `;
+                } else {
+                    // Placeholder for missing cards
+                    gridHTML += `<div class="card-cell card-placeholder"></div>`;
+                }
+            });
+        });
+        
+        gridContent.innerHTML = gridHTML;
+        
+        // Reattach event listeners for mobile grid
+        attachMobileEventListeners();
+        
+    } else if (!isMobile && gridContent.classList.contains('mobile-rebuilt')) {
+        // Switching back to desktop - reload page to restore original HTML
+        location.reload();
+    }
+}
+
+function attachMobileEventListeners() {
+    // Mobile card clicks
+    document.querySelectorAll('.mobile-card').forEach(cell => {
+        cell.style.cursor = 'pointer';
+        cell.style.pointerEvents = 'auto';
+        
+        cell.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const archetype = parseInt(this.dataset.archetype);
+            showCardDetail(archetype);
+        }, true);
+    });
+    
+    // Mobile cycle column header clicks
+    document.querySelectorAll('.mobile-cycle').forEach(header => {
+        header.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const cycle = this.dataset.cycle;
+            showFocusedView('cycle', cycle);
+        });
+    });
+    
+    // Mobile position row header clicks
+    document.querySelectorAll('.mobile-position').forEach(header => {
+        header.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const position = this.dataset.position;
+            showFocusedView('position', position);
+        });
+    });
+}
 
 function initializeTheme() {
     // Check for saved theme preference or default to light mode
@@ -249,41 +369,24 @@ function initializeEventListeners() {
     });
 
     // Column header clicks (archetypal positions on desktop, cycles on mobile)
-    document.querySelectorAll('.column-header').forEach((header, index) => {
-        header.addEventListener('click', () => {
-            const isMobile = window.innerWidth <= 768;
-            
-            if (isMobile) {
-                // Mobile: columns are Mind/Body/Spirit
-                const cycles = ['mind', 'body', 'spirit'];
-                // Offset by 1 because first column is empty corner
-                if (index > 0 && index <= 3) {
-                    showFocusedView('cycle', cycles[index - 1]);
-                }
-            } else {
-                // Desktop: columns are Matrix/Potentiator/etc
+    // Mobile handlers are attached separately in handleMobileGrid()
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) {
+        document.querySelectorAll('.column-header').forEach((header, index) => {
+            header.addEventListener('click', () => {
                 const positions = ['matrix', 'potentiator', 'catalyst', 'experience', 'significator', 'transformation', 'great-way'];
                 showFocusedView('position', positions[index]);
-            }
+            });
         });
-    });
 
-    // Row header clicks (cycles on desktop, positions on mobile)
-    document.querySelectorAll('.row-header').forEach((header, index) => {
-        header.addEventListener('click', () => {
-            const isMobile = window.innerWidth <= 768;
-            
-            if (isMobile) {
-                // Mobile: rows are Matrix/Potentiator/etc
-                const positions = ['matrix', 'potentiator', 'catalyst', 'experience', 'significator', 'transformation', 'great-way'];
-                showFocusedView('position', positions[index]);
-            } else {
-                // Desktop: rows are Mind/Body/Spirit
+        // Row header clicks (cycles on desktop)
+        document.querySelectorAll('.row-header').forEach((header, index) => {
+            header.addEventListener('click', () => {
                 const cycles = ['mind', 'body', 'spirit'];
                 showFocusedView('cycle', cycles[index]);
-            }
+            });
         });
-    });
+    }
 
     // Back button (detail view only)
     document.getElementById('back-from-detail').addEventListener('click', () => {
