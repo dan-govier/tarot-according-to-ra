@@ -264,11 +264,7 @@ function initializeEventListeners() {
         });
     });
 
-    // Back buttons
-    document.getElementById('back-to-grid').addEventListener('click', () => {
-        showView('grid');
-    });
-
+    // Back button (detail view only)
     document.getElementById('back-from-detail').addEventListener('click', () => {
         if (previousView) {
             showView(previousView);

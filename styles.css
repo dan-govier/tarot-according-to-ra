@@ -601,6 +601,15 @@ body::after {
     overflow-x: auto;
     padding: 20px 0;
     align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* For smaller screens, allow scrolling but keep cards together */
+@media (max-width: 1400px) {
+    .focused-cards-wrapper {
+        justify-content: flex-start;
+    }
 }
 
 /* Detail View */
