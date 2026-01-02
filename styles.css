@@ -1012,6 +1012,34 @@ body::after {
         line-height: 1.1;
     }
     
+    /* Mobile row header colors - override nth-of-type which doesn't work with 4-column grid */
+    .row-header.mobile-position:nth-of-type(4n+1) {
+        background: var(--memphis-pink);
+        color: var(--black);
+    }
+    .row-header.mobile-position:nth-of-type(4n+5) {
+        background: var(--memphis-cyan);
+        color: var(--black);
+    }
+    .row-header.mobile-position:nth-of-type(4n+9) {
+        background: var(--memphis-yellow);
+        color: var(--black);
+    }
+    .row-header.mobile-position:nth-of-type(4n+13) {
+        background: var(--memphis-purple);
+    }
+    .row-header.mobile-position:nth-of-type(4n+17) {
+        background: var(--memphis-orange);
+        color: var(--black);
+    }
+    .row-header.mobile-position:nth-of-type(4n+21) {
+        background: var(--memphis-green);
+        color: var(--black);
+    }
+    .row-header.mobile-position:nth-of-type(4n+25) {
+        background: var(--memphis-blue);
+    }
+    
     /* Cards */
     .card-cell.mobile-card {
         padding: 6px;
@@ -1048,7 +1076,6 @@ body::after {
     #deck-slider {
         width: 280px;
     }
-}
     
     .deck-labels {
         max-width: 280px;
