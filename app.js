@@ -225,6 +225,7 @@ function initializeEventListeners() {
     // Grid card clicks
     document.querySelectorAll('.card-cell').forEach(cell => {
         cell.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent event bubbling
             const archetype = parseInt(cell.dataset.archetype);
             showCardDetail(archetype);
         });
@@ -232,7 +233,8 @@ function initializeEventListeners() {
 
     // Fool card clicks
     document.querySelectorAll('.card-small').forEach(card => {
-        card.addEventListener('click', () => {
+        card.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent event bubbling
             showCardDetail(22);
         });
     });
