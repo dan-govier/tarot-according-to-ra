@@ -475,6 +475,7 @@ body::after {
     top: -2px;
     left: -2px;
     border-radius: 50%;
+    pointer-events: none;
 }
 
 .card-cell::after {
@@ -486,12 +487,26 @@ body::after {
     bottom: -2px;
     right: -2px;
     border-radius: 50%;
+    pointer-events: none;
 }
 
 .card-cell:hover {
     transform: translateY(-8px) rotate(-3deg);
     box-shadow: 10px 10px 0 var(--border-color);
     z-index: 100;
+}
+
+/* Focused view specific card sizing */
+.focused-cards-wrapper .card-cell {
+    flex: 0 0 auto;
+    width: 160px !important;
+    min-width: 160px;
+    max-width: 160px;
+}
+
+.focused-cards-wrapper .card-cell img {
+    width: 100%;
+    height: auto;
 }
 
 .card-cell img {
@@ -582,15 +597,10 @@ body::after {
 /* Wrapper for cards to keep them in one row */
 .focused-cards-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     overflow-x: auto;
-    padding: 10px 0;
-}
-
-.focused-cards-wrapper .card-cell {
-    flex: 0 0 auto;
-    width: 180px;
-    min-width: 180px;
+    padding: 20px 0;
+    align-items: flex-start;
 }
 
 /* Detail View */

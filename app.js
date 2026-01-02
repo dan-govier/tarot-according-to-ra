@@ -224,19 +224,28 @@ function initializeEventListeners() {
 
     // Grid card clicks
     document.querySelectorAll('.card-cell').forEach(cell => {
-        cell.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent event bubbling
-            const archetype = parseInt(cell.dataset.archetype);
+        // Multiple approaches to ensure clicks work
+        cell.style.cursor = 'pointer';
+        cell.style.pointerEvents = 'auto';
+        
+        cell.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const archetype = parseInt(this.dataset.archetype);
+            console.log('Card clicked:', archetype);
             showCardDetail(archetype);
-        });
+        }, true); // Use capture phase
     });
 
     // Fool card clicks
     document.querySelectorAll('.card-small').forEach(card => {
-        card.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent event bubbling
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Fool clicked');
             showCardDetail(22);
-        });
+        }, true);
     });
 
     // Column header clicks (now archetypal positions)
