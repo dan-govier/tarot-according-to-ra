@@ -226,6 +226,8 @@ function handleMobileGrid() {
     
     if (!gridHeader || !gridContent) return;
     
+    console.log('handleMobileGrid called', { isMobile, dataLoaded: Object.keys(tarotData).length });
+    
     if (isMobile && !gridContent.classList.contains('mobile-rebuilt')) {
         // Mark as rebuilt to avoid duplicate work
         gridContent.classList.add('mobile-rebuilt');
@@ -258,21 +260,29 @@ function handleMobileGrid() {
             
             // Add cards for each cycle in this position
             cycles.forEach(cycle => {
-                const card = Object.entries(tarotData).find(([num, data]) => 
-                    data.cycle === cycle && data.position === pos.key && num !== '22'
-                );
+                // Find card by matching cycle and position
+                let foundCard = null;
+                let foundNum = null;
                 
-                if (card) {
-                    const [num, data] = card;
+                for (const [num, data] of Object.entries(tarotData)) {
+                    if (num !== '22' && data.cycle === cycle && data.position === pos.key) {
+                        foundCard = data;
+                        foundNum = num;
+                        break;
+                    }
+                }
+                
+                if (foundCard && foundNum) {
                     gridHTML += `
-                        <div class="card-cell mobile-card" data-archetype="${num}" data-cycle="${cycle}" data-position="${pos.key}">
-                            <img src="${data.images.ra}" alt="${data.name}">
-                            <span class="card-name">${data.name}</span>
+                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}">
+                            <img src="${foundCard.images.ra}" alt="${foundCard.name}">
+                            <span class="card-name">${foundCard.name}</span>
                         </div>
                     `;
                 } else {
-                    // Placeholder for missing cards
-                    gridHTML += `<div class="card-cell card-placeholder"></div>`;
+                    // Placeholder for missing cards  
+                    console.log(`Missing card: ${cycle} ${pos.key}`);
+                    gridHTML += `<div class="card-cell card-placeholder" style="background: var(--bg-secondary); opacity: 0.3;"></div>`;
                 }
             });
         });
