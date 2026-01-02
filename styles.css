@@ -499,6 +499,7 @@ body::after {
     height: auto;
     border: 2px solid var(--border-color);
     margin-bottom: 10px;
+    pointer-events: none; /* Allow clicks to pass through to parent card */
 }
 
 .card-name {
@@ -509,6 +510,7 @@ body::after {
     margin-top: 8px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    pointer-events: none; /* Allow clicks to pass through to parent card */
 }
 
 /* Focused View */
@@ -556,6 +558,39 @@ body::after {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     margin-top: 30px;
+}
+
+/* Single row layout for cycle/position views */
+#focused-content {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack description and cards */
+    gap: 20px;
+}
+
+#focused-content.cycle-view,
+#focused-content.position-view {
+    grid-template-columns: 1fr;
+}
+
+/* Cards container within focused content */
+#focused-content .card-cell {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+}
+
+/* Wrapper for cards to keep them in one row */
+.focused-cards-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.focused-cards-wrapper .card-cell {
+    flex: 0 0 auto;
+    width: 180px;
+    min-width: 180px;
 }
 
 /* Detail View */

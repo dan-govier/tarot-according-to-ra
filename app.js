@@ -363,13 +363,18 @@ function showFocusedView(type, value) {
         descriptionDiv.innerHTML = `<p>${cycleDescriptions[value]}</p>`;
         focusedContent.appendChild(descriptionDiv);
         
+        // Create wrapper for cards in single row
+        const cardsWrapper = document.createElement('div');
+        cardsWrapper.className = 'focused-cards-wrapper';
+        focusedContent.appendChild(cardsWrapper);
+        
         focusedContent.classList.add('cycle-view');
         focusedContent.classList.remove('position-view');
         
         // Get all cards in this cycle
         Object.entries(tarotData).forEach(([num, card]) => {
             if (card.cycle === value && num !== '22') {
-                addFocusedCard(num, card);
+                addFocusedCard(num, card, cardsWrapper);
             }
         });
     } else if (type === 'position') {
@@ -391,13 +396,18 @@ function showFocusedView(type, value) {
         descriptionDiv.innerHTML = `<p>${positionDescriptions[value]}</p>`;
         focusedContent.appendChild(descriptionDiv);
         
+        // Create wrapper for cards in single row
+        const cardsWrapper = document.createElement('div');
+        cardsWrapper.className = 'focused-cards-wrapper';
+        focusedContent.appendChild(cardsWrapper);
+        
         focusedContent.classList.add('position-view');
         focusedContent.classList.remove('cycle-view');
         
         // Get all cards in this position
         Object.entries(tarotData).forEach(([num, card]) => {
             if (card.position === value && num !== '22') {
-                addFocusedCard(num, card);
+                addFocusedCard(num, card, cardsWrapper);
             }
         });
     }
@@ -405,7 +415,7 @@ function showFocusedView(type, value) {
     showView('focused');
 }
 
-function addFocusedCard(num, card) {
+function addFocusedCard(num, card, container) {
     const cardDiv = document.createElement('div');
     cardDiv.className = 'card-cell';
     cardDiv.dataset.archetype = num;
@@ -413,8 +423,11 @@ function addFocusedCard(num, card) {
         <img src="${card.images.ra}" alt="${card.name}">
         <span class="card-name">${card.name}</span>
     `;
-    cardDiv.addEventListener('click', () => showCardDetail(parseInt(num)));
-    document.getElementById('focused-content').appendChild(cardDiv);
+    cardDiv.addEventListener('click', (e) => {
+        e.stopPropagation();
+        showCardDetail(parseInt(num));
+    });
+    container.appendChild(cardDiv);
 }
 
 function showCardDetail(archetypeNum) {
