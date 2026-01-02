@@ -1009,15 +1009,16 @@ body::after {
     /* Row headers (positions) */
     .row-header.mobile-position {
         writing-mode: horizontal-tb;
-        font-size: 0.55rem;
-        padding: 6px 2px;
+        font-size: 0.45rem;
+        padding: 4px 2px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        line-height: 1.1;
+        line-height: 1.0;
         word-break: break-word;
         hyphens: auto;
+        letter-spacing: 0;
     }
     
     /* Mobile row header colors - override nth-of-type which doesn't work with 4-column grid */
@@ -1068,13 +1069,18 @@ body::after {
         grid-template-columns: 1fr;
     }
     
+    /* Focused view - display cards in a column on mobile */
     .focused-cards-wrapper {
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: visible;
+        gap: 20px;
     }
     
     .focused-cards-wrapper .card-cell {
-        width: 140px !important;
-        min-width: 140px;
+        width: 200px !important;
+        min-width: 200px;
+        max-width: 200px;
     }
     
     #detail-card-image {

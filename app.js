@@ -243,12 +243,12 @@ function handleMobileGrid() {
         // Rebuild grid content with 7 position rows
         const positions = [
             { name: 'MATRIX', key: 'matrix' },
-            { name: 'POTENT.', key: 'potentiator' },
+            { name: 'POTENTIATOR', key: 'potentiator' },
             { name: 'CATALYST', key: 'catalyst' },
-            { name: 'EXPER.', key: 'experience' },
-            { name: 'SIGNIF.', key: 'significator' },
-            { name: 'TRANSF.', key: 'transformation' },
-            { name: 'GRT WAY', key: 'great-way' }
+            { name: 'EXPERIENCE', key: 'experience' },
+            { name: 'SIGNIFICATOR', key: 'significator' },
+            { name: 'TRANSFORMATION', key: 'transformation' },
+            { name: 'GREAT WAY', key: 'great-way' }
         ];
         
         const cycles = ['mind', 'body', 'spirit'];
