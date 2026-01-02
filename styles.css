@@ -274,6 +274,73 @@ body::after {
     box-shadow: 20px 20px 0 var(--memphis-purple);
 }
 
+/* Mini deck selector for grid view */
+.grid-deck-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    background: var(--bg-secondary);
+    border: 3px solid var(--border-color);
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-deck-selector .deck-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    letter-spacing: 1px;
+}
+
+#grid-deck-slider {
+    width: 120px;
+    height: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--border-color);
+    outline: none;
+    border-radius: 0;
+}
+
+#grid-deck-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--memphis-pink);
+    cursor: pointer;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+}
+
+#grid-deck-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--memphis-pink);
+    cursor: pointer;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+}
+
+.grid-deck-labels {
+    display: flex;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+
+.grid-deck-labels span {
+    min-width: 35px;
+    text-align: center;
+}
+
 #grid-view::before {
     content: '';
     position: absolute;
@@ -970,6 +1037,31 @@ body::after {
 
     body {
         padding: 70px 10px 10px 10px;
+    }
+
+    /* Grid deck selector - compact for mobile */
+    .grid-deck-selector {
+        padding: 8px 12px;
+        gap: 8px;
+        max-width: 280px;
+        margin-bottom: 12px;
+    }
+    
+    .grid-deck-selector .deck-label {
+        font-size: 0.75rem;
+    }
+    
+    #grid-deck-slider {
+        width: 80px;
+    }
+    
+    .grid-deck-labels {
+        font-size: 0.65rem;
+        gap: 4px;
+    }
+    
+    .grid-deck-labels span {
+        min-width: 28px;
     }
 
     /* MOBILE: JavaScript rebuilds grid as 7 rows x 3 columns */

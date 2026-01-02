@@ -416,10 +416,18 @@ function initializeEventListeners() {
         navigateCard(1);
     });
 
-    // Deck slider
+    // Deck slider (detail view)
     document.getElementById('deck-slider').addEventListener('input', (e) => {
         currentDeck = parseInt(e.target.value);
         updateCardImage();
+    });
+
+    // Grid deck slider (main view)
+    document.getElementById('grid-deck-slider').addEventListener('input', (e) => {
+        currentDeck = parseInt(e.target.value);
+        updateGridImages();
+        // Keep detail view slider in sync
+        document.getElementById('deck-slider').value = currentDeck;
     });
 
     // Keyboard navigation
@@ -657,6 +665,31 @@ function updateCardImage() {
     
     document.getElementById('detail-card-image').src = card.images[selectedDeck];
     document.getElementById('detail-card-image').alt = card.name;
+}
+
+function updateGridImages() {
+    const deckTypes = ['ra', 'rws', 'thoth'];
+    const selectedDeck = deckTypes[currentDeck];
+    
+    // Update all card images in grid view
+    document.querySelectorAll('.card-cell[data-archetype]').forEach(cell => {
+        const archetype = cell.dataset.archetype;
+        const card = tarotData[archetype];
+        if (card && card.images) {
+            const img = cell.querySelector('img');
+            if (img) {
+                img.src = card.images[selectedDeck];
+            }
+        }
+    });
+    
+    // Update the Fool card at bottom
+    document.querySelectorAll('.card-small[data-archetype="22"]').forEach(card => {
+        const img = card.querySelector('img');
+        if (img && tarotData[22]) {
+            img.src = tarotData[22].images[selectedDeck];
+        }
+    });
 }
 
 function navigateCard(direction) {
