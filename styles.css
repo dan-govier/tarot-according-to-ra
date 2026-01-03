@@ -32,6 +32,10 @@
     --black: #1A1A1A;
     --white: #FFFFFF;
     --grey: #E5E5E5;
+    
+    /* Typography */
+    --font-display: 'Archivo Black', 'Arial Black', sans-serif;
+    --font-body: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 }
 
 /* Dark mode colors */
@@ -44,7 +48,7 @@ body.dark-mode {
 }
 
 body {
-    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-family: var(--font-body);
     background: var(--bg-primary);
     background-image: 
         repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 217, 255, 0.03) 10px, rgba(0, 217, 255, 0.03) 20px),
@@ -74,8 +78,9 @@ body {
 }
 
 .app-title {
+    font-family: var(--font-display);
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 3px;
     color: var(--text-primary);
     text-align: center;
@@ -84,13 +89,14 @@ body {
 }
 
 .header-button {
+    font-family: var(--font-display);
     background: var(--memphis-pink);
     border: 3px solid var(--border-color);
     color: var(--border-color);
     padding: 12px 20px;
     cursor: pointer;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -175,11 +181,6 @@ body::after {
     margin: 30px 0;
     padding: 20px;
     position: relative;
-}
-
-/* Hide the top Fool - keep only the bottom one as foundation */
-#fool-top {
-    display: none;
 }
 
 .fool-container::before {
@@ -274,73 +275,6 @@ body::after {
     box-shadow: 20px 20px 0 var(--memphis-purple);
 }
 
-/* Mini deck selector for grid view */
-.grid-deck-selector {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 20px;
-    padding: 12px 20px;
-    background: var(--bg-secondary);
-    border: 3px solid var(--border-color);
-    max-width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.grid-deck-selector .deck-label {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    color: var(--text-primary);
-    letter-spacing: 1px;
-}
-
-#grid-deck-slider {
-    width: 120px;
-    height: 6px;
-    -webkit-appearance: none;
-    appearance: none;
-    background: var(--border-color);
-    outline: none;
-    border-radius: 0;
-}
-
-#grid-deck-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background: var(--memphis-pink);
-    cursor: pointer;
-    border: 2px solid var(--border-color);
-    border-radius: 50%;
-}
-
-#grid-deck-slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background: var(--memphis-pink);
-    cursor: pointer;
-    border: 2px solid var(--border-color);
-    border-radius: 50%;
-}
-
-.grid-deck-labels {
-    display: flex;
-    gap: 8px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: var(--text-primary);
-    text-transform: uppercase;
-}
-
-.grid-deck-labels span {
-    min-width: 35px;
-    text-align: center;
-}
-
 #grid-view::before {
     content: '';
     position: absolute;
@@ -378,9 +312,10 @@ body::after {
 }
 
 .column-header {
+    font-family: var(--font-display);
     text-align: center;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
     color: var(--white);
     padding: 18px 8px;
     background: var(--border-color);
@@ -460,9 +395,10 @@ body::after {
 }
 
 .card-name {
+    font-family: var(--font-display);
     display: block;
     font-size: 0.85rem;
-    font-weight: bold;
+    font-weight: normal;
     color: var(--text-primary);
     margin-top: 8px;
     text-transform: uppercase;
@@ -472,8 +408,9 @@ body::after {
 }
 
 .row-header {
+    font-family: var(--font-display);
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: normal;
     color: var(--white);
     padding: 15px;
     text-align: center;
@@ -616,9 +553,10 @@ body::after {
 }
 
 .card-name {
+    font-family: var(--font-display);
     display: block;
     font-size: 0.85rem;
-    font-weight: bold;
+    font-weight: normal;
     color: var(--text-primary);
     margin-top: 8px;
     text-transform: uppercase;
@@ -636,9 +574,11 @@ body::after {
 }
 
 #focused-title {
+    font-family: var(--font-display);
     color: var(--text-primary);
     margin: 20px 0 40px 0;
     font-size: 3rem;
+    font-weight: normal;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -745,8 +685,10 @@ body::after {
 }
 
 #detail-title {
+    font-family: var(--font-display);
     color: var(--text-primary);
     font-size: 2.5rem;
+    font-weight: normal;
     text-align: center;
     flex-grow: 1;
     text-transform: uppercase;
@@ -894,9 +836,11 @@ body::after {
 }
 
 .card-description h3 {
+    font-family: var(--font-display);
     color: var(--white);
     background: var(--border-color);
     font-size: 1.8rem;
+    font-weight: normal;
     margin: 40px 0 20px 0;
     padding: 20px;
     text-transform: uppercase;
@@ -921,6 +865,7 @@ body::after {
 .card-description h3:nth-of-type(3) { background: var(--memphis-cyan); color: var(--border-color); }
 
 .card-description div {
+    font-family: var(--font-body);
     line-height: 1.9;
     color: var(--text-primary);
     padding: 25px;
@@ -932,13 +877,14 @@ body::after {
 
 /* Navigation Buttons */
 .nav-button {
+    font-family: var(--font-display);
     background: var(--memphis-green);
     border: 4px solid var(--border-color);
     color: var(--border-color);
     padding: 15px 30px;
     cursor: pointer;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: normal;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1039,31 +985,6 @@ body::after {
         padding: 70px 10px 10px 10px;
     }
 
-    /* Grid deck selector - compact for mobile */
-    .grid-deck-selector {
-        padding: 8px 12px;
-        gap: 8px;
-        max-width: 280px;
-        margin-bottom: 12px;
-    }
-    
-    .grid-deck-selector .deck-label {
-        font-size: 0.75rem;
-    }
-    
-    #grid-deck-slider {
-        width: 80px;
-    }
-    
-    .grid-deck-labels {
-        font-size: 0.65rem;
-        gap: 4px;
-    }
-    
-    .grid-deck-labels span {
-        min-width: 28px;
-    }
-
     /* MOBILE: JavaScript rebuilds grid as 7 rows x 3 columns */
     .grid-container {
         overflow-x: auto;
@@ -1073,9 +994,9 @@ body::after {
     /* Header with Mind/Body/Spirit as columns */
     .grid-header {
         display: grid !important;
-        grid-template-columns: 80px repeat(3, 1fr);
-        gap: 4px;
-        margin-bottom: 6px;
+        grid-template-columns: 100px repeat(3, 1fr);
+        gap: 6px;
+        margin-bottom: 8px;
     }
     
     .grid-header .spacer {
@@ -1084,61 +1005,29 @@ body::after {
     
     .grid-header .column-header {
         writing-mode: horizontal-tb;
-        padding: 8px 4px;
+        padding: 12px 8px;
         min-height: auto;
-        font-size: 0.7rem;
-        letter-spacing: 0.5px;
+        font-size: 0.9rem;
     }
     
     /* Grid content: 7 rows (positions) x 4 columns (header + 3 cycles) */
     .grid-content.mobile-rebuilt {
         display: grid;
-        grid-template-columns: 80px repeat(3, 1fr);
+        grid-template-columns: 100px repeat(3, 1fr);
         grid-auto-rows: auto;
-        gap: 4px;
+        gap: 6px;
     }
     
     /* Row headers (positions) */
     .row-header.mobile-position {
         writing-mode: horizontal-tb;
-        font-size: 0.45rem;
-        padding: 4px 2px;
+        font-size: 0.7rem;
+        padding: 8px 4px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        line-height: 1.0;
-        word-break: break-word;
-        hyphens: auto;
-        letter-spacing: 0;
-    }
-    
-    /* Mobile row header colors - override nth-of-type which doesn't work with 4-column grid */
-    .row-header.mobile-position:nth-of-type(4n+1) {
-        background: var(--memphis-pink);
-        color: var(--black);
-    }
-    .row-header.mobile-position:nth-of-type(4n+5) {
-        background: var(--memphis-cyan);
-        color: var(--black);
-    }
-    .row-header.mobile-position:nth-of-type(4n+9) {
-        background: var(--memphis-yellow);
-        color: var(--black);
-    }
-    .row-header.mobile-position:nth-of-type(4n+13) {
-        background: var(--memphis-purple);
-    }
-    .row-header.mobile-position:nth-of-type(4n+17) {
-        background: var(--memphis-orange);
-        color: var(--black);
-    }
-    .row-header.mobile-position:nth-of-type(4n+21) {
-        background: var(--memphis-green);
-        color: var(--black);
-    }
-    .row-header.mobile-position:nth-of-type(4n+25) {
-        background: var(--memphis-blue);
+        line-height: 1.1;
     }
     
     /* Cards */
@@ -1161,81 +1050,37 @@ body::after {
         grid-template-columns: 1fr;
     }
     
-    /* Focused view - display cards in a column on mobile */
     .focused-cards-wrapper {
-        flex-direction: column;
-        align-items: center;
-        overflow-x: visible;
-        gap: 20px;
+        justify-content: flex-start;
     }
     
     .focused-cards-wrapper .card-cell {
-        width: 200px !important;
-        min-width: 200px;
-        max-width: 200px;
+        width: 140px !important;
+        min-width: 140px;
     }
     
     #detail-card-image {
         max-width: 100%;
     }
     
-    /* Deck selector - compact for mobile */
-    .deck-selector {
-        padding: 12px 10px;
-        margin-bottom: 15px;
-    }
-    
-    .deck-selector::before {
-        display: none; /* Hide decorative circle on mobile */
-    }
-    
-    .deck-selector label {
-        font-size: 0.9rem;
-        margin-bottom: 8px;
-        letter-spacing: 1px;
-    }
-    
     #deck-slider {
-        width: 100%;
-        max-width: 250px;
-        margin: 8px auto;
+        width: 280px;
     }
+}
     
     .deck-labels {
-        max-width: 250px;
-        font-size: 0.7rem;
-        margin-top: 8px;
+        max-width: 280px;
+        font-size: 0.85rem;
     }
     
-    /* Navigation - all on one line */
     .detail-navigation {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 8px;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
     }
     
     #detail-title {
-        font-size: 1rem;
-        letter-spacing: 1px;
-        order: 0;
-        flex: 1;
-        text-align: center;
-        margin: 0 5px;
-    }
-    
-    .nav-arrow {
-        padding: 8px 12px;
-        font-size: 1.2rem;
-        box-shadow: 3px 3px 0 var(--border-color);
-    }
-    
-    /* Back button - smaller on mobile */
-    #back-from-detail {
-        padding: 8px 12px;
-        font-size: 0.8rem;
-        box-shadow: 3px 3px 0 var(--border-color);
+        order: 1;
+        font-size: 1.8rem;
     }
     
     #focused-title {
