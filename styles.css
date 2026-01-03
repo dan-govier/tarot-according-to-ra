@@ -863,6 +863,11 @@ body::after {
 
 .card-description h3:nth-of-type(2) { background: var(--memphis-pink); color: var(--border-color); }
 .card-description h3:nth-of-type(3) { background: var(--memphis-cyan); color: var(--border-color); }
+.card-description h3:nth-of-type(4) { background: var(--memphis-yellow); color: var(--border-color); }
+.card-description h3:nth-of-type(5) { background: var(--memphis-green); color: var(--border-color); }
+.card-description h3:nth-of-type(6) { background: var(--memphis-orange); color: var(--border-color); }
+.card-description h3:nth-of-type(7) { background: var(--memphis-purple); color: var(--white); }
+.card-description h3:nth-of-type(8) { background: var(--memphis-blue); color: var(--white); }
 
 .card-description div {
     font-family: var(--font-body);

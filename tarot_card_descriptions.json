@@ -41,7 +41,9 @@
         "session": "91.35",
         "text": "It is then that the adept would call upon the new mind, untouched and virgin, full of the magic of the Logos."
       }
-    ]
+    ],
+    "jungian": "The Magician represents the Ego in its most functional state\u2014the mediator between conscious intention and unconscious resources. This archetype embodies what Jung called 'directed thinking,' the masculine Logos principle that organizes psychic energy toward goals. The Magician accesses the four functions (thinking, feeling, sensation, intuition) represented by his tools. However, he operates within maya, suggesting the ego's construction of reality is always partial. The reaching toward the feminine Potentiator reflects the ego's necessary relationship with the Anima\u2014he cannot create alone but must invoke the unconscious.",
+    "lacanian": "The Magician occupies the position of the subject who believes himself master of the signifying chain. His tools are the master signifiers (S1) through which he attempts to organize reality and produce meaning. Yet his 'reaching' toward the High Priestess reveals the fundamental lack (manque-\u00e0-\u00eatre) at the heart of subjectivity\u2014the conscious mind cannot access its own foundations. The veil between them is the bar between signifier and signified, the impossibility of direct access to the Real. His magic is the operation of m\u00e9connaissance: productive misrecognition that enables action while concealing its true source in the Other."
   },
   "2": {
     "name": "The High Priestess",
@@ -75,7 +77,9 @@
         "session": "78.34",
         "text": "The unconscious is what may be poetically described as High Priestess, for it is the Potentiator of the Mind, and as potentiator for the mind is that principle which potentiates all experience."
       }
-    ]
+    ],
+    "jungian": "The High Priestess is the Anima in her most primordial form\u2014the Soul-Image that mediates between ego-consciousness and the collective unconscious. She embodies what Jung called 'the not-yet-conscious,' holding all potentials in undifferentiated form. Her scrolls contain the wisdom that cannot be directly known but must be intuited. She represents the receptive, Eros principle that compensates the Magician's directed Logos. In individuation, the ego must learn to dialogue with this figure rather than either ignore or be possessed by her. She guards the threshold to the deeper Self.",
+    "lacanian": "The High Priestess embodies the Other (Autre)\u2014the locus of the signifier, the unconscious structured like a language. Her scrolls represent the treasury of signifiers from which all meaning derives, yet which can never be fully articulated. She sits before the veil of castration, marking the limit of symbolization. Her 'answering when asked' mirrors the analytic position: the unconscious speaks only when questioned, and always in riddles. She is the subject-supposed-to-know (sujet suppos\u00e9 savoir), the transferential figure onto whom knowledge is projected, though she herself embodies the knowledge that there is no final knowledge."
   },
   "3": {
     "name": "The Empress",
@@ -116,7 +120,9 @@
         "session": "78.36",
         "text": "The Archetype is perhaps confusedly called Empress, representing the unconscious portion being ennobled by the conscious portion."
       }
-    ]
+    ],
+    "jungian": "The Empress represents the Great Mother archetype in her nurturing, generative aspect. She embodies the anima mundi\u2014the soul of the world that gives form to psychic contents. Her constant self-presentation reflects the autonomous nature of complexes: they express themselves whether we attend to them or not. She is the matrix from which consciousness emerges and to which dream imagery belongs. Her fertility symbolizes the psyche's natural tendency toward growth and elaboration. In shadow, she becomes the Devouring Mother who overwhelms with too much meaning, too much feeling.",
+    "lacanian": "The Empress represents the primordial matrix of signification\u2014the pre-symbolic Real from which the subject emerges through alienation. Her self-presentation is jouissance made visible: the excess that escapes symbolization yet insists on expression. She is the Mother before the Name-of-the-Father introduces lack and law. Her catalytic function creates what Lacan calls 'precipitates'\u2014the affective residues that attach to signifiers and give them weight. The bird overhead (spirit resting) suggests the imaginary wholeness before symbolic castration\u2014a completeness that must be lost for subjectivity to emerge."
   },
   "4": {
     "name": "The Emperor",
@@ -151,7 +157,9 @@
         "session": "78.37",
         "text": "The broad name for Archetype Four may be the Experience of the Mind. Again this implies nobility: only through processed catalyst does experience ensue."
       }
-    ]
+    ],
+    "jungian": "The Emperor represents the Logos principle actualized\u2014the discriminating function that separates, judges, and orders experience. He is the inner King who rules the psychic kingdom, establishing law and hierarchy among contents. His throne suggests the stable ego-position from which reality is assessed. Yet his armor indicates defensiveness\u2014the shadow of judgment is rigidity and persecution. He embodies what Jung called the 'spirit of gravity' that can either ground us in reality or crush spontaneity. His scepter of generation shows that proper discrimination enables new life; his ankh of preservation maintains what has value.",
+    "lacanian": "The Emperor occupies the position of the Master (S1) who pronounces verdicts and establishes the symbolic order. His judgment creates the fundamental binary oppositions (signifier/signified, presence/absence) that structure meaning. The scale and sword represent the cut of castration\u2014the primordial division that creates the subject by separating it from jouissance. His 'processing of catalyst' mirrors the work of secondary revision: organizing chaotic primary process material into coherent narrative. Yet every verdict reveals his own division\u2014the master is constituted by the very discourse he appears to command."
   },
   "5": {
     "name": "The Hierophant",
@@ -190,7 +198,9 @@
         "session": "79.42",
         "text": "As the Significator of the mind, the Hierophant has the will to know, but what shall it do with its knowledge?"
       }
-    ]
+    ],
+    "jungian": "The Hierophant represents the archetype of Meaning\u2014the psyche's inherent tendency to organize experience into coherent narratives. He is the inner sage who contextualizes events within larger patterns, connecting personal experience to collective wisdom. His doctrine-making function reflects what Jung called 'the transcendent function': the psyche's self-regulatory capacity to synthesize opposites into new wholes. He guards the threshold to the Greater Cycle, suggesting that transformation requires a framework of meaning. In shadow, he becomes dogmatic\u2014mistaking his maps for the territory, his stories for truth itself.",
+    "lacanian": "The Hierophant is the quilting point (point de capiton)\u2014the master signifier that retroactively fixes meaning across the signifying chain. His storytelling function reveals how narrative creates the illusion of coherent subjectivity from fragmentary experience. He embodies the Symbolic order's promise of meaning while simultaneously revealing its contingency: all doctrine is constructed, all narrative is defense against the Real. His position as 'threshold to the Greater Cycle' marks the limit of imaginary identification\u2014beyond lies the encounter with lack that enables genuine transformation. He is ideology itself: necessary yet necessarily incomplete."
   },
   "6": {
     "name": "The Two Paths",
@@ -223,7 +233,9 @@
         "session": "79.40",
         "text": "As you observe Archetype Six you may see the student of the mysteries being transformed by the need to choose betwixt the light and the dark in mind."
       }
-    ]
+    ],
+    "jungian": "The Lovers represents the archetypal moment of choice that initiates individuation proper. Standing between two paths, the figure embodies the ego's confrontation with opposites that cannot be reconciled through thinking alone. This is the coniunctio\u2014the sacred marriage of conscious and unconscious, masculine and feminine, that produces the third thing. The transformation through choosing reflects Jung's insight that we become ourselves only through commitment, not contemplation. The crossroads is the Self calling the ego beyond its comfort zone. Both paths lead to individuation; the choice itself is the transformative agent.",
+    "lacanian": "The Lovers marks the forced choice (vel) that constitutes subjectivity: to enter the symbolic order, one must surrender being for meaning. Standing at the crossroads, the subject confronts the fundamental fantasy\u2014the frame through which desire is organized. Neither path is 'true'; both are constructions of the Other. The transformation through choosing reveals the subject's act of assuming their desire rather than remaining trapped in the Other's desire. This is the ethical moment: not choosing the 'right' path but taking responsibility for one's choice, recognizing that the subject is nothing but this very act of choosing."
   },
   "7": {
     "name": "The Chariot",
@@ -263,7 +275,9 @@
         "session": "79.41",
         "text": "The mind continues to move majestically through material it conceives of as a chariot drawn by royal lions or steeds."
       }
-    ]
+    ],
+    "jungian": "The Chariot represents the Self in its dynamic aspect\u2014the organizing center of the psyche that integrates opposites into purposive movement. The Conqueror has achieved what Jung called 'relative wholeness': not perfection but functional integration of shadow, anima/animus, and persona. The sphinxes (light and dark) represent tamed opposites that now serve rather than divide. The canopy of stars indicates alignment with the archetypal order\u2014personal will harmonized with transpersonal purpose. This is individuation as achievement: the ego serving the Self while maintaining appropriate boundaries, moving through life with centered authority.",
+    "lacanian": "The Chariot represents the fantasy of the unified subject\u2014the ego ideal (Ich-Ideal) in its most seductive form. The Conqueror appears to master the drives (sphinxes) through will, demonstrating successful sublimation. Yet this mastery is imaginary: the charioteer depends upon the very forces he appears to command. The starry canopy is the 'big Other' validating this self-image. As 'Great Way,' this card marks where the subject's fundamental fantasy solidifies into character structure\u2014the consistent way of organizing desire that feels like 'who I am.' The achievement is real; its foundation in m\u00e9connaissance is equally real."
   },
   "8": {
     "name": "Justice",
@@ -294,7 +308,9 @@
       "Unintentionally arrhythmic activity - Cycles that don't resolve into predictable rhythms, making intelligent potentiation impossible",
       "Avoiding the persona entirely - Not trusting intuitive judgments about body's needs; listening only to others or trying to figure things out consciously"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "Justice represents the body-Self\u2014the wisdom of the instincts operating below conscious awareness. Her blindfold indicates what Jung called 'the natural mind' that knows without knowing how it knows. The Wild Woman embodies the archetype of embodied feminine wisdom: not chaos but a different order, governed by lex talionis\u2014proportional response, natural consequence. Her inflexibility reflects the body's honest feedback: it cannot lie or rationalize. The sphinx and lion represent the cyclic nature of bodily existence\u2014hunger and satiation, tension and release. She is the somatic unconscious demanding attention.",
+    "lacanian": "Justice represents the Real of the body\u2014that which resists symbolization yet determines existence. Her blindfold marks her indifference to narrative; she responds to acts, not intentions. The 'Wild Woman' operates outside the symbolic order, embodying what Lacan calls the drive (Trieb): not biological instinct but the circuit of partial objects that insists beyond pleasure. Her 'lex talionis' is the automatic return of the repressed\u2014not punishment but consequence at the level of the Real. She is the body's jouissance that cannot be fully captured in the signifying chain yet constantly interrupts it."
   },
   "9": {
     "name": "The Sage",
@@ -322,7 +338,9 @@
       "Inability to identify what is good - Failure in the perceptive side of practical reason",
       "Mind cycle overriding body cycle - Mental concerns distorting the Sage's mechanisms of practical reason"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "The Hermit represents the Self's guidance operating through somatic intuition\u2014the 'body knowing' that Jung recognized as distinct from intellectual insight. The Sage carries the small candle of instinctive wisdom, illuminating only the next step. His isolation reflects the essentially private nature of embodied experience: no one else can feel your body. The two serpents represent the complementary poles of bodily wisdom\u2014one oriented outward to environment, one inward to felt sense. Following this guidance requires what Jung called 'introverted sensation': attending to the subtle signals the body offers.",
+    "lacanian": "The Hermit embodies savoir\u2014knowledge in the Real, distinct from connaissance (imaginary knowledge) or symbolic expertise. His lamp reveals only immediate vicinity, marking the limit of foresight when operating from embodied experience. The 'no mistakes' doctrine challenges the guilt-structure of symbolic law: at the level of the body, there is only action and consequence, not transgression. His isolation figures the fundamental solitude of the subject vis-\u00e0-vis jouissance\u2014the body's satisfaction cannot be shared or fully communicated. He marks where the signifying chain fails and something else must guide."
   },
   "10": {
     "name": "Wheel of Fortune",
@@ -353,7 +371,9 @@
       "Over-attribution - Seeing causal connections where none exist",
       "Victim mentality - Missing that same event can be catalyst from one perspective and potentiation from another"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "The Wheel represents the archetypal pattern of enantiodromia\u2014the psyche's tendency to swing between opposites over time. What rises falls; what is repressed returns. The Affected encounters this as fate, but deeper understanding reveals the Self's regulatory activity. Typhon descending and Hermanubis ascending show shadow and light in perpetual rotation. The sphinx atop represents transcendent awareness that witnesses without being caught in the turning. This card teaches that fortune and misfortune are viewpoints, not absolutes\u2014the ego that identifies with rising will suffer falling; the ego aligned with the still center remains balanced.",
+    "lacanian": "The Wheel figures the circuit of the drive (pulsion)\u2014the endless rotation around the object a that can never be grasped. Typhon and Hermanubis represent the subject's oscillation between alienation and separation, identification and dis-identification. The sphinx atop marks the position of the analyst: not outside the wheel but occupying a place of non-reactive witnessing. 'Working out how one brought it upon oneself' is the operation of analysis: tracing the subject's complicity in their symptom. The wheel reveals repetition compulsion\u2014not fate but the insistence of an unmetabolized Real that keeps returning until integrated."
   },
   "11": {
     "name": "The Enchantress",
@@ -384,7 +404,9 @@
       "Premature absolution - Forgiving without receiving sincere confession",
       "Failure to recognize power - Not understanding one's position of strength in the relationship"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "Strength represents the right relationship between ego and instinct\u2014what Jung called the 'taming of the animal.' The Whisperer does not dominate the lion through force but through rapport, demonstrating that shadow integration occurs through acceptance, not repression. Her composure reflects the 'synergistic harmony of emotions': all parts of the psyche working together rather than in conflict. The pitcher of emotional biases is upright, indicating these feelings now guide rather than overwhelm. This is the body-anima\u2014the feminine principle operating through embodied presence rather than verbal communication.",
+    "lacanian": "Strength figures the subject's relationship to the drives\u2014not mastery but a certain 'know-how' (savoir-faire) with jouissance. The Whisperer demonstrates that the drives can be directed without being eliminated. Her 'holding all the cards' reveals the imaginary mother's omnipotence\u2014she who could satisfy or frustrate absolutely. The taming of the lion is not repression but sublimation: redirecting drive energy toward non-destructive aims while preserving satisfaction. The Accomplice/Absolver split marks the ethical dimension: will this know-how serve relation (absolution) or exploitation (accomplice to one's own drive)?"
   },
   "12": {
     "name": "The Martyr",
@@ -414,7 +436,9 @@
       "Neglect - Allowing the economy of body and home to fall into disrepair",
       "Overwork - Spending all resources without allowing for recovery"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "The Hanged Man represents what Jung called 'the sacrifice of the hero'\u2014the ego's surrender of control that enables renewal. The Homesteader is suspended, unable to act, forced into receptivity. This marks the body-Self's via negativa: knowing through what doesn't work, through resource depletion, through enforced stillness. The crossed limbs form the ankh, suggesting that limitation itself becomes the path to life. His domestic focus reflects the individuation task of this card: creating sustainable relationship with one's own nature, balancing expenditure and renewal, finding the 'economy of energy' that allows continued existence.",
+    "lacanian": "The Hanged Man figures the subject's confrontation with impasse\u2014the point where symbolic solutions fail and something must be surrendered. The Homesteader's 'economy of energy' reveals the libidinal calculus underlying all action: every investment forecloses alternatives. Dropping coins marks the necessary expenditure that cannot be recovered\u2014the sunk cost of subjectivity itself. The Shelterer/Swindler split reveals the two positions available when resources are scarce: genuine hospitality (symbolic debt based on trust) or exploitation (imaginary transaction that leaves others indebted). The suspension is the analytic position: waiting without acting, allowing something to emerge."
   },
   "13": {
     "name": "Death",
@@ -443,7 +467,9 @@
       "Avoiding the transformation - Knowing change is needed but refusing to face the death of the old way",
       "Premature transformation - Attempting to transform before fully understanding what needs to change"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "Death represents the archetype of transformation through dissolution\u2014what Jung called the nigredo, the blackening that precedes renewal. The Reaper has seen that the old self-structure is unsustainable; complete reconstitution is required. This is the body's wisdom demanding total change, not modification. The reaping of heads, hands, and feet examines mental approach, actions, and way of life\u2014nothing escapes review. The rainbow promises rebirth but only after the storm. This card marks the death-rebirth mystery at the somatic level: the body insisting that this way of living cannot continue, even when the mind resists.",
+    "lacanian": "Death figures the traversal of fantasy\u2014the dissolution of the frame through which the subject has organized desire. The Reaper confronts what Lacan calls 'subjective destitution': the falling away of identifications that reveals the subject as pure lack. The 'negative method' mirrors the via negativa of analysis\u2014knowing what one is not, what one does not want, before positive movement becomes possible. Reaping heads/hands/feet marks the dismemberment of the imaginary body\u2014the unified self-image that must fragment before restructuring. The Revolutionary aspect suggests the social dimension: personal transformation ripples outward into collective structures."
   },
   "14": {
     "name": "The Alchemist",
@@ -473,7 +499,9 @@
       "Imbalance - Overemphasis on one element at expense of others; losing the temperate middle",
       "Stagnation - Allowing the process to halt; refusing to continue the work"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "Temperance represents the opus of embodied integration\u2014the slow, patient work of alchemical transformation. The Alchemist doesn't force change but facilitates it, creating conditions for natural transmutation. Pouring between vessels reflects the circulation of libido between conscious and unconscious that gradually refines psychic material. One foot on land, one in water marks the position between realms that the individuating ego must maintain. This is the Great Work at the body level: sustainable practice rather than dramatic breakthrough, the 'middle way' that avoids both excess and deficiency while consistently moving toward greater integration.",
+    "lacanian": "Temperance figures the endless work of symbolization\u2014the attempt to integrate jouissance into the signifying chain without eliminating it. The Alchemist's pouring represents the circulation of affect through representation: binding the Real through repeated working-over. This is the process Freud called 'Nachtr\u00e4glichkeit' (deferred action): meaning emerges retroactively through repeated traversal. The aspiration toward 'temperate mixing' is the analytic aim: neither drowning in affect (acting out) nor cutting off from it (intellectualization). The Great Way marks the ongoing nature of this work\u2014there is no final integration, only continued practice."
   },
   "15": {
     "name": "The Devil",
@@ -505,7 +533,9 @@
         "session": "80.14",
         "text": "The adept, whether positive or negative, has the same Matrix. The Potentiator is also identical."
       }
-    ]
+    ],
+    "jungian": "The Devil represents the Shadow at its most numinous\u2014not evil but the rejected totality of the psyche's dark aspects. The Adversary is the experience of being fundamentally misunderstood because one lives in connection with powers others fear. She is the Dweller on the Threshold: one's own unlived life appearing as obstruction. Her 'fundamental capriciousness' reflects the Shadow's amorality\u2014it operates beyond good and evil, from the depths where opposites have not yet separated. As Matrix of Spirit, she embodies the unintegrated spiritual self that appears demonic precisely because it has been denied.",
+    "lacanian": "The Devil figures the dimension of jouissance that horrifies\u2014the excess that escapes symbolic law and appears monstrous. The Adversary reveals how the subject's disavowed enjoyment returns as alien threat. Her 'capriciousness' marks the Real's indifference to meaning: jouissance follows its own logic. As 'Dweller on the Threshold,' she guards against premature access to power\u2014the check against inflation that maintains the bar of castration. Her intersex nature marks the beyond of sexual difference: the polymorphous perverse enjoyment that precedes gendered subject positions. She is das Ding, the primordial Thing around which the subject circulates."
   },
   "16": {
     "name": "Lightning Struck Tower",
@@ -533,7 +563,9 @@
       "Refusing to fall - Desperately holding onto capstone despite clear evidence of hypocrisy",
       "Identifying with the destruction - Becoming obsessed with one's own disgrace rather than learning from it"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "The Tower represents what Jung called 'the collapse of the conscious attitude'\u2014the violent destruction of false structures that enables authentic reconstruction. The Disgraced Priest had built a spiritual persona that concealed rather than revealed; lightning strikes the lie. The falling figures (conscious and unconscious) show that no part of the psyche escapes this revelation. The tower/pyramid as mental construct demolished indicates that belief systems can become prisons. This is spiritual emergency as emergency: breakdown that is also breakthrough, the destruction of who we thought we were in service of who we actually are.",
+    "lacanian": "The Tower figures the encounter with the Real that shatters the symbolic framework\u2014what Lacan calls 'the fall of the subject supposed to know.' The Disgraced Priest discovers that his position was always a fraud: no one actually possesses the knowledge they appear to hold. The lightning is the traumatic intrusion that reveals the void underlying all construction. Both figures falling together mark the collapse of the ego ideal and ideal ego simultaneously\u2014imaginary and symbolic supports failing at once. The dislodged capstone is the master signifier dethroned, revealing that the edifice of meaning was always groundless."
   },
   "17": {
     "name": "The Star",
@@ -564,7 +596,9 @@
       "Doubt as paralysis - Teetering between extremes without moving forward",
       "False hope - Confusing mental belief with spiritual faith"
     ],
-    "raQuotes": []
+    "raQuotes": [],
+    "jungian": "The Star represents anima mundi in her aspect of hope and renewal\u2014the Soul of the World pouring healing waters after catastrophe. The Faithful embodies what Jung called 'religious attitude': not belief but trust in the psyche's self-healing capacity. Her nakedness after the Tower shows the ego stripped of pretense, vulnerable but open. The seven stars represent the chakras or energy centers\u2014the full spectrum of psychic functioning that becomes available when false structures fall. Faith here is not belief without evidence but trust born of surviving the worst: having lost everything, one discovers what cannot be lost.",
+    "lacanian": "The Star figures the feminine position par excellence\u2014the subject who has traversed the fantasy and can dwell in openness to the Other. The Faithful has surrendered demand and expectation, allowing something to flow through her rather than grasping. Her nakedness marks the beyond of imaginary covering\u2014subjective destitution that becomes spacious rather than desperate. The two streams represent the split between enunciation and statement: what is said and the saying of it, never fully coinciding. The left-hand path inversion (faith turning inward) shows how the same openness can serve either love or narcissistic self-enclosure."
   },
   "18": {
     "name": "The Moon",
@@ -603,7 +637,9 @@
         "session": "80.15",
         "text": "With the discrimination possible in shadow, be worked with until light equaling the light of brightest noon descends upon the adept."
       }
-    ]
+    ],
+    "jungian": "The Moon represents the Self's protective function\u2014the Watcher who guards the threshold between consciousness and the deep unconscious. This is the spirit guide who tests seekers, ensuring readiness before granting passage. The two jackals embody shadow and persona in their spiritual aspect: authentic helper (black, common) versus seductive deceiver (white, attractive). The scorpion warns of genuine danger\u2014premature opening to spiritual forces can devastate the unprepared ego. The diffuse moonlight reflects the uncertainty of spiritual discrimination: at this threshold, nothing is clear, and subtle sensing replaces rational assessment.",
+    "lacanian": "The Moon figures the Other's opacity\u2014the dimension where the signifying chain fails and something else determines outcome. The Watcher embodies the analyst's function: neither directing nor abandoning but maintaining presence at the threshold. The two jackals represent true and false transference: the black helper who assists without seducing, and the white deceiver who attracts into dependency. The Guardian/Pied Piper split reveals the ethical crux: will one who has power use it for liberation or enslavement? The scorpion marks the Real danger of spiritual work: not metaphor but actual psychic injury possible for those who proceed without preparation."
   },
   "19": {
     "name": "The Sun",
@@ -642,7 +678,9 @@
         "session": "19.17",
         "text": "Some love the light. Some love the darkness. It is a matter of the unique and infinitely various Creator choosing and playing among its experiences as a child upon a picnic."
       }
-    ]
+    ],
+    "jungian": "The Sun represents the Self's radiance experienced as joy\u2014the 'picnic' of conscious life when aligned with archetypal purpose. The Celebrant lives from the center rather than the periphery, expressing what Jung called 'the religious function of the psyche': the natural capacity for meaning and connection. The two figures joining hands show masculine and feminine, conscious and unconscious, in harmonious play. The flower circle marks temenos\u2014sacred space that now moves with us rather than confining us to particular locations. This is individuation experienced from inside: not achievement but celebration, not arrival but journey enjoyed.",
+    "lacanian": "The Sun figures the subject's fundamental fantasy in its most consolidated form\u2014the particular way this subject organizes desire and stages satisfaction. The Celebrant's 'vibe' is the sinthome: not symptom to be dissolved but signature style of being that makes life livable. The Unicorn/Vampire split reveals how the same libidinal intensity can serve radically different ends: radiating outward in generativity or absorbing inward in consumption. The False Guru marks mixed polarity\u2014neither integrated nor consistently parasitic, the common condition of love-bombing alternating with exploitation. The 'picnic' metaphor is precise: both paths offer genuine pleasure, differently obtained."
   },
   "20": {
     "name": "Awakening",
@@ -683,7 +721,9 @@
         "session": "80.20",
         "text": "The infinity of the spirit is an even greater realization than the infinity of consciousness."
       }
-    ]
+    ],
+    "jungian": "Judgment represents the archetype of spiritual death and rebirth\u2014the call from beyond that resurrects what has been entombed. The Prophet has dwelt in the nigredo so long that only external intervention can initiate renewal. The three figures (masculine, feminine, child) rising together show that transformation includes all aspects of the self: conscious, unconscious, and their union. The trumpet from above represents the Self calling the ego beyond its apparent limits. This is spiritual emergency as apocalypse: the unveiling that destroys the world-that-was to reveal the world-that-always-is, buried under accumulated falsity.",
+    "lacanian": "Judgment figures the act\u2014the moment when the subject emerges from repetition into genuine novelty. The Prophet's 'living death' marks the endpoint of neurotic suffering: where symptom enjoyment has exhausted itself and something must change. The call from beyond represents the dimension of truth that exceeds individual psychology: the Real's insistence that finally breaks through defensive structure. The bound figures mark the subject's inability to free themselves through will: transformation requires grace, the intervention of what Lacan calls 'fortune' (tuch\u00e9). Rising from the tomb is subjective repositioning: not new content but new stance toward the same content."
   },
   "21": {
     "name": "The World",
@@ -722,7 +762,9 @@
         "session": "various",
         "text": "The crown is already upon the head."
       }
-    ]
+    ],
+    "jungian": "The World represents the archetype of wholeness\u2014the mandala that contains all opposites in dynamic balance. The Avatar lives as expression of the Self: ego transparent to transpersonal purpose, individual will aligned with cosmic pattern. The feminine playing the masculine as instrument reverses ordinary ego-dominance: consciousness serves the unconscious rather than attempting to control it. The four creatures mark completion: all functions integrated, all directions honored. The flower circle in the sky indicates that sacred space is now portable\u2014the individuated person carries their center wherever they go. This is the goal imagined: wholeness as process, not achievement.",
+    "lacanian": "The World figures the 'pass' (la passe)\u2014the completion of analysis where the subject assumes their sinthome and takes responsibility for their mode of jouissance. The Avatar has traversed the fantasy and emerged on the other side, no longer mystified by their own desire. The feminine playing the masculine marks the shift from ego-mastery to authorized surrender: the subject allows themselves to be 'played' by the unconscious they have come to trust. The lingam-yoni's flight represents desire no longer anchored in specific objects but mobile, capable of investing anywhere. The left-hand path version (dragon-riding) shows the same structure serving opposite ends: power for self versus power for other."
   },
   "22": {
     "name": "The Fool",
@@ -763,6 +805,8 @@
         "session": "various",
         "text": "We are all Bozos on this bus."
       }
-    ]
+    ],
+    "jungian": "The Fool represents the archetype of the Eternal Youth (puer aeternus) and the Wise Old Man simultaneously\u2014beginner's mind that is also complete wisdom. The Traveler is the Self before and after differentiation: the same consciousness that enters incarnation and exits it, unchanged by the journey yet enriched by experience. The blindfold marks the necessary not-knowing that protects free will: if we saw clearly, we could not choose authentically. The crocodile (shadow danger) and fallen column (collective failure) frame the individual's passage. The Fool is who we are beneath all roles: witness to our own drama, capable of departing any scene when it no longer serves.",
+    "lacanian": "The Fool figures the subject of the unconscious\u2014the dimension of subjectivity that is not the ego, not the self-image, but the gap or discontinuity that makes self-consciousness possible. The Traveler is the barred subject ($): divided, lacking, yet capable of desire precisely because of this division. The blindfold represents structural not-knowing: the subject cannot see themselves seeing, cannot know the desire that motivates their knowing. The two bags are the objet a (behind, unknown) and the ego-ideal (in front, known): what actually causes desire versus what we believe causes it. The Fool's 'relatively fixed' nature reveals the subject as purely formal: not a substance but a position, the same empty place through which all content passes."
   }
 }
