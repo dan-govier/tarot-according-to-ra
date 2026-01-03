@@ -4,114 +4,114 @@ let tarotData = {};
 // Image path configuration
 const imagePaths = {
     1: {
-        ra: "public/images/tarot/ra/magician.png",
-        rws: "public/images/tarot/rws/magician.jpg",
-        thoth: "public/images/tarot/thoth/magician.webp"
+        ra: "/public/images/tarot/ra/magician.png",
+        rws: "/public/images/tarot/rws/magician.jpg",
+        thoth: "/public/images/tarot/thoth/magician.webp"
     },
     2: {
-        ra: "public/images/tarot/ra/high-priestess.png",
-        rws: "public/images/tarot/rws/priestess.jpg",
-        thoth: "public/images/tarot/thoth/priestess.webp"
+        ra: "/public/images/tarot/ra/high-priestess.png",
+        rws: "/public/images/tarot/rws/priestess.jpg",
+        thoth: "/public/images/tarot/thoth/priestess.webp"
     },
     3: {
-        ra: "public/images/tarot/ra/empress.png",
-        rws: "public/images/tarot/rws/empress.jpg",
-        thoth: "public/images/tarot/thoth/empress.webp"
+        ra: "/public/images/tarot/ra/empress.png",
+        rws: "/public/images/tarot/rws/empress.jpg",
+        thoth: "/public/images/tarot/thoth/empress.webp"
     },
     4: {
-        ra: "public/images/tarot/ra/emperor.png",
-        rws: "public/images/tarot/rws/emperor.jpg",
-        thoth: "public/images/tarot/thoth/emperor.webp"
+        ra: "/public/images/tarot/ra/emperor.png",
+        rws: "/public/images/tarot/rws/emperor.jpg",
+        thoth: "/public/images/tarot/thoth/emperor.webp"
     },
     5: {
-        ra: "public/images/tarot/ra/hierophant.png",
-        rws: "public/images/tarot/rws/hierophant.jpg",
-        thoth: "public/images/tarot/thoth/hierophant.webp"
+        ra: "/public/images/tarot/ra/hierophant.png",
+        rws: "/public/images/tarot/rws/hierophant.jpg",
+        thoth: "/public/images/tarot/thoth/hierophant.webp"
     },
     6: {
-        ra: "public/images/tarot/ra/lovers.png",
-        rws: "public/images/tarot/rws/lovers.jpg",
-        thoth: "public/images/tarot/thoth/lovers.webp"
+        ra: "/public/images/tarot/ra/lovers.png",
+        rws: "/public/images/tarot/rws/lovers.jpg",
+        thoth: "/public/images/tarot/thoth/lovers.webp"
     },
     7: {
-        ra: "public/images/tarot/ra/chariot.png",
-        rws: "public/images/tarot/rws/chariot.jpg",
-        thoth: "public/images/tarot/thoth/chariot.webp"
+        ra: "/public/images/tarot/ra/chariot.png",
+        rws: "/public/images/tarot/rws/chariot.jpg",
+        thoth: "/public/images/tarot/thoth/chariot.webp"
     },
     8: {
-        ra: "public/images/tarot/ra/justice.png",
-        rws: "public/images/tarot/rws/justice.jpg",
-        thoth: "public/images/tarot/thoth/justice.webp"
+        ra: "/public/images/tarot/ra/justice.png",
+        rws: "/public/images/tarot/rws/justice.jpg",
+        thoth: "/public/images/tarot/thoth/justice.webp"
     },
     9: {
-        ra: "public/images/tarot/ra/sage.png",
-        rws: "public/images/tarot/rws/sage.jpg",
-        thoth: "public/images/tarot/thoth/sage.webp"
+        ra: "/public/images/tarot/ra/sage.png",
+        rws: "/public/images/tarot/rws/sage.jpg",
+        thoth: "/public/images/tarot/thoth/sage.webp"
     },
     10: {
-        ra: "public/images/tarot/ra/wheel.png",
-        rws: "public/images/tarot/rws/wheel.jpg",
-        thoth: "public/images/tarot/thoth/wheel.webp"
+        ra: "/public/images/tarot/ra/wheel.png",
+        rws: "/public/images/tarot/rws/wheel.jpg",
+        thoth: "/public/images/tarot/thoth/wheel.webp"
     },
     11: {
-        ra: "public/images/tarot/ra/enchantress.png",
-        rws: "public/images/tarot/rws/enchantress.jpg",
-        thoth: "public/images/tarot/thoth/enchantress.webp"
+        ra: "/public/images/tarot/ra/enchantress.png",
+        rws: "/public/images/tarot/rws/enchantress.jpg",
+        thoth: "/public/images/tarot/thoth/enchantress.webp"
     },
     12: {
-        ra: "public/images/tarot/ra/hangedman.png",
-        rws: "public/images/tarot/rws/hangedman.jpg",
-        thoth: "public/images/tarot/thoth/hangedman.webp"
+        ra: "/public/images/tarot/ra/hangedman.png",
+        rws: "/public/images/tarot/rws/hangedman.jpg",
+        thoth: "/public/images/tarot/thoth/hangedman.webp"
     },
     13: {
-        ra: "public/images/tarot/ra/death.png",
-        rws: "public/images/tarot/rws/death.jpg",
-        thoth: "public/images/tarot/thoth/death.webp"
+        ra: "/public/images/tarot/ra/death.png",
+        rws: "/public/images/tarot/rws/death.jpg",
+        thoth: "/public/images/tarot/thoth/death.webp"
     },
     14: {
-        ra: "public/images/tarot/ra/alchemist.png",
-        rws: "public/images/tarot/rws/alchemist.jpg",
-        thoth: "public/images/tarot/thoth/alchemist.webp"
+        ra: "/public/images/tarot/ra/alchemist.png",
+        rws: "/public/images/tarot/rws/alchemist.jpg",
+        thoth: "/public/images/tarot/thoth/alchemist.webp"
     },
     15: {
-        ra: "public/images/tarot/ra/devil.png",
-        rws: "public/images/tarot/rws/devil.jpg",
-        thoth: "public/images/tarot/thoth/devil.webp"
+        ra: "/public/images/tarot/ra/devil.png",
+        rws: "/public/images/tarot/rws/devil.jpg",
+        thoth: "/public/images/tarot/thoth/devil.webp"
     },
     16: {
-        ra: "public/images/tarot/ra/lightning.png",
-        rws: "public/images/tarot/rws/lightning.jpg",
-        thoth: "public/images/tarot/thoth/lightning.webp"
+        ra: "/public/images/tarot/ra/lightning.png",
+        rws: "/public/images/tarot/rws/lightning.jpg",
+        thoth: "/public/images/tarot/thoth/lightning.webp"
     },
     17: {
-        ra: "public/images/tarot/ra/star.png",
-        rws: "public/images/tarot/rws/star.jpg",
-        thoth: "public/images/tarot/thoth/star.webp"
+        ra: "/public/images/tarot/ra/star.png",
+        rws: "/public/images/tarot/rws/star.jpg",
+        thoth: "/public/images/tarot/thoth/star.webp"
     },
     18: {
-        ra: "public/images/tarot/ra/moon.png",
-        rws: "public/images/tarot/rws/moon.jpg",
-        thoth: "public/images/tarot/thoth/moon.webp"
+        ra: "/public/images/tarot/ra/moon.png",
+        rws: "/public/images/tarot/rws/moon.jpg",
+        thoth: "/public/images/tarot/thoth/moon.webp"
     },
     19: {
-        ra: "public/images/tarot/ra/sun.png",
-        rws: "public/images/tarot/rws/sun.jpg",
-        thoth: "public/images/tarot/thoth/sun.webp"
+        ra: "/public/images/tarot/ra/sun.png",
+        rws: "/public/images/tarot/rws/sun.jpg",
+        thoth: "/public/images/tarot/thoth/sun.webp"
     },
     20: {
-        ra: "public/images/tarot/ra/judgment.png",
-        rws: "public/images/tarot/rws/judgment.jpg",
-        thoth: "public/images/tarot/thoth/judgment.webp"
+        ra: "/public/images/tarot/ra/judgment.png",
+        rws: "/public/images/tarot/rws/judgment.jpg",
+        thoth: "/public/images/tarot/thoth/judgment.webp"
     },
     21: {
-        ra: "public/images/tarot/ra/world.png",
-        rws: "public/images/tarot/rws/world.jpg",
-        thoth: "public/images/tarot/thoth/world.webp"
+        ra: "/public/images/tarot/ra/world.png",
+        rws: "/public/images/tarot/rws/world.jpg",
+        thoth: "/public/images/tarot/thoth/world.webp"
     },
     22: {
-        ra: "public/images/tarot/ra/fool.png",
-        rws: "public/images/tarot/rws/fool.jpg",
-        thoth: "public/images/tarot/thoth/fool.webp"
+        ra: "/public/images/tarot/ra/fool.png",
+        rws: "/public/images/tarot/rws/fool.jpg",
+        thoth: "/public/images/tarot/thoth/fool.webp"
     }
 };
 
@@ -416,18 +416,10 @@ function initializeEventListeners() {
         navigateCard(1);
     });
 
-    // Deck slider (detail view)
+    // Deck slider
     document.getElementById('deck-slider').addEventListener('input', (e) => {
         currentDeck = parseInt(e.target.value);
         updateCardImage();
-    });
-
-    // Grid deck slider (main view)
-    document.getElementById('grid-deck-slider').addEventListener('input', (e) => {
-        currentDeck = parseInt(e.target.value);
-        updateGridImages();
-        // Keep detail view slider in sync
-        document.getElementById('deck-slider').value = currentDeck;
     });
 
     // Keyboard navigation
@@ -587,15 +579,23 @@ function showCardDetail(archetypeNum) {
     // Framework
     let frameworkHTML = `<p>${card.framework}</p>`;
     if (card.character) {
-        frameworkHTML += `<h4 style="margin-top: 20px; color: var(--memphis-cyan);">Character: ${card.character.split(' - ')[0]}</h4>`;
-        frameworkHTML += `<p>${card.character.split(' - ').slice(1).join(' - ')}</p>`;
+        frameworkHTML += `<h4 style="margin-top: 20px; color: var(--memphis-cyan); font-family: var(--font-display); text-transform: uppercase; letter-spacing: 1px;">Character</h4>`;
+        frameworkHTML += `<p>${card.character}</p>`;
     }
     document.getElementById('archetypal-framework').innerHTML = frameworkHTML;
     
-    // Ra quotes (will be filled in later)
+    // Ra quotes
     const quotesDiv = document.getElementById('ra-quotes');
     if (card.raQuotes && card.raQuotes.length > 0) {
-        quotesDiv.innerHTML = card.raQuotes.map(quote => `<p>"${quote}"</p>`).join('');
+        quotesDiv.innerHTML = card.raQuotes.map(quote => {
+            if (typeof quote === 'string') {
+                return `<p>"${quote}"</p>`;
+            } else if (quote.text) {
+                const session = quote.session ? `<strong style="color: var(--memphis-cyan);">Session ${quote.session}:</strong> ` : '';
+                return `<p>${session}"${quote.text}"</p>`;
+            }
+            return '';
+        }).join('');
     } else {
         quotesDiv.innerHTML = '<p><em>Ra quotes will be added from the Law of One material.</em></p>';
     }
@@ -630,15 +630,28 @@ function showCardDetail(archetypeNum) {
     
     // Polarized Expressions
     const polarizedDiv = document.getElementById('polarized-expressions');
-    if (card.polarized && (card.polarized.positive || card.polarized.negative)) {
+    const polarized = card.polarizedExpressions || card.polarized;
+    if (polarized) {
         let polarizedHTML = '';
-        if (card.polarized.positive) {
-            polarizedHTML += `<h4 style="color: var(--memphis-green); margin-top: 15px;">Service to Others (STO / Right-Hand Path)</h4><p>${card.polarized.positive}</p>`;
+        // Handle note for non-polarized archetypes (Matrix/Potentiator)
+        if (polarized.note) {
+            polarizedHTML += `<p><em>${polarized.note}</em></p>`;
         }
-        if (card.polarized.negative) {
-            polarizedHTML += `<h4 style="color: var(--memphis-red); margin-top: 15px;">Service to Self (STS / Left-Hand Path)</h4><p>${card.polarized.negative}</p>`;
+        // Handle right-hand path / positive
+        if (polarized.rightHandPath || polarized.positive) {
+            const content = polarized.rightHandPath || polarized.positive;
+            polarizedHTML += `<h4 style="color: var(--memphis-green); margin-top: 15px;">☀ Service to Others (Right-Hand Path)</h4><p>${content}</p>`;
         }
-        polarizedDiv.innerHTML = polarizedHTML;
+        // Handle left-hand path / negative
+        if (polarized.leftHandPath || polarized.negative) {
+            const content = polarized.leftHandPath || polarized.negative;
+            polarizedHTML += `<h4 style="color: var(--memphis-red); margin-top: 15px;">☾ Service to Self (Left-Hand Path)</h4><p>${content}</p>`;
+        }
+        if (polarizedHTML) {
+            polarizedDiv.innerHTML = polarizedHTML;
+        } else {
+            polarizedDiv.innerHTML = '<p><em>Polarized expressions will be added.</em></p>';
+        }
     } else {
         polarizedDiv.innerHTML = '<p><em>Polarized expressions will be added.</em></p>';
     }
@@ -665,31 +678,6 @@ function updateCardImage() {
     
     document.getElementById('detail-card-image').src = card.images[selectedDeck];
     document.getElementById('detail-card-image').alt = card.name;
-}
-
-function updateGridImages() {
-    const deckTypes = ['ra', 'rws', 'thoth'];
-    const selectedDeck = deckTypes[currentDeck];
-    
-    // Update all card images in grid view
-    document.querySelectorAll('.card-cell[data-archetype]').forEach(cell => {
-        const archetype = cell.dataset.archetype;
-        const card = tarotData[archetype];
-        if (card && card.images) {
-            const img = cell.querySelector('img');
-            if (img) {
-                img.src = card.images[selectedDeck];
-            }
-        }
-    });
-    
-    // Update the Fool card at bottom
-    document.querySelectorAll('.card-small[data-archetype="22"]').forEach(card => {
-        const img = card.querySelector('img');
-        if (img && tarotData[22]) {
-            img.src = tarotData[22].images[selectedDeck];
-        }
-    });
 }
 
 function navigateCard(direction) {
