@@ -873,6 +873,8 @@ body::after {
     border: 4px solid var(--border-color);
     margin-bottom: 25px;
     font-size: 1.1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Navigation Buttons */
@@ -1066,7 +1068,6 @@ body::after {
     #deck-slider {
         width: 280px;
     }
-}
     
     .deck-labels {
         max-width: 280px;
@@ -1085,6 +1086,34 @@ body::after {
     
     #focused-title {
         font-size: 2rem;
+    }
+    
+    /* Mobile text adjustments */
+    .card-description div {
+        padding: 15px;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .card-description h3 {
+        font-size: 1.3rem;
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .card-description h3::before {
+        width: 20px;
+        height: 20px;
+        top: -8px;
+        left: -8px;
+    }
+    
+    #focused-view {
+        padding: 20px;
+    }
+    
+    #detail-view {
+        padding: 20px 15px;
     }
 }
 

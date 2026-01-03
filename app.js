@@ -4,114 +4,114 @@ let tarotData = {};
 // Image path configuration
 const imagePaths = {
     1: {
-        ra: "/public/images/tarot/ra/magician.png",
-        rws: "/public/images/tarot/rws/magician.jpg",
-        thoth: "/public/images/tarot/thoth/magician.webp"
+        ra: "public/images/tarot/ra/magician.png",
+        rws: "public/images/tarot/rws/magician.jpg",
+        thoth: "public/images/tarot/thoth/magician.webp"
     },
     2: {
-        ra: "/public/images/tarot/ra/high-priestess.png",
-        rws: "/public/images/tarot/rws/priestess.jpg",
-        thoth: "/public/images/tarot/thoth/priestess.webp"
+        ra: "public/images/tarot/ra/high-priestess.png",
+        rws: "public/images/tarot/rws/priestess.jpg",
+        thoth: "public/images/tarot/thoth/priestess.webp"
     },
     3: {
-        ra: "/public/images/tarot/ra/empress.png",
-        rws: "/public/images/tarot/rws/empress.jpg",
-        thoth: "/public/images/tarot/thoth/empress.webp"
+        ra: "public/images/tarot/ra/empress.png",
+        rws: "public/images/tarot/rws/empress.jpg",
+        thoth: "public/images/tarot/thoth/empress.webp"
     },
     4: {
-        ra: "/public/images/tarot/ra/emperor.png",
-        rws: "/public/images/tarot/rws/emperor.jpg",
-        thoth: "/public/images/tarot/thoth/emperor.webp"
+        ra: "public/images/tarot/ra/emperor.png",
+        rws: "public/images/tarot/rws/emperor.jpg",
+        thoth: "public/images/tarot/thoth/emperor.webp"
     },
     5: {
-        ra: "/public/images/tarot/ra/hierophant.png",
-        rws: "/public/images/tarot/rws/hierophant.jpg",
-        thoth: "/public/images/tarot/thoth/hierophant.webp"
+        ra: "public/images/tarot/ra/hierophant.png",
+        rws: "public/images/tarot/rws/hierophant.jpg",
+        thoth: "public/images/tarot/thoth/hierophant.webp"
     },
     6: {
-        ra: "/public/images/tarot/ra/lovers.png",
-        rws: "/public/images/tarot/rws/lovers.jpg",
-        thoth: "/public/images/tarot/thoth/lovers.webp"
+        ra: "public/images/tarot/ra/lovers.png",
+        rws: "public/images/tarot/rws/lovers.jpg",
+        thoth: "public/images/tarot/thoth/lovers.webp"
     },
     7: {
-        ra: "/public/images/tarot/ra/chariot.png",
-        rws: "/public/images/tarot/rws/chariot.jpg",
-        thoth: "/public/images/tarot/thoth/chariot.webp"
+        ra: "public/images/tarot/ra/chariot.png",
+        rws: "public/images/tarot/rws/chariot.jpg",
+        thoth: "public/images/tarot/thoth/chariot.webp"
     },
     8: {
-        ra: "/public/images/tarot/ra/justice.png",
-        rws: "/public/images/tarot/rws/justice.jpg",
-        thoth: "/public/images/tarot/thoth/justice.webp"
+        ra: "public/images/tarot/ra/justice.png",
+        rws: "public/images/tarot/rws/justice.jpg",
+        thoth: "public/images/tarot/thoth/justice.webp"
     },
     9: {
-        ra: "/public/images/tarot/ra/sage.png",
-        rws: "/public/images/tarot/rws/sage.jpg",
-        thoth: "/public/images/tarot/thoth/sage.webp"
+        ra: "public/images/tarot/ra/sage.png",
+        rws: "public/images/tarot/rws/sage.jpg",
+        thoth: "public/images/tarot/thoth/sage.webp"
     },
     10: {
-        ra: "/public/images/tarot/ra/wheel.png",
-        rws: "/public/images/tarot/rws/wheel.jpg",
-        thoth: "/public/images/tarot/thoth/wheel.webp"
+        ra: "public/images/tarot/ra/wheel.png",
+        rws: "public/images/tarot/rws/wheel.jpg",
+        thoth: "public/images/tarot/thoth/wheel.webp"
     },
     11: {
-        ra: "/public/images/tarot/ra/enchantress.png",
-        rws: "/public/images/tarot/rws/enchantress.jpg",
-        thoth: "/public/images/tarot/thoth/enchantress.webp"
+        ra: "public/images/tarot/ra/enchantress.png",
+        rws: "public/images/tarot/rws/enchantress.jpg",
+        thoth: "public/images/tarot/thoth/enchantress.webp"
     },
     12: {
-        ra: "/public/images/tarot/ra/hangedman.png",
-        rws: "/public/images/tarot/rws/hangedman.jpg",
-        thoth: "/public/images/tarot/thoth/hangedman.webp"
+        ra: "public/images/tarot/ra/hangedman.png",
+        rws: "public/images/tarot/rws/hangedman.jpg",
+        thoth: "public/images/tarot/thoth/hangedman.webp"
     },
     13: {
-        ra: "/public/images/tarot/ra/death.png",
-        rws: "/public/images/tarot/rws/death.jpg",
-        thoth: "/public/images/tarot/thoth/death.webp"
+        ra: "public/images/tarot/ra/death.png",
+        rws: "public/images/tarot/rws/death.jpg",
+        thoth: "public/images/tarot/thoth/death.webp"
     },
     14: {
-        ra: "/public/images/tarot/ra/alchemist.png",
-        rws: "/public/images/tarot/rws/alchemist.jpg",
-        thoth: "/public/images/tarot/thoth/alchemist.webp"
+        ra: "public/images/tarot/ra/alchemist.png",
+        rws: "public/images/tarot/rws/alchemist.jpg",
+        thoth: "public/images/tarot/thoth/alchemist.webp"
     },
     15: {
-        ra: "/public/images/tarot/ra/devil.png",
-        rws: "/public/images/tarot/rws/devil.jpg",
-        thoth: "/public/images/tarot/thoth/devil.webp"
+        ra: "public/images/tarot/ra/devil.png",
+        rws: "public/images/tarot/rws/devil.jpg",
+        thoth: "public/images/tarot/thoth/devil.webp"
     },
     16: {
-        ra: "/public/images/tarot/ra/lightning.png",
-        rws: "/public/images/tarot/rws/lightning.jpg",
-        thoth: "/public/images/tarot/thoth/lightning.webp"
+        ra: "public/images/tarot/ra/lightning.png",
+        rws: "public/images/tarot/rws/lightning.jpg",
+        thoth: "public/images/tarot/thoth/lightning.webp"
     },
     17: {
-        ra: "/public/images/tarot/ra/star.png",
-        rws: "/public/images/tarot/rws/star.jpg",
-        thoth: "/public/images/tarot/thoth/star.webp"
+        ra: "public/images/tarot/ra/star.png",
+        rws: "public/images/tarot/rws/star.jpg",
+        thoth: "public/images/tarot/thoth/star.webp"
     },
     18: {
-        ra: "/public/images/tarot/ra/moon.png",
-        rws: "/public/images/tarot/rws/moon.jpg",
-        thoth: "/public/images/tarot/thoth/moon.webp"
+        ra: "public/images/tarot/ra/moon.png",
+        rws: "public/images/tarot/rws/moon.jpg",
+        thoth: "public/images/tarot/thoth/moon.webp"
     },
     19: {
-        ra: "/public/images/tarot/ra/sun.png",
-        rws: "/public/images/tarot/rws/sun.jpg",
-        thoth: "/public/images/tarot/thoth/sun.webp"
+        ra: "public/images/tarot/ra/sun.png",
+        rws: "public/images/tarot/rws/sun.jpg",
+        thoth: "public/images/tarot/thoth/sun.webp"
     },
     20: {
-        ra: "/public/images/tarot/ra/judgment.png",
-        rws: "/public/images/tarot/rws/judgment.jpg",
-        thoth: "/public/images/tarot/thoth/judgment.webp"
+        ra: "public/images/tarot/ra/judgment.png",
+        rws: "public/images/tarot/rws/judgment.jpg",
+        thoth: "public/images/tarot/thoth/judgment.webp"
     },
     21: {
-        ra: "/public/images/tarot/ra/world.png",
-        rws: "/public/images/tarot/rws/world.jpg",
-        thoth: "/public/images/tarot/thoth/world.webp"
+        ra: "public/images/tarot/ra/world.png",
+        rws: "public/images/tarot/rws/world.jpg",
+        thoth: "public/images/tarot/thoth/world.webp"
     },
     22: {
-        ra: "/public/images/tarot/ra/fool.png",
-        rws: "/public/images/tarot/rws/fool.jpg",
-        thoth: "/public/images/tarot/thoth/fool.webp"
+        ra: "public/images/tarot/ra/fool.png",
+        rws: "public/images/tarot/rws/fool.jpg",
+        thoth: "public/images/tarot/thoth/fool.webp"
     }
 };
 
