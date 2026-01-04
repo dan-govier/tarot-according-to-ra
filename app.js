@@ -274,7 +274,7 @@ function handleMobileGrid() {
                 
                 if (foundCard && foundNum) {
                     gridHTML += `
-                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}">
+                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}" style="background: var(--bg-primary);">
                             <img src="${foundCard.images.ra}" alt="${foundCard.name}">
                             <span class="card-name">${foundCard.name}</span>
                         </div>
