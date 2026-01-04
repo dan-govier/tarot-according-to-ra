@@ -1046,6 +1046,7 @@ body::after {
         grid-template-columns: 100px repeat(3, 1fr);
         grid-auto-rows: auto;
         gap: 6px;
+        background: transparent;
     }
     
     /* Row headers (positions) */
@@ -1060,11 +1061,30 @@ body::after {
         line-height: 1.1;
     }
     
-    /* Cards */
+    /* Mobile cards - reset everything and apply clean styles */
+    .grid-content.mobile-rebuilt .card-cell,
+    .grid-content.mobile-rebuilt .card-cell.mobile-card,
     .card-cell.mobile-card {
-        padding: 6px;
-        min-height: 140px;
-        background: var(--bg-primary) !important;
+        padding: 6px !important;
+        min-height: 140px !important;
+        background-color: #FFFFFF !important;
+        box-shadow: 3px 3px 0 var(--border-color) !important;
+        position: relative !important;
+    }
+    
+    /* Dark mode mobile cards */
+    body.dark-mode .grid-content.mobile-rebuilt .card-cell,
+    body.dark-mode .grid-content.mobile-rebuilt .card-cell.mobile-card,
+    body.dark-mode .card-cell.mobile-card {
+        background-color: #1A1A2E !important;
+    }
+    
+    /* Remove decorative circles on mobile */
+    .card-cell.mobile-card::before,
+    .card-cell.mobile-card::after,
+    .grid-content.mobile-rebuilt .card-cell::before,
+    .grid-content.mobile-rebuilt .card-cell::after {
+        display: none !important;
     }
     
     .card-cell.mobile-card .card-name {
@@ -1080,27 +1100,39 @@ body::after {
     }
     
     /* Mobile text wrapping for card descriptions */
+    .card-description {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
     .card-description div {
-        padding: 15px;
-        font-size: 1rem;
-        line-height: 1.7;
+        padding: 12px;
+        font-size: 0.9rem;
+        line-height: 1.6;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        word-break: break-word;
         hyphens: auto;
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .card-description div p {
         word-wrap: break-word;
         overflow-wrap: break-word;
+        word-break: break-word;
+        max-width: 100%;
     }
     
     .card-description h3 {
-        font-size: 1.3rem;
-        padding: 15px;
-        letter-spacing: 1px;
+        font-size: 1.1rem;
+        padding: 12px;
+        letter-spacing: 0.5px;
         word-wrap: break-word;
+        word-break: break-word;
     }
     
     .card-description h3::before {

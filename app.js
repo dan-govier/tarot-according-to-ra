@@ -143,10 +143,30 @@ const basicCardData = {
 
 // Load enhanced descriptions from JSON
 async function loadEnhancedData() {
-    try {
-        const response = await fetch('public/data/tarot_card_descriptions.json');
-        const enhancedData = await response.json();
-        
+    // Try multiple possible paths - root directory first since that's where it is
+    const possiblePaths = [
+        'tarot_card_descriptions.json',
+        './tarot_card_descriptions.json',
+        'public/data/tarot_card_descriptions.json',
+        './public/data/tarot_card_descriptions.json'
+    ];
+    
+    let enhancedData = null;
+    
+    for (const path of possiblePaths) {
+        try {
+            const response = await fetch(path);
+            if (response.ok) {
+                enhancedData = await response.json();
+                console.log('Loaded JSON from:', path);
+                break;
+            }
+        } catch (e) {
+            console.log('Failed to load from:', path);
+        }
+    }
+    
+    if (enhancedData) {
         // Merge enhanced data with basic data and image paths
         for (let num in basicCardData) {
             tarotData[num] = {
@@ -156,7 +176,9 @@ async function loadEnhancedData() {
                 character: "",
                 symbols: [],
                 levels: {},
-                raQuotes: []
+                raQuotes: [],
+                jungian: "",
+                lacanian: ""
             };
             
             // If we have enhanced data for this card, merge it in
@@ -170,8 +192,8 @@ async function loadEnhancedData() {
         }
         
         console.log('Enhanced card data loaded successfully!');
-    } catch (error) {
-        console.error('Could not load enhanced descriptions, using basic data:', error);
+    } else {
+        console.error('Could not load enhanced descriptions from any path, using basic data');
         // Use basic data as fallback
         for (let num in basicCardData) {
             tarotData[num] = {
@@ -181,7 +203,9 @@ async function loadEnhancedData() {
                 character: "",
                 symbols: [],
                 levels: {},
-                raQuotes: []
+                raQuotes: [],
+                jungian: "",
+                lacanian: ""
             };
         }
     }
