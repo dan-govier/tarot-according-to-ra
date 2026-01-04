@@ -144,7 +144,7 @@ const basicCardData = {
 // Load enhanced descriptions from JSON
 async function loadEnhancedData() {
     try {
-        const response = await fetch('tarot_card_descriptions.json');
+        const response = await fetch('public/data/tarot_card_descriptions.json');
         const enhancedData = await response.json();
         
         // Merge enhanced data with basic data and image paths
@@ -664,6 +664,22 @@ function showCardDetail(archetypeNum) {
             '</ul>';
     } else {
         distortionsDiv.innerHTML = '<p><em>Distortions will be added.</em></p>';
+    }
+    
+    // Jungian Analysis
+    const jungianDiv = document.getElementById('jungian-analysis');
+    if (card.jungian) {
+        jungianDiv.innerHTML = `<p>${card.jungian}</p>`;
+    } else {
+        jungianDiv.innerHTML = '<p><em>Jungian analysis will be added.</em></p>';
+    }
+    
+    // Lacanian Psychoanalysis
+    const lacanianDiv = document.getElementById('lacanian-analysis');
+    if (card.lacanian) {
+        lacanianDiv.innerHTML = `<p>${card.lacanian}</p>`;
+    } else {
+        lacanianDiv.innerHTML = '<p><em>Lacanian analysis will be added.</em></p>';
     }
     
     updateCardImage();
