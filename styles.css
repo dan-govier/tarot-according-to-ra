@@ -989,7 +989,9 @@ body::after {
     }
 }
 
-@media (max-width: 768px) {
+/* Mobile portrait mode - applies when narrow OR (medium width AND portrait) */
+@media (max-width: 500px), 
+       (max-width: 768px) and (orientation: portrait) {
     .app-header {
         padding: 0 10px;
     }

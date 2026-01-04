@@ -233,6 +233,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             handleMobileGrid();
         }, 250);
     });
+    
+    // Also listen for orientation changes
+    window.addEventListener('orientationchange', () => {
+        setTimeout(() => {
+            handleMobileGrid();
+        }, 100);
+    });
 });
 
 function initializeTheme() {
@@ -244,15 +251,26 @@ function initializeTheme() {
 }
 
 function handleMobileGrid() {
-    const isMobile = window.innerWidth <= 768;
+    // Portrait mode on mobile/tablet: width <= 768 AND height > width (portrait)
+    // OR very narrow screen regardless of orientation
+    const isPortrait = window.innerHeight > window.innerWidth;
+    const isNarrow = window.innerWidth <= 500;
+    const isMobilePortrait = (window.innerWidth <= 768 && isPortrait) || isNarrow;
+    
     const gridHeader = document.querySelector('.grid-header');
     const gridContent = document.querySelector('.grid-content');
     
     if (!gridHeader || !gridContent) return;
     
-    console.log('handleMobileGrid called', { isMobile, dataLoaded: Object.keys(tarotData).length });
+    console.log('handleMobileGrid called', { 
+        isMobilePortrait, 
+        isPortrait,
+        width: window.innerWidth,
+        height: window.innerHeight,
+        dataLoaded: Object.keys(tarotData).length 
+    });
     
-    if (isMobile && !gridContent.classList.contains('mobile-rebuilt')) {
+    if (isMobilePortrait && !gridContent.classList.contains('mobile-rebuilt')) {
         // Mark as rebuilt to avoid duplicate work
         gridContent.classList.add('mobile-rebuilt');
         
@@ -297,8 +315,10 @@ function handleMobileGrid() {
                 }
                 
                 if (foundCard && foundNum) {
+                    const isDark = document.body.classList.contains('dark-mode');
+                    const bgColor = isDark ? '#1A1A2E' : '#FFFFFF';
                     gridHTML += `
-                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}" style="background: var(--bg-primary);">
+                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}" style="background-color: ${bgColor} !important;">
                             <img src="${foundCard.images.ra}" alt="${foundCard.name}">
                             <span class="card-name">${foundCard.name}</span>
                         </div>
@@ -306,7 +326,9 @@ function handleMobileGrid() {
                 } else {
                     // Placeholder for missing cards  
                     console.log(`Missing card: ${cycle} ${pos.key}`);
-                    gridHTML += `<div class="card-cell card-placeholder" style="background: var(--bg-secondary); opacity: 0.3;"></div>`;
+                    const isDark = document.body.classList.contains('dark-mode');
+                    const bgColor = isDark ? '#16213E' : '#E5E5E5';
+                    gridHTML += `<div class="card-cell card-placeholder" style="background-color: ${bgColor} !important; opacity: 0.3;"></div>`;
                 }
             });
         });
@@ -316,8 +338,8 @@ function handleMobileGrid() {
         // Reattach event listeners for mobile grid
         attachMobileEventListeners();
         
-    } else if (!isMobile && gridContent.classList.contains('mobile-rebuilt')) {
-        // Switching back to desktop - reload page to restore original HTML
+    } else if (!isMobilePortrait && gridContent.classList.contains('mobile-rebuilt')) {
+        // Switching back to desktop/landscape - reload page to restore original HTML
         location.reload();
     }
 }
