@@ -317,8 +317,9 @@ function handleMobileGrid() {
                 if (foundCard && foundNum) {
                     const isDark = document.body.classList.contains('dark-mode');
                     const bgColor = isDark ? '#1A1A2E' : '#FFFFFF';
+                    const borderColor = isDark ? '#E8E8E8' : '#1A1A1A';
                     gridHTML += `
-                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}" style="background-color: ${bgColor} !important;">
+                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}" style="background: ${bgColor} !important; background-color: ${bgColor} !important; background-image: none !important; border: 3px solid ${borderColor};">
                             <img src="${foundCard.images.ra}" alt="${foundCard.name}">
                             <span class="card-name">${foundCard.name}</span>
                         </div>
@@ -328,7 +329,7 @@ function handleMobileGrid() {
                     console.log(`Missing card: ${cycle} ${pos.key}`);
                     const isDark = document.body.classList.contains('dark-mode');
                     const bgColor = isDark ? '#16213E' : '#E5E5E5';
-                    gridHTML += `<div class="card-cell card-placeholder" style="background-color: ${bgColor} !important; opacity: 0.3;"></div>`;
+                    gridHTML += `<div class="card-cell card-placeholder" style="background: ${bgColor} !important; background-color: ${bgColor} !important; background-image: none !important; opacity: 0.3;"></div>`;
                 }
             });
         });
