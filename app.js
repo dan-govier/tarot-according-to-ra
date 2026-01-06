@@ -315,11 +315,8 @@ function handleMobileGrid() {
                 }
                 
                 if (foundCard && foundNum) {
-                    const isDark = document.body.classList.contains('dark-mode');
-                    const bgColor = isDark ? '#1A1A2E' : '#FFFFFF';
-                    const borderColor = isDark ? '#E8E8E8' : '#1A1A1A';
                     gridHTML += `
-                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}" style="background: ${bgColor} !important; background-color: ${bgColor} !important; background-image: none !important; border: 3px solid ${borderColor};">
+                        <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}">
                             <img src="${foundCard.images.ra}" alt="${foundCard.name}">
                             <span class="card-name">${foundCard.name}</span>
                         </div>
@@ -327,14 +324,30 @@ function handleMobileGrid() {
                 } else {
                     // Placeholder for missing cards  
                     console.log(`Missing card: ${cycle} ${pos.key}`);
-                    const isDark = document.body.classList.contains('dark-mode');
-                    const bgColor = isDark ? '#16213E' : '#E5E5E5';
-                    gridHTML += `<div class="card-cell card-placeholder" style="background: ${bgColor} !important; background-color: ${bgColor} !important; background-image: none !important; opacity: 0.3;"></div>`;
+                    gridHTML += `<div class="card-cell card-placeholder"></div>`;
                 }
             });
         });
         
         gridContent.innerHTML = gridHTML;
+        
+        // Apply styles directly via JavaScript after render
+        const isDark = document.body.classList.contains('dark-mode');
+        const bgColor = isDark ? '#1A1A2E' : '#FFFFFF';
+        const borderColor = isDark ? '#E8E8E8' : '#1A1A1A';
+        
+        document.querySelectorAll('.mobile-card').forEach(card => {
+            card.style.setProperty('background', bgColor, 'important');
+            card.style.setProperty('background-color', bgColor, 'important');
+            card.style.setProperty('border', `3px solid ${borderColor}`, 'important');
+        });
+        
+        document.querySelectorAll('.card-placeholder').forEach(card => {
+            const placeholderBg = isDark ? '#16213E' : '#E5E5E5';
+            card.style.setProperty('background', placeholderBg, 'important');
+            card.style.setProperty('background-color', placeholderBg, 'important');
+            card.style.setProperty('opacity', '0.3', 'important');
+        });
         
         // Reattach event listeners for mobile grid
         attachMobileEventListeners();
@@ -587,6 +600,77 @@ function showFocusedView(type, value) {
 <p>The Great Way is outside both the Significator and Transformation. It is the axis along which one can transform—the direction in which one is heading in choosing to transform. This context provides purpose to the choices made by the Choice (the Fool). The Great Way archetypes represent the endpoint toward which the path is heading, the consistent orientation that gives meaning to each successive transformation.</p>`
     };
     
+    // Cycle narrative stories - how each cycle works as a whole
+    const cycleStories = {
+        mind: `<h4 style="color: var(--memphis-pink); margin-top: 30px; margin-bottom: 15px;">The Story of the Mind Cycle</h4>
+<p>The Mind Cycle tells the story of consciousness coming to know itself through the veiled relationship between the conscious and unconscious mind.</p>
+<p><strong>The Magician (Matrix)</strong> represents the conscious mind—full of desire but empty of content, reaching toward the unknown for fulfillment. He is the "unfed mind" that longs to be nourished by experience.</p>
+<p><strong>The High Priestess (Potentiator)</strong> is the vast unconscious, containing everything that can be known but is not yet known. She holds all the scrolls of wisdom but reveals them only when properly approached. The veil between Magician and Priestess is the fundamental structure of our mental experience.</p>
+<p><strong>The Empress (Catalyst)</strong> emerges from the union of conscious reaching and unconscious answering. She is the constant stream of thoughts, feelings, and spontaneous expressions that flow through us—each one a coded opportunity for self-knowledge. Her offerings appear in "shades of grey," requiring moral interpretation.</p>
+<p><strong>The Emperor (Experience)</strong> processes and judges the Catalyst, deciding what it means and recording changes in the Matrix. He discriminates between experiences, building the framework through which we understand ourselves and others.</p>
+<p><strong>The Hierophant (Significator)</strong> represents the whole mind complex—all our accumulated biases, beliefs, and ways of processing experience. He is who we have become through countless iterations of the lesser cycle, the storyteller who weaves meaning from our experiences.</p>
+<p><strong>The Lovers (Transformation)</strong> stand at the crossroads where genuine change becomes possible. Here the Choice (the Fool) can intervene, tired of the current Significator and desiring something different. The transformation requires choosing one path and sacrificing another.</p>
+<p><strong>The Chariot (Great Way)</strong> shows the endpoint of mental evolution—the integrated self moving through life with all aspects working in harmony. The sphinxes of light and dark are tamed, serving rather than pulling apart. This is the direction toward which all mental transformation moves.</p>`,
+
+        body: `<h4 style="color: var(--memphis-cyan); margin-top: 30px; margin-bottom: 15px;">The Story of the Body Cycle</h4>
+<p>The Body Cycle tells the story of intention manifesting as action, and action teaching us through consequence. The body serves as a mirror for the mind's internal conflicts, expressing them externally.</p>
+<p><strong>Justice (Matrix)</strong> represents the body's experiential continuum—the instinctual, unreflective responses that govern our physical existence. She operates according to lex talionis: proportional response, natural consequence. She is blindfolded because the body knows without knowing how it knows.</p>
+<p><strong>The Hermit/Sage (Potentiator)</strong> carries the wisdom of embodied experience, the "knowing in the bones" that guides us when the conscious mind cannot see the way. His small candle illuminates only the next step—the body cannot plan far ahead but knows the immediate path with certainty.</p>
+<p><strong>The Wheel of Fortune (Catalyst)</strong> represents the turning circumstances of physical existence—the ups and downs of fortune that test our embodied responses. Typhon descends while Hermanubis rises; what was high becomes low. These changes in circumstance are the body's opportunities for evolution.</p>
+<p><strong>Strength (Experience)</strong> shows the proper relationship between will and instinct. The woman doesn't dominate the lion through force but through rapport and understanding. She processes the Catalyst of circumstance by working with the body's nature rather than against it.</p>
+<p><strong>The Hanged Man (Significator)</strong> represents the whole body complex—suspended, unable to act, forced into receptive stillness. He is the homesteader who must balance expenditure and renewal, learning the economy of energy that allows continued existence.</p>
+<p><strong>Death (Transformation)</strong> is the radical restructuring of physical existence. When the Hanged Man's current configuration becomes unsustainable, Death reaps what must go. This is not metaphorical—it is the body insisting that this way of living cannot continue.</p>
+<p><strong>Temperance/The Alchemist (Great Way)</strong> shows the ongoing work of bodily integration—the patient transmutation of raw experience into wisdom. One foot on land, one in water, she bridges realms while continuously refining her relationship to physical existence.</p>`,
+
+        spirit: `<h4 style="color: var(--memphis-yellow); margin-top: 30px; margin-bottom: 15px;">The Story of the Spirit Cycle</h4>
+<p>The Spirit Cycle tells the story of the finite self opening to the infinite—our journey from separation back to unity with the One Infinite Creator. This is the most mysterious cycle, dealing with powers that can work literal miracles.</p>
+<p><strong>The Devil (Matrix)</strong> represents the spiritual experiential continuum before any contact with higher power. She is the Adversary—not evil, but the experience of being fundamentally misunderstood, of living connected to powers that others fear. She guards the threshold against the unprepared.</p>
+<p><strong>The Tower (Potentiator)</strong> is the lightning strike of spiritual awakening—the sudden, dramatic revelation that destroys false structures. The Disgraced Priest's carefully constructed spiritual edifice is shattered, revealing that it was built on sand. This is terrifying but necessary.</p>
+<p><strong>The Star (Catalyst)</strong> emerges after the destruction, naked and vulnerable but open. She is the Faithful—having lost everything, she discovers what cannot be lost. Her two streams pour healing waters, offering the soul opportunities for genuine spiritual development.</p>
+<p><strong>The Moon (Experience)</strong> processes spiritual Catalyst through the Watcher who guards the threshold. The two jackals—one helpful, one deceptive—represent the difficulty of spiritual discrimination. In the dim moonlight, nothing is clear; subtle sensing replaces rational assessment.</p>
+<p><strong>The Sun (Significator)</strong> represents the whole spirit complex—the Celebrant who radiates or absorbs divine light. This is the self that either shares its connection with the Creator or feeds on the spiritual energy of others. The choice of polarity is most stark here.</p>
+<p><strong>Judgment (Transformation)</strong> is the call from beyond that resurrects what has been entombed. The Prophet has dwelt in living death, will to live sapped, until the trumpet sounds. This is spiritual emergency as apocalypse—the unveiling that destroys the world-that-was.</p>
+<p><strong>The World (Great Way)</strong> shows the Avatar living within constant flow of spiritual energy from Creator into manifestation. The feminine plays the masculine as instrument; the sacred circle is now mobile. This is the crown already upon the head—full integration with divine will.</p>`
+    };
+    
+    // Position card summaries - how each card manifests in that position
+    const positionCardSummaries = {
+        matrix: `<h4 style="color: var(--memphis-pink); margin-top: 30px; margin-bottom: 15px;">The Three Matrices</h4>
+<p><strong>The Magician (Mind)</strong> is the conscious mind reaching for experience—full of desire but empty of content. He represents our longing to understand ourselves and our world. His magical orb symbolizes the spiritual nature of what he seeks; his pointing hand shows the direction of his desire toward the hidden contents of the unconscious.</p>
+<p><strong>Justice (Body)</strong> is the instinctual body responding before thought—the Wild Woman who acts without reflection. Blindfolded, she operates by feel rather than sight, governing through natural law and proportional response. She represents the body's honest feedback that cannot lie or rationalize.</p>
+<p><strong>The Devil (Spirit)</strong> is the spiritual self before awakening—the Adversary who dwells at the threshold. She is neither good nor evil but represents the experience of radical individuality, the "if it feels right, it is right" orientation that precedes any recognition of the two paths. She guards against premature spiritual opening.</p>`,
+
+        potentiator: `<h4 style="color: var(--memphis-cyan); margin-top: 30px; margin-bottom: 15px;">The Three Potentiators</h4>
+<p><strong>The High Priestess (Mind)</strong> is the vast unconscious mind—the Maiden who contains all that can be known but is not yet known. She holds the scrolls of wisdom behind the veil, answering when properly approached. She represents the infinite depth of self that awaits discovery through the gradual process of unveiling.</p>
+<p><strong>The Hermit (Body)</strong> is embodied wisdom—the Sage who carries the small candle of instinctive knowing. He cannot show the whole path, only the next step, because bodily wisdom operates in the immediate present. His two serpents represent the complementary poles of bodily guidance.</p>
+<p><strong>The Tower (Spirit)</strong> is divine revelation—the lightning strike that destroys false spiritual constructs. The Disgraced Priest experiences the shattering of everything he thought he knew about the sacred. This violent potentiation is necessary because the spirit's truth cannot coexist with spiritual pretense.</p>`,
+
+        catalyst: `<h4 style="color: var(--memphis-yellow); margin-top: 30px; margin-bottom: 15px;">The Three Catalysts</h4>
+<p><strong>The Empress (Mind)</strong> is the constant stream of thoughts and feelings—the Expressive who pours forth mental and emotional content spontaneously. Each expression is a coded opportunity for self-knowledge, appearing in "shades of grey" that require moral interpretation. She offers truth but not clarity about what to do with it.</p>
+<p><strong>The Wheel of Fortune (Body)</strong> is the turning of circumstance—the Affected experiencing the rise and fall of fortune. Typhon descends, Hermanubis rises; the sphinx watches from above. These changes test our embodied responses and reveal how we have brought our circumstances upon ourselves.</p>
+<p><strong>The Star (Spirit)</strong> is the opportunity for spiritual renewal—the Faithful pouring healing waters after catastrophe. Having been stripped bare by the Tower, she offers the soul genuine opportunities for growth. Her nakedness represents vulnerability transformed into openness to divine blessing.</p>`,
+
+        experience: `<h4 style="color: var(--memphis-green); margin-top: 30px; margin-bottom: 15px;">The Three Experiences</h4>
+<p><strong>The Emperor (Mind)</strong> is the discriminating function—the Judge who processes Catalyst and determines meaning. He sits on his throne with scepter (generative authority) and ankh (life-preserving wisdom), ordering experience into the framework through which we understand ourselves. His judgments build our mental architecture.</p>
+<p><strong>Strength (Body)</strong> is the harmonious relationship between will and instinct—the Whisperer who tames without dominating. She processes the Catalyst of circumstance by working with the body's nature, achieving "synergistic harmony of emotions." Her upright pitcher shows emotional biases now guiding rather than overwhelming.</p>
+<p><strong>The Moon (Spirit)</strong> is the process of spiritual discrimination—the Watcher in the Night who guards the threshold between worlds. The two jackals (true helper and false seducer) represent the difficulty of distinguishing genuine spiritual guidance from deception. Diffuse moonlight requires subtle sensing.</p>`,
+
+        significator: `<h4 style="color: var(--memphis-orange); margin-top: 30px; margin-bottom: 15px;">The Three Significators</h4>
+<p><strong>The Hierophant (Mind)</strong> represents the whole mind complex—the Storyteller who weaves meaning from experience. He is the repository of all mental biases accumulated through incarnations, the doctrine-maker who contextualizes events within larger patterns. He guards the threshold to the Greater Cycle.</p>
+<p><strong>The Hanged Man (Body)</strong> represents the whole body complex—the Homesteader suspended in enforced stillness. Unable to act, he must learn the economy of energy: what to hold, what to release. His crossed limbs form the ankh, suggesting that limitation itself becomes the path to life.</p>
+<p><strong>The Sun (Spirit)</strong> represents the whole spirit complex—the Celebrant who lives in and through characteristic spiritual presence. People are drawn to him because of who he is, not what he does. The sacred takes shape as the pleasant; daily existence becomes ongoing communion with the divine.</p>`,
+
+        transformation: `<h4 style="color: var(--memphis-purple); margin-top: 30px; margin-bottom: 15px;">The Three Transformations</h4>
+<p><strong>The Lovers (Mind)</strong> stand at the crossroads of mental transformation—the Chooser facing two paths that cannot both be walked. This is where the Choice (the Fool) can intervene to change who we are mentally. The figure is transformed by choosing, not by what is chosen. Neither path is wrong; the transformation is in committing.</p>
+<p><strong>Death (Body)</strong> is the radical restructuring of physical existence—the Reaper who comes when the current configuration is unsustainable. This is the body's insistence that this way of living cannot continue. Heads, hands, and feet are harvested—mental approach, actions, and way of life all under review.</p>
+<p><strong>Judgment (Spirit)</strong> is the call from beyond personal self—the Prophet rising from living death when the trumpet sounds. Nothing the entombed one can do initiates this; it comes from outside. The burial wrappings fall away, the sarcophagus opens. This is spiritual resurrection through grace.</p>`,
+
+        'great-way': `<h4 style="color: var(--memphis-red); margin-top: 30px; margin-bottom: 15px;">The Three Great Ways</h4>
+<p><strong>The Chariot (Mind)</strong> shows mental integration achieved—the Conqueror moving through life with all aspects working in harmony. Light and dark sphinxes serve rather than divide. The canopy of stars indicates alignment with archetypal order. This is what mental evolution moves toward: centered authority with appropriate boundaries.</p>
+<p><strong>Temperance (Body)</strong> shows the ongoing work of bodily integration—the Alchemist transmuting raw experience into refined wisdom. One foot on land, one in water, she bridges realms while continuously pouring between vessels. This is not an achievement but an enduring practice of balance.</p>
+<p><strong>The World (Spirit)</strong> shows spiritual integration achieved—the Avatar living within constant flow of divine energy. The feminine plays the masculine as instrument; he offers himself to be played. The winged lingam-yoni flies freely; the sacred circle is now mobile. Every part of creation is revealed as holy ground.</p>`
+    };
+    
     if (type === 'cycle') {
         const cycleNames = { mind: 'Mind', body: 'Body', spirit: 'Spirit' };
         focusedTitle.textContent = `The ${cycleNames[value]} Cycle`;
@@ -594,9 +678,16 @@ function showFocusedView(type, value) {
         // Add description
         const descriptionDiv = document.createElement('div');
         descriptionDiv.className = 'cycle-description';
-        descriptionDiv.style.cssText = 'background: var(--bg-secondary); border: 4px solid var(--border-color); padding: 25px; margin-bottom: 40px; line-height: 1.8; color: var(--text-primary); font-size: 1.1rem;';
-        descriptionDiv.innerHTML = `<p>${cycleDescriptions[value]}</p>`;
+        descriptionDiv.style.cssText = 'background: var(--bg-secondary); border: 4px solid var(--border-color); padding: 25px; margin-bottom: 20px; line-height: 1.8; color: var(--text-primary); font-size: 1.1rem; word-wrap: break-word; overflow-wrap: break-word;';
+        descriptionDiv.innerHTML = cycleDescriptions[value];
         focusedContent.appendChild(descriptionDiv);
+        
+        // Add cycle story
+        const storyDiv = document.createElement('div');
+        storyDiv.className = 'cycle-story';
+        storyDiv.style.cssText = 'background: var(--bg-secondary); border: 4px solid var(--border-color); padding: 25px; margin-bottom: 40px; line-height: 1.8; color: var(--text-primary); font-size: 1.1rem; word-wrap: break-word; overflow-wrap: break-word;';
+        storyDiv.innerHTML = cycleStories[value];
+        focusedContent.appendChild(storyDiv);
         
         // Create wrapper for cards in single row
         const cardsWrapper = document.createElement('div');
@@ -627,9 +718,16 @@ function showFocusedView(type, value) {
         // Add description
         const descriptionDiv = document.createElement('div');
         descriptionDiv.className = 'position-description';
-        descriptionDiv.style.cssText = 'background: var(--bg-secondary); border: 4px solid var(--border-color); padding: 25px; margin-bottom: 40px; line-height: 1.8; color: var(--text-primary); font-size: 1.1rem;';
-        descriptionDiv.innerHTML = `<p>${positionDescriptions[value]}</p>`;
+        descriptionDiv.style.cssText = 'background: var(--bg-secondary); border: 4px solid var(--border-color); padding: 25px; margin-bottom: 20px; line-height: 1.8; color: var(--text-primary); font-size: 1.1rem; word-wrap: break-word; overflow-wrap: break-word;';
+        descriptionDiv.innerHTML = positionDescriptions[value];
         focusedContent.appendChild(descriptionDiv);
+        
+        // Add position card summaries
+        const summaryDiv = document.createElement('div');
+        summaryDiv.className = 'position-summary';
+        summaryDiv.style.cssText = 'background: var(--bg-secondary); border: 4px solid var(--border-color); padding: 25px; margin-bottom: 40px; line-height: 1.8; color: var(--text-primary); font-size: 1.1rem; word-wrap: break-word; overflow-wrap: break-word;';
+        summaryDiv.innerHTML = positionCardSummaries[value];
+        focusedContent.appendChild(summaryDiv);
         
         // Create wrapper for cards in single row
         const cardsWrapper = document.createElement('div');
