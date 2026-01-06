@@ -30,6 +30,16 @@
     <div id="app-container">
         <!-- View 1: Grid View -->
         <div id="grid-view" class="view active">
+            <div class="grid-deck-selector">
+                <label for="grid-deck-slider">Deck:</label>
+                <input type="range" id="grid-deck-slider" min="0" max="2" value="0" step="1">
+                <div class="deck-labels">
+                    <span>Ra/Fathman</span>
+                    <span>RWS</span>
+                    <span>Thoth</span>
+                </div>
+            </div>
+            
             <div class="grid-header">
                 <div class="spacer"></div>
                 <div class="column-header">Matrix</div>
@@ -147,8 +157,6 @@
 
         <!-- View 3: Single Card Detail View -->
         <div id="detail-view" class="view">
-            <button id="back-from-detail" class="nav-button">← Back</button>
-            
             <div class="detail-navigation">
                 <button id="prev-card" class="nav-arrow">←</button>
                 <h2 id="detail-title"></h2>

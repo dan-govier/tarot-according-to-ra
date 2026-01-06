@@ -458,15 +458,6 @@ function initializeEventListeners() {
         });
     }
 
-    // Back button (detail view only)
-    document.getElementById('back-from-detail').addEventListener('click', () => {
-        if (previousView) {
-            showView(previousView);
-        } else {
-            showView('grid');
-        }
-    });
-
     // Card navigation arrows
     document.getElementById('prev-card').addEventListener('click', () => {
         navigateCard(-1);
@@ -476,10 +467,18 @@ function initializeEventListeners() {
         navigateCard(1);
     });
 
-    // Deck slider
+    // Deck slider (detail view)
     document.getElementById('deck-slider').addEventListener('input', (e) => {
         currentDeck = parseInt(e.target.value);
         updateCardImage();
+    });
+    
+    // Grid deck slider (main view)
+    document.getElementById('grid-deck-slider').addEventListener('input', (e) => {
+        currentDeck = parseInt(e.target.value);
+        updateAllGridImages();
+        // Sync with detail view slider
+        document.getElementById('deck-slider').value = currentDeck;
     });
 
     // Keyboard navigation
@@ -490,7 +489,7 @@ function initializeEventListeners() {
             } else if (e.key === 'ArrowRight') {
                 navigateCard(1);
             } else if (e.key === 'Escape') {
-                document.getElementById('back-from-detail').click();
+                showView('grid');
             }
         }
     });
@@ -888,6 +887,29 @@ function updateCardImage() {
     
     document.getElementById('detail-card-image').src = card.images[selectedDeck];
     document.getElementById('detail-card-image').alt = card.name;
+}
+
+function updateAllGridImages() {
+    const deckTypes = ['ra', 'rws', 'thoth'];
+    const selectedDeck = deckTypes[currentDeck];
+    
+    // Update all card images in the grid
+    document.querySelectorAll('.card-cell[data-archetype]').forEach(cell => {
+        const archetype = cell.dataset.archetype;
+        const card = tarotData[archetype];
+        if (card && card.images) {
+            const img = cell.querySelector('img');
+            if (img) {
+                img.src = card.images[selectedDeck];
+            }
+        }
+    });
+    
+    // Update Fool card at bottom
+    const foolCard = document.querySelector('#fool-bottom .card-small img');
+    if (foolCard && tarotData['22'] && tarotData['22'].images) {
+        foolCard.src = tarotData['22'].images[selectedDeck];
+    }
 }
 
 function navigateCard(direction) {
