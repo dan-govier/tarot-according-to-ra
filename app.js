@@ -10,7 +10,7 @@ const imagePaths = {
     },
     2: {
         ra: "public/images/tarot/ra/high-priestess.png",
-        rws: "public/images/tarot/rws/priestess.jpg",
+        rws: "public/images/tarot/rws/high-priestess.jpg",
         thoth: "public/images/tarot/thoth/priestess.webp"
     },
     3: {
@@ -100,8 +100,8 @@ const imagePaths = {
     },
     20: {
         ra: "public/images/tarot/ra/judgment.png",
-        rws: "public/images/tarot/rws/judgment.jpg",
-        thoth: "public/images/tarot/thoth/judgment.webp"
+        rws: "public/images/tarot/rws/judgement.jpg",
+        thoth: "public/images/tarot/thoth/judgement.webp"
     },
     21: {
         ra: "public/images/tarot/ra/world.png",
