@@ -278,10 +278,10 @@ body::after {
 #grid-view::before {
     content: '';
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 44px;
+    height: 44px;
     background: var(--memphis-orange);
-    top: -20px;
+    top: -12px;
     right: 100px;
     border-radius: 50%;
     border: 4px solid var(--border-color);
@@ -302,7 +302,7 @@ body::after {
 
 .grid-header {
     display: grid;
-    grid-template-columns: 120px repeat(7, 1fr);
+    grid-template-columns: 120px repeat(7, minmax(0, 1fr));
     gap: 12px;
     margin-bottom: 25px;
 }
@@ -314,20 +314,20 @@ body::after {
 .column-header {
     font-family: var(--font-display);
     text-align: center;
-    font-size: 1rem;
+    font-size: clamp(0.55rem, 0.95vw, 1rem);
     font-weight: normal;
     color: var(--white);
-    padding: 18px 8px;
+    padding: 16px 4px;
     background: var(--border-color);
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     border: 3px solid var(--border-color);
     position: relative;
     overflow: hidden;
     word-wrap: break-word;
-    hyphens: auto;
+    hyphens: manual;
     line-height: 1.2;
     min-height: 60px;
     display: flex;
@@ -375,7 +375,7 @@ body::after {
 
 .grid-content {
     display: grid;
-    grid-template-columns: 120px repeat(7, 1fr);
+    grid-template-columns: 120px repeat(7, minmax(0, 1fr));
     gap: 12px;
     align-items: stretch;
 }
@@ -555,12 +555,13 @@ body::after {
 .card-name {
     font-family: var(--font-display);
     display: block;
-    font-size: 0.85rem;
+    font-size: clamp(0.5rem, 0.95vw, 0.85rem);
     font-weight: normal;
     color: var(--text-primary);
     margin-top: 8px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+    overflow-wrap: anywhere;
     pointer-events: none; /* Allow clicks to pass through to parent card */
 }
 
@@ -993,18 +994,17 @@ body::after {
 /* Responsive Design */
 @media (max-width: 1200px) {
     .grid-content {
-        grid-template-columns: 90px repeat(7, 1fr);
+        grid-template-columns: 90px repeat(7, minmax(0, 1fr));
         gap: 8px;
     }
     
     .grid-header {
-        grid-template-columns: 90px repeat(7, 1fr);
+        grid-template-columns: 90px repeat(7, minmax(0, 1fr));
         gap: 8px;
     }
     
     .column-header {
-        font-size: 0.85rem;
-        padding: 10px 6px;
+        padding: 10px 3px;
         min-height: 50px;
     }
     
@@ -1017,28 +1017,24 @@ body::after {
         padding: 8px;
     }
     
-    .card-name {
-        font-size: 0.75rem;
-    }
 }
 
 /* Intermediate breakpoint for smoother scaling */
 @media (max-width: 1000px) {
     .grid-content {
-        grid-template-columns: 80px repeat(7, 1fr);
+        grid-template-columns: 80px repeat(7, minmax(0, 1fr));
         gap: 6px;
     }
     
     .grid-header {
-        grid-template-columns: 80px repeat(7, 1fr);
+        grid-template-columns: 80px repeat(7, minmax(0, 1fr));
         gap: 6px;
     }
     
     .column-header {
-        font-size: 0.75rem;
-        padding: 8px 4px;
+        padding: 8px 2px;
         min-height: 45px;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.3px;
     }
     
     .row-header {
@@ -1051,9 +1047,6 @@ body::after {
         border: 3px solid var(--border-color);
     }
     
-    .card-name {
-        font-size: 0.7rem;
-    }
 }
 
 /* Mobile portrait mode - applies when narrow OR (medium width AND portrait) */
@@ -1194,6 +1187,7 @@ body::after {
 
     /* The hover "CLICK" badge has no place on touch screens */
     .row-header.mobile-position::after,
+    .grid-header .column-header::before,
     .grid-header .column-header::after {
         display: none;
     }
@@ -1206,11 +1200,7 @@ body::after {
     }
 
     #grid-view::before {
-        width: 40px;
-        height: 40px;
-        top: -26px;
-        right: 16px;
-        border-width: 3px;
+        display: none;
     }
 
     #grid-view::after {
@@ -1219,8 +1209,8 @@ body::after {
 
     .grid-header .column-header {
         letter-spacing: 0;
-        font-size: 0.8rem;
-        padding: 12px 4px;
+        font-size: clamp(0.55rem, 3vw, 0.8rem);
+        padding: 12px 2px;
     }
 
     /* Mobile cards - reset everything and apply clean styles */
