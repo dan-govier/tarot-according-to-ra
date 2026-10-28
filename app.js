@@ -790,7 +790,7 @@ function showCardDetail(archetypeNum) {
             return '';
         }).join('');
     } else {
-        quotesDiv.innerHTML = '<p><em>Ra quotes will be added from the Law of One material.</em></p>';
+        quotesDiv.innerHTML = '<p><em>No verified Ra quote has been added for this archetype yet. Ra spoke of it mostly in general terms; see the cycle and position descriptions.</em></p>';
     }
     
     // Symbolic elements
