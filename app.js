@@ -289,7 +289,7 @@ function handleMobileGrid() {
             { name: 'CATALYST', key: 'catalyst' },
             { name: 'EXPERIENCE', key: 'experience' },
             { name: 'SIGNIFICATOR', key: 'significator' },
-            { name: 'TRANSFORMATION', key: 'transformation' },
+            { name: 'TRANS&shy;FORMATION', key: 'transformation' },
             { name: 'GREAT WAY', key: 'great-way' }
         ];
         
