@@ -939,6 +939,8 @@ body::after {
 .card-description h3:nth-of-type(6) { background: var(--memphis-orange); color: var(--border-color); }
 .card-description h3:nth-of-type(7) { background: var(--memphis-purple); color: var(--white); }
 .card-description h3:nth-of-type(8) { background: var(--memphis-blue); color: var(--white); }
+.card-description h3:nth-of-type(9) { background: var(--memphis-pink); color: var(--border-color); }
+.card-description .interpretive-note { font-size: 0.9rem; opacity: 0.85; }
 
 .card-description div {
     font-family: var(--font-body);

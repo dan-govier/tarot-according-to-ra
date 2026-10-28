@@ -862,7 +862,7 @@ function showCardDetail(archetypeNum) {
     // Jungian Analysis
     const jungianDiv = document.getElementById('jungian-analysis');
     if (card.jungian) {
-        jungianDiv.innerHTML = `<p>${card.jungian}</p>`;
+        jungianDiv.innerHTML = `<p class="interpretive-note"><em>Interpretive layer added for this app. It is not from Ra or from Dartez.</em></p><p>${card.jungian}</p>`;
     } else {
         jungianDiv.innerHTML = '<p><em>Jungian analysis will be added.</em></p>';
     }
@@ -870,11 +870,21 @@ function showCardDetail(archetypeNum) {
     // Lacanian Psychoanalysis
     const lacanianDiv = document.getElementById('lacanian-analysis');
     if (card.lacanian) {
-        lacanianDiv.innerHTML = `<p>${card.lacanian}</p>`;
+        lacanianDiv.innerHTML = `<p class="interpretive-note"><em>Interpretive layer added for this app. It is not from Ra or from Dartez.</em></p><p>${card.lacanian}</p>`;
     } else {
         lacanianDiv.innerHTML = '<p><em>Lacanian analysis will be added.</em></p>';
     }
     
+    // Sources
+    const sourcesDiv = document.getElementById('card-sources');
+    if (card.sources && card.sources.length > 0) {
+        sourcesDiv.innerHTML = '<ul style="list-style-position: inside; padding-left: 0;">' +
+            card.sources.map(s => `<li style="margin-bottom: 8px;">${s}</li>`).join('') +
+            '</ul><p><em>Ra quotations are cited by session and question number from the Ra Contact (L/L Research).</em></p>';
+    } else {
+        sourcesDiv.innerHTML = '<p><em>Source citations for this card have not been added yet.</em></p>';
+    }
+
     updateCardImage();
     updateNavigationButtons();
     showView('detail');
