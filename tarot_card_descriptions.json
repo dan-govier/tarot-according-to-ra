@@ -323,32 +323,46 @@
     "cycle": "body",
     "position": "matrix",
     "framework": "The Matrix of the Body represents the unconscious body\u2014responsible for coordinating all automatic processes, seeking homeostatic balance. The coordination of these processes seeks a stable, regular flow of energy. Her reaction to any imbalance is purely a function of the degree of imbalance introduced, without regard to narrative or explanation.",
-    "character": "The Wild Woman does not think about what she does or why. She is motivated by instinctive desires and cravings. In her very body, she knows what she needs and when; each craving appears in its appropriate moment and she follows that craving exactly as it drives her. If attacked, she retaliates in proportion according to lex talionis (eye for an eye). She is the living manifestation of natural justice, with no regard for human legal justice.",
+    "character": "Dartez calls her the Wild Woman. She does not reflect on what she does or why. Her body knows what it needs and when, each craving arrives in its own moment, and she follows it exactly. If she is attacked she answers in proportion (an eye for an eye), so she is natural justice in living form and indifferent to human law. Her justice is empirical: she does not reason it out, she simply must, because the urge has built up in her. She only dispenses justice in response to a conscious intervention, and that intervention is the job of the Potentiator. She is also the storehouse of lived trauma: her responses answer the type of intervention and its history in the body, not only the event at hand. Her empowering capacity is direct attunement to the body's needs. The draft starts a list of virtues with 'brazen audacity and...' and leaves it unfinished.",
     "symbols": [
-      "Female figure in black and white stripes - the unconscious body; polarity inherent in physical existence",
-      "Sturdy throne with pedestal - extreme stability; automatic recovery of balance",
-      "Sword and balanced scales - if scales are tipped, the sword strikes; proportional response to imbalance",
-      "Blindfold - indifference to narrative; response based purely on degree of imbalance",
-      "Iron crown - inflexibility; no exceptions to the rule of her reaction",
-      "Messenger from Ma'at with feather - support of universal truth; natural laws of cause and effect",
-      "Sphinx walking atop lion - cyclic nature of stable energy flow; immense potential of instinctive drives"
+      "Woman in black and white stripes on a sturdy throne, feet on a pedestal - the unconscious body; the stable seat means it recovers balance automatically",
+      "Sword in one hand, balanced scales in the other - the scales are level, and if something tips them the sword is ready to strike",
+      "Blindfold - not the veil (the veil hides a woman from a man); it means her strike ignores the story behind an imbalance and answers only the size of it",
+      "Iron crown with uraeus - inflexibility; there are no exceptions to her reaction",
+      "Messenger of Ma'at bearing the feather - the body's workings follow natural law, so its motion is neither whimsical nor personal",
+      "Sphinx walking atop a lion - the sphinx is the cyclic nature of the body's stable energy flow, the lion the potential and danger of its instinctive drives",
+      "Winged turtle - Dartez rejects the traditional 'repentance' reading and prefers: slow spiritual flight (wings) is only possible inside the physical vehicle (the turtle that carries its home)",
+      "Canopy - Dartez admits its meaning eludes him"
     ],
     "levels": {
-      "personal": "Intuitive awareness of and responsiveness to body's needs. Habitual actions taken without thinking, including automatic functions like breathing, digestion, elimination. The routine operation of body in maintaining itself as vehicle for mind.",
-      "interpersonal": "Unthinking patterns of interaction with others. Most interactions guided by rote patterns of unconscious activity\u2014standard greetings, phrasings, jokes, activities. The Wild Woman is a creature of rigid habit.",
-      "social": "Unplanned social interaction of human beings. Coordination emerging when each person acts according to own needs without aiming for social outcome. The Masses who follow no code but personal habit."
+      "personal": "Intuitive awareness of, and responsiveness to, what the body needs: habits carried out without thought plus automatic functions such as breathing, digestion and elimination. The body here extends to the places we live and work, so unconscious habits of interacting with our environment count too.",
+      "interpersonal": "Our rote patterns with other people: the standard greeting, the standard joke, the standard activity, usually copied from parents and authority figures and repeated without noticing. The Wild Woman is a creature of rigid habit.",
+      "social": "The unplanned coordination that emerges when everyone acts on their own needs with no social goal in mind. It is hard to subvert but easy for organized action to take over, and it sits at the bottom of the social pecking order: the Masses, the proletariat not yet conscious of itself."
     },
     "polarizedExpressions": {
-      "note": "As with all Matrices and Potentiators, the Matrix of the Body does not admit of polarized expression. She simply is as she is."
+      "note": "Like all Matrices and Potentiators, the Matrix of the Body has no polarized expression. She simply is as she is."
     },
     "distortions": [
-      "Insensitivity - Not perceiving attempted interventions in habitual cycles; carrying on as if nothing happened, preventing potentiation entirely",
-      "Unintentionally arrhythmic activity - Cycles that don't resolve into predictable rhythms, making intelligent potentiation impossible",
-      "Avoiding the persona entirely - Not trusting intuitive judgments about body's needs; listening only to others or trying to figure things out consciously"
+      "Insensitivity - she does not register an attempted intervention in her habitual cycles and carries on as if nothing happened, which blocks potentiation entirely",
+      "Unintentional arrhythmia - her activity never settles into predictable rhythms, so the Potentiator cannot judge where to intervene",
+      "Avoiding the persona - by far the most common form: we distrust our body's own judgment and defer to others or try to work it out consciously",
+      "Disproportionate response - Dartez says this only looks like a distortion: the reply is proportional once the whole history of similar interventions (the trauma echo) is counted"
     ],
-    "raQuotes": [],
-    "jungian": "Justice represents the body-Self\u2014the wisdom of the instincts operating below conscious awareness. Her blindfold indicates what Jung called 'the natural mind' that knows without knowing how it knows. The Wild Woman embodies the archetype of embodied feminine wisdom: not chaos but a different order, governed by lex talionis\u2014proportional response, natural consequence. Her inflexibility reflects the body's honest feedback: it cannot lie or rationalize. The sphinx and lion represent the cyclic nature of bodily existence\u2014hunger and satiation, tension and release. She is the somatic unconscious demanding attention.",
-    "lacanian": "Justice represents the Real of the body\u2014that which resists symbolization yet determines existence. Her blindfold marks her indifference to narrative; she responds to acts, not intentions. The 'Wild Woman' operates outside the symbolic order, embodying what Lacan calls the drive (Trieb): not biological instinct but the circuit of partial objects that insists beyond pleasure. Her 'lex talionis' is the automatic return of the repressed\u2014not punishment but consequence at the level of the Real. She is the body's jouissance that cannot be fully captured in the signifying chain yet constantly interrupts it."
+    "raQuotes": [
+      {
+        "session": "78.11",
+        "text": "In the body the Matrix may be seen as Balanced Working or Even Functioning. Note that here the Matrix is always active with no means of being inactive."
+      },
+      {
+        "session": "79.20",
+        "text": "The Matrix of the Body may be seen to be a reflection in opposites of the mind; that is, unrestricted motion."
+      }
+    ],
+    "jungian": "Justice is the body-Self: the instinctive intelligence that works below awareness and knows what it needs without knowing how. It is closer to Jung's 'natural mind' and to a somatic unconscious than to a moral judge. Its order is not chaos but a different logic, proportional response and natural consequence. The body cannot lie or rationalize, so its feedback is honest in a way thought is not. Dartez's point that this layer stores unprocessed trauma matches the Jungian idea of a complex: a charged pattern that answers the type of event, not the event itself.",
+    "lacanian": "Justice is the Real of the body: what resists being put into words yet governs what happens. The blindfold marks her indifference to the narrative we tell about an act; she answers the act. Her automatic rhythm is closer to the drive, a circuit that repeats rather than a need that is satisfied. The 'storehouse of trauma' reading fits the Lacanian Real as what returns in the same place until it is symbolized. This is an interpretive layer added for this app.",
+    "sources": [
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), pp. 85-88"
+    ]
   },
   "9": {
     "name": "The Sage",
@@ -356,29 +370,42 @@
     "cycle": "body",
     "position": "potentiator",
     "framework": "The Potentiator of the Body depicts the conscious body. The lamp represents the brilliant truth of the inner sub-sub-Logos\u2014that 'through free will, chooses to make alterations in its experiential continuum.' During incarnation, Ra tells us, we find ourselves 'working in darkness with a tiny candle' to correct our imbalances. This candle only reveals the next step on the path.",
-    "character": "The Sage is characterized by willingness to do what seems like a good idea. The wisdom here is not far-seeing clarity but the deep wisdom of the sub-sub-Logos within, which has no regard for petty concerns about how life plays out. What looks to others like grave mistake turns out to be crucial experience. As Ra says, 'there are no mistakes.' Following hidden wisdom of one's own small candle is an isolating experience\u2014the Hermit path.",
+    "character": "Dartez calls him the Sage, and also the Hermit. His wisdom is not far-seeing clarity; it is the deep wisdom of the sub-sub-Logos within, which does not care how our small plans turn out. What looks to others like a grave mistake can be the experience that gave a person the sensitivity they lacked, and Ra says there are no mistakes. His small lamp shows only the next step, and following a light that does not explain itself is isolating. He is not an observer: once a plan forms it creates an irresistible desire to carry it out, even against advice. When he says 'I'm never doing that again' it is not the Sage who learned; the Matrix around him has changed, so the inner Logos now judges a different action to be a good idea. His function is to alter the habitual cycles of the physical environment, and his empowering capacity is seeing which intervention will further reveal how that environment works. The draft leaves his virtues blank. In relation to the Wild Woman (Relationship #5, 'Intervention') he is active and intentional where she is habitual and reactive, and his virtues of silence and restraint make him awkward on a stage. His interventions are experiments, so he expects to be surprised, and she answers each one in proportion: with retaliation if it is more painful than pleasant on balance, with a reward if the opposite.",
     "symbols": [
-      "Male figure with walking stick - the conscious body moving through physical existence",
-      "Lamp in left hand - the brilliant truth of inner sub-sub-Logos; the tiny candle revealing only the next step",
-      "Square cape/cloak hiding the light - the physical world hiding light of inner Logos from others (not from self)",
-      "Two serpents with Egyptian crowns - outward wisdom (prudence) and inward wisdom (clear sense of higher purpose)"
+      "Male figure with walking stick - the conscious body",
+      "Lamp in the left hand - the truth of the inner sub-sub-Logos, which Ra describes as a tiny candle we work by in darkness; it shows only the next step, the alteration the sub-sub-Logos has chosen",
+      "Square cloak partly hiding the lamp - squareness is the physical world; it hides the light from others, not from the Sage himself, so it is the veil between self and other",
+      "Two serpents wearing the two Egyptian crowns - outward wisdom (prudence) and inward wisdom (a clear sense of what must be done for a higher purpose); he follows both"
     ],
     "levels": {
-      "personal": "Awareness of what we consider useful ways of acting\u2014the reasons we hold these judgments and the will to act on them. We envision desired outcome fitting into overall sense of how the world might be improved by our action.",
-      "interpersonal": "Intervening in someone else's unthinking routine. Can have trickster quality (pranks) or be serious help or harm. The interpersonal Sage interrupts normal life with twofold purpose: experiment to determine consequences and effort to improve daily flow.",
-      "social": "Group acting on behalf of social agenda by intervening in activity of those without agenda. Often manifests as legal activity\u2014legislation, policing. The social Sage is 'The Man'\u2014organized, intentional, planned action."
+      "personal": "Our awareness of what seems a useful way to act, including the reasons and the will to act on them. Dartez mentions George Fatham's version of the card, which adds a shining city on a hill as the imagined result.",
+      "interpersonal": "Interrupting someone else's unthinking routine, as a prank, a gift, legal paperwork, or an effort to help or harm. It is always an experiment and an attempt to improve things, and always has an agenda.",
+      "social": "A group acting on a social agenda by intervening in those who have none, often through legislation or policing. It is powerful relative to the Masses. The social Sage is 'The Man'."
     },
     "polarizedExpressions": {
-      "note": "As a Potentiator, this archetype awaits activation and does not itself express polarity."
+      "note": "Like all Potentiators, this archetype has no polarized expression. Dartez says the Sage's intention is not yet governed by malice or compassion; he is mainly experimenting."
     },
     "distortions": [
-      "Vice in practical reasoning - Breakdown in means-ends reasoning; self-sabotage where chosen course of action is opposite of what would achieve the end",
-      "Inability to identify what is good - Failure in the perceptive side of practical reason",
-      "Mind cycle overriding body cycle - Mental concerns distorting the Sage's mechanisms of practical reason"
+      "Breakdown in means-ends reasoning - we pick the course that is the opposite of what would reach our goal; when it is not just the world being unpredictable, Dartez suspects the mind cycle has overridden the body cycle",
+      "Failure to see what is good for us in the plain sense of health (whole food, sleep, company, attention to our own reasoning) - a sign that mind or spirit has taken over the body cycle",
+      "Weakness of will - we see the good and the means and still lack the energy to act; Dartez links this to the overriding influence of mind or spirit and calls it a characteristic symptom of spiritual activity"
     ],
-    "raQuotes": [],
-    "jungian": "The Hermit represents the Self's guidance operating through somatic intuition\u2014the 'body knowing' that Jung recognized as distinct from intellectual insight. The Sage carries the small candle of instinctive wisdom, illuminating only the next step. His isolation reflects the essentially private nature of embodied experience: no one else can feel your body. The two serpents represent the complementary poles of bodily wisdom\u2014one oriented outward to environment, one inward to felt sense. Following this guidance requires what Jung called 'introverted sensation': attending to the subtle signals the body offers.",
-    "lacanian": "The Hermit embodies savoir\u2014knowledge in the Real, distinct from connaissance (imaginary knowledge) or symbolic expertise. His lamp reveals only immediate vicinity, marking the limit of foresight when operating from embodied experience. The 'no mistakes' doctrine challenges the guilt-structure of symbolic law: at the level of the body, there is only action and consequence, not transgression. His isolation figures the fundamental solitude of the subject vis-\u00e0-vis jouissance\u2014the body's satisfaction cannot be shared or fully communicated. He marks where the signifying chain fails and something else must guide."
+    "raQuotes": [
+      {
+        "session": "78.11",
+        "text": "The Potentiator of the body complex, then, may be called Wisdom, for it is only through judgment that the unceasing activities and proclivities of the body complex may be experienced in useful modes."
+      },
+      {
+        "session": "79.20",
+        "text": "The Potentiator of the Body then is that which, being informed, regulates activity."
+      }
+    ],
+    "jungian": "The Hermit is the Self guiding through the body: the felt 'knowing what to do next' that Jung would class as sensation or intuition working introverted. The lamp lights only the next step, so the individuating person is not shown the whole road. His isolation is real, because embodied experience cannot be handed over to someone else. The two crowned serpents can be read as the outer, adaptive wisdom and the inner, purposeful wisdom the draft describes. This is an interpretive layer added for this app.",
+    "lacanian": "The Hermit stands for knowledge in the Real rather than expertise in the symbolic: he acts on something he cannot fully say. The small lamp marks the limit of what can be foreseen from inside the body. 'There are no mistakes' loosens the guilt structure of the symbolic law, since at this level there is action and consequence rather than transgression. His isolation fits the fact that each person's bodily enjoyment cannot be shared or fully communicated. This is an interpretive layer added for this app.",
+    "sources": [
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), pp. 88-91",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Relationship #5, pp. 91-94"
+    ]
   },
   "10": {
     "name": "Wheel of Fortune",
@@ -386,32 +413,45 @@
     "cycle": "body",
     "position": "catalyst",
     "framework": "The Catalyst of the Body depicts the body as potentiated self\u2014a perspective primarily of observation, encompassing all sensory information. Everything in the physical world with which you interact is part of the body complex because your aura extends at least 50 feet beyond your skin. The wheel represents the body complex and its energy web; its turning is the constant cyclical motion of the body.",
-    "character": "The Affected examines his actions with awareness of dramatic turns of events. Surprised by fortune or misfortune, he doesn't know what he did to earn this circumstance. But in his virtuous manifestation, he believes some previous action has caused this situation. No matter how random or bizarre the event, the Affected sets himself to working out how he brought it upon himself.",
+    "character": "Dartez calls him the Affected, the persona we send children into when we say 'Think about what you did.' Catalyst is the Wild Woman's reaction to the Sage's action: the natural consequence, which arrives as fortune or misfortune that seems unconnected to anything. The Affected does not process it; he makes its nature known to the mind through his own lens. In his virtuous form he believes some earlier action or inaction caused this, and sets himself to work out how, however random it looks. Dartez warns against misreading this: the victim of someone else's agenda really is a victim, and the same event can be catalyst from one side and potentiation from another. His function is to make the body's catalytic activity known to the mind in as much detail as possible. His empowering capacity is holding complex causal chains in view at once, and his virtues are the conviction that every random-seeming event traces back to his own action plus an eye for small details. This archetype is the first image in the series without an obvious figure to identify with; Dartez concludes, a little uneasily, that the viewpoint is the sphinx.",
     "symbols": [
-      "Wheel held by two columns - the body complex and energy web; constant cyclical motion",
-      "Typhon (darkness) riding wheel downward - misfortune, vice, decay attracted by condition of energy web",
-      "Hermanubis climbing upward - fortune, virtue, prosperity attracted by condition of energy web",
-      "Eight spokes - octaves of experience; energy centers and their manifestations as primal drives",
-      "Inner and outer wheel - hidden ethereal nature and outer physical nature of body",
-      "Sphinx with spear above - conscious body after potentiating action; four virtues of magician (to know, to will, to dare, to be silent)"
+      "Wheel held by two pillars - the body complex and its energy web in constant cyclical motion; the pillars are the moral polarity on which third density is built",
+      "Typhon (Set) on the left, riding the wheel down - darkness, decay, vice; energies attracted by the condition of our energy web",
+      "Hermanubis on the right, climbing - ingenuity, prosperity, virtue; the same magnetism, other direction",
+      "Eight spokes - the octaves of experience, shown in the energy centers and primal drives; the eighth is hidden behind a pillar because the next octave is hidden from us",
+      "Wheel within a wheel - the inner (ethereal) and outer (physical) nature of the body; we cannot understand fortune or misfortune without grasping the inner wheel",
+      "Winged orb and two serpents at the base - the covenant with spirit; the serpents may suggest the progressive activation of energy centers (Dartez is unsure)",
+      "Sphinx on a platform above, spear aimed to the right - the conscious body after its potentiating act, with the four magician's virtues (know, will, dare, be silent); it is armed on its left and unarmed on its right, so defence and attack belong to the left-hand path and disarming oneself to the right-hand path"
     ],
     "levels": {
-      "personal": "Examining actions with respect to own body and living space. Actions not affecting others directly but primarily affecting the body's relationship with its environment.",
-      "interpersonal": "Examining how actions toward others have produced consequences. Tracing apparently random fortune or misfortune back to seed actions in relationships.",
-      "social": "Collective examination of how group actions have produced social consequences. Understanding the causal relationships at play in public events."
+      "personal": "Examining how our own actions have affected our body and living space. Ailments often have a metaphysical component tied to our energy web. Working out the cause is felt less as reasoning than as exposing oneself, without protection, to memories and present sensations.",
+      "interpersonal": "Another person has become suddenly elated or resentful, and we learn the feeling is aimed at us. We have to work out what we did: gave them something good, or crossed one of their boundaries.",
+      "social": "A group facing backlash or praise for its past behavior, such as protest as the Wild Woman's anger at a boundary being violated, or any social response to a powerful actor's agenda."
     },
     "polarizedExpressions": {
-      "rightHandPath": "Sphinx faces right side with no weapon\u2014disarming oneself in relation to the world. Misfortune and discomfort catalyze along right-hand path (brothers and sisters of sorrow).",
-      "leftHandPath": "Sphinx armed against left side\u2014defense and attack. Fortune and comfort in physical world tend to catalyze along left-hand path."
+      "rightHandPath": "The Contrite. Misfortune tends to polarize us toward service to others. He takes responsibility, may recount each boundary violation and each neglected chance to serve, and does not defend himself; he accepts the Wild Woman's anger as righteous. He is grateful for fortune but does not think he uniquely deserves it. Looking backward at what he did, he learns the light touch. In the mixed form he wants to confess but cannot bear the full weight of his acts, and secretly needs to see himself as incapable of harm.",
+      "leftHandPath": "The Emboldened. Fortune tends to polarize us toward service to self. He studies his past for the act that brought him good luck so he can repeat it, takes public credit as proof he deserves his privileges, and treats misfortune as a lesson in making his actions subtler so he is not caught. Looking forward at opportunity and threat, he doubles down. In the mixed form he wants no remorse but spirals into it when things go wrong, then hates himself for being weak."
     },
     "distortions": [
-      "Blaming randomness - Refusing to examine how one's actions contributed to circumstances",
-      "Over-attribution - Seeing causal connections where none exist",
-      "Victim mentality - Missing that same event can be catalyst from one perspective and potentiation from another"
+      "The exoteric view that apparently random events are random - catalyst rarely enters the mind for integration; he sees no sign anything is wrong with his own actions and only buys insurance against misfortune",
+      "Insensitivity to present circumstances - body catalyst is blunt and hard to miss, yet some people ignore symptoms or the warning signs of a failing relationship until the loss is complete"
     ],
-    "raQuotes": [],
-    "jungian": "The Wheel represents the archetypal pattern of enantiodromia\u2014the psyche's tendency to swing between opposites over time. What rises falls; what is repressed returns. The Affected encounters this as fate, but deeper understanding reveals the Self's regulatory activity. Typhon descending and Hermanubis ascending show shadow and light in perpetual rotation. The sphinx atop represents transcendent awareness that witnesses without being caught in the turning. This card teaches that fortune and misfortune are viewpoints, not absolutes\u2014the ego that identifies with rising will suffer falling; the ego aligned with the still center remains balanced.",
-    "lacanian": "The Wheel figures the circuit of the drive (pulsion)\u2014the endless rotation around the object a that can never be grasped. Typhon and Hermanubis represent the subject's oscillation between alienation and separation, identification and dis-identification. The sphinx atop marks the position of the analyst: not outside the wheel but occupying a place of non-reactive witnessing. 'Working out how one brought it upon oneself' is the operation of analysis: tracing the subject's complicity in their symptom. The wheel reveals repetition compulsion\u2014not fate but the insistence of an unmetabolized Real that keeps returning until integrated."
+    "raQuotes": [
+      {
+        "session": "81.11",
+        "text": "The most carefully noted addition would be that the outside stimulus of the Wheel of Fortune is that which offers both positive and negative experience."
+      },
+      {
+        "session": "93.11",
+        "text": "The configurations of each in the group of body offer catalyst through comfort/discomfort."
+      }
+    ],
+    "jungian": "The Wheel is enantiodromia, the psyche's tendency to swing into its opposite over time. In Dartez's version the swing is not blind fate: the energies we meet are drawn by the condition of our own energy web. The Affected is the ego deciding whether to read events as chance or as its own doing, and the Contrite and Emboldened are two ways of owning, or not owning, the shadow. The sphinx is, in the draft's reading, the conscious self after it has acted, waiting for the result. This is an interpretive layer added for this app.",
+    "lacanian": "The Wheel is repetition: events that seem to come from outside keep returning around the same point. 'Working out how I brought it upon myself' is the movement from complaint to taking up one's own position in the symptom. Contrite and Emboldened are two answers to the same question of guilt: accept a debt to the other, or deny it and polish one's concealment. The 'random' reading is the refusal to enter the question at all. This is an interpretive layer added for this app.",
+    "sources": [
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), pp. 94-100",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Relationship #6, pp. 103-107"
+    ]
   },
   "11": {
     "name": "The Enchantress",
@@ -419,32 +459,34 @@
     "cycle": "body",
     "position": "experience",
     "framework": "The Experience of the Body depicts how the unconscious body processes catalyst. The woman's ability to stand before the lion and close its jaws reflects the grace, composure, and power of the unconscious body. All the strength and ferocity of the lion is at her disposal. The pitcher on her head indicates that emotional disposition toward the physical world is the strength through which the unconscious body manifests authority to close the lion's jaws.",
-    "character": "The Whisperer holds all the cards in relationship to others. She is the only one who can tame the inner beast in humanity\u2014the raw, brazen, destructive capacity, especially in emotionally excited and unthinking states. If she agrees with the Sage's agenda, she multiplies its power by removing all barriers. If against it, she makes it impossible. Every path to manifestation must gain her support. Her composure comes not through control of emotions, but through synergistic harmony of those emotions.",
+    "character": "Dartez calls her the Whisperer. In relation to other people she holds all the cards: she is the only one who can tame the inner beast, the raw destructive capacity in human beings, especially when excited and unthinking. She can aim that energy at a purpose, but only if she is won over by a demonstration that the purpose is worthy, not by argument. If she backs the Sage's agenda she multiplies its power by removing every obstacle; if she opposes it, it cannot happen. Commentators call her Strength because nothing is accomplished without her. Her gaze cows anyone racked by guilt. Her composure comes from the harmony of her emotions rather than control of them, and she is unconflicted about the offense and her position; her only doubt is whether to give a clear wrongdoer another chance. Her function is to integrate sensory and physical information into the body's cycles by regaining homeostasis; she is motivated by wanting reunion while knowing how lopsided the power is. Dartez says Ra says nothing useful about this archetype itself, so what we have comes from Ra's classification and from its counterpart, the Catalyst of the Body. The draft's virtues list for her is blank.",
     "symbols": [
-      "Female figure facing right - unconscious body; transparent about her intentions on right-hand path",
-      "Heavy dress - protection from influence of opposite polarity",
-      "Lion with open mouth - volatility and danger of body's instincts and physical environment; creature that can overwhelm and destroy",
-      "Closing the lion's mouth - power to tame and command the inner beast; all strength at her disposal",
-      "Pitcher on head upright - emotional biases contained, not released; emotions as guiding force",
-      "Bird perched next to pitcher - spirit at rest, not struggling; covenant with spirit fulfilled"
+      "Woman in a long, heavy dress, facing her right - the unconscious body; the thick dress is protection from the opposite polarity",
+      "Open-mouthed lion - the volatility and danger of the body's instincts and of the physical world itself, a predator that can maim or kill",
+      "Her hands closing the lion's mouth - the lion's strength is at her disposal; she could just as easily command it to attack",
+      "Uraeus and crown - the natural wisdom of the unconscious",
+      "Pitcher on her head, upright - emotional biases held in place and used as a guide; she does not spill them even while handling the lion",
+      "Free bird beside the pitcher - the spirit is at rest, not struggling (contrast the caged bird of the Matrix of the Mind); the bird's equal height with the pitcher shows the covenant with spirit fulfilled"
     ],
     "levels": {
-      "personal": "Holding ourselves accountable for actions causing current condition. The hidden self judges whether we have adequately apologized for errors or properly attributed responsibility for positive results.",
-      "interpersonal": "Position to withhold needed assistance or physical support from another. The onus is on us to decide whether to reestablish rapport based on whether that person has demonstrated aligned intentions.",
-      "social": "Some social source of power needs our assistance to enact their agenda. The politically aware Masses who understand they are the power without which a social agent is impotent."
+      "personal": "Holding ourselves accountable for what caused our present condition. On the right-hand path the hidden self judges whether our apology or our humble credit-taking is adequate; on the left-hand path, seeing a threat, we punish the unconscious for letting it through, and the body answers by choking its violent capacities into submission rather than forgiving.",
+      "interpersonal": "Being in a position to withhold needed help or support from someone, and deciding whether to restore rapport depending on whether their intentions line up with ours, often in response to a wrong or a favor they do not even realize they did.",
+      "social": "A social power needs our help to carry out its agenda and courts us with trust or an offer too good to refuse. We become the politically aware Masses who realize the agent is powerless without us."
     },
     "polarizedExpressions": {
-      "rightHandPath": "The Absolver - has power to forgive transgressions, relieving inner and outer torment. Listens to confession and weighs sincerity. Keeps the dogs at bay while listening. If satisfied, calms the beast and returns the world to peace.",
-      "leftHandPath": "The Accomplice - marshals the will of the human beast through skill, fear, and threat. Watchful eye everywhere; technically proficient; always in the right place at the right time. Awaits a satisfying agenda to put her energy behind."
+      "rightHandPath": "The Absolver. She can forgive transgressions, which lifts not guilt but the physical punishment that follows guilt. She listens to a confession and weighs how sincere and complete it is, keeping the dogs at bay while she listens. If the onslaught continues, she has withheld absolution; if she is satisfied, she calms the beast and returns the world to peace. Dartez's mixed forms are described in Relationship #6: a Whisperer who knows she should hold him accountable but is not convinced he is wrong and takes him back too quickly (Relationship #6, p. 105).",
+      "leftHandPath": "The Accomplice. She marshals the human beast through skill, fear and threat, with a watchful eye everywhere and an uncanny sense of being in the right place at the right time. She will put her energy behind an agenda only if its owner has already shown he can deliver and is willing to share power with her. In the mixed form (Relationship #6) she wants to respect a ruthless partner but despises his visible second-guessing."
     },
-    "distortions": [
-      "Withholding without cause - Using power position to punish without justification",
-      "Premature absolution - Forgiving without receiving sincere confession",
-      "Failure to recognize power - Not understanding one's position of strength in the relationship"
-    ],
+    "distortions": [],
     "raQuotes": [],
-    "jungian": "Strength represents the right relationship between ego and instinct\u2014what Jung called the 'taming of the animal.' The Whisperer does not dominate the lion through force but through rapport, demonstrating that shadow integration occurs through acceptance, not repression. Her composure reflects the 'synergistic harmony of emotions': all parts of the psyche working together rather than in conflict. The pitcher of emotional biases is upright, indicating these feelings now guide rather than overwhelm. This is the body-anima\u2014the feminine principle operating through embodied presence rather than verbal communication.",
-    "lacanian": "Strength figures the subject's relationship to the drives\u2014not mastery but a certain 'know-how' (savoir-faire) with jouissance. The Whisperer demonstrates that the drives can be directed without being eliminated. Her 'holding all the cards' reveals the imaginary mother's omnipotence\u2014she who could satisfy or frustrate absolutely. The taming of the lion is not repression but sublimation: redirecting drive energy toward non-destructive aims while preserving satisfaction. The Accomplice/Absolver split marks the ethical dimension: will this know-how serve relation (absolution) or exploitation (accomplice to one's own drive)?"
+    "jungian": "Strength is the right relationship between ego and instinct, the old image of taming the animal. She does not dominate the lion by force; she closes its mouth with composure, which suggests shadow energy is integrated by relationship rather than repression. The upright pitcher shows emotion guiding rather than flooding. As the one who withholds or grants forgiveness she is also the body-anima: the feminine pole of the psyche that answers to demonstrated sincerity rather than to argument. This is an interpretive layer added for this app.",
+    "lacanian": "Strength is a knack for living with enjoyment: the drive is directed rather than abolished. 'Holding all the cards' recalls the position of the all-powerful other who can satisfy or deny, with the aggrieved party standing where the speaker must prove sincerity. Taming the lion reads as sublimation rather than repression: the energy keeps its force and gets a new aim. Absolver and Accomplice are two ethical uses of that power, to release a debt or to collect on it. This is an interpretive layer added for this app.",
+    "sources": [
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), pp. 100-103",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Relationship #6, pp. 103-107",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Note: the draft leaves the Whisperer's virtues, mixed forms and distortions unfinished (p. 103); the mixed forms used here come from Relationship #6",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Ra, session 81 question 12, affirms the name Enchantress and that this archetype is catalyst processed by the mind/body/spirit complex that \"produces further seed for growth\" (the wording is the questioner's; Ra answers only \"This is correct.\")"
+    ]
   },
   "12": {
     "name": "The Martyr",
@@ -452,31 +494,35 @@
     "cycle": "body",
     "position": "significator",
     "framework": "The Significator of the Body represents the total body complex as it relates to inner evolution. The conscious body is bound, hand and foot\u2014ability to act extremely limited. Free will of the Lesser Cycle is not freedom of choice but freedom to be the unique self one already is. We act as the Potentiator not by thinking out what to do, but by bringing awareness to the present moment. The crossed legs and circular arms form a stylized ankh\u2014the strait and narrow path of return to Creator.",
-    "character": "The Homesteader focuses on keeping balance between curated and wild. Always aware of limited resources, fixed on economy of energy expenditure. Exists within dynamic flow of events, constantly juggling needs of the day without luxury of rest. His home is in constant movement but tends toward stable balance. He experiments with changes to daily protocols, seeking maximum efficiency.",
+    "character": "Dartez calls him the Homesteader. The body is a vehicle for discovering the nuances of our thoughts and feelings that mind alone cannot reveal, and like any home it needs care. His efforts go into keeping body, home and any second home in good order and in balance between the curated and the wild. He is always aware of how little energy he has, so he lives in a stream of events with no rest, uses everything that comes to him, and finds that each day's output is exactly what the day allowed. His home is always moving but leans toward balance, and he is willing to change: experimenting with small tweaks to his routines is part of his nature. His function is to offer a stable vehicle for experience and manifestation, his empowering capacity is adapting to the day's demands without breaking his routine, and the virtues list in the draft is blank. In Relationship #7 (Lodging) he is the master who gives the Traveler a place to stay and a way of seeing the physical world; she eventually gains critical distance, finds him too self-centered or too forgiving, thanks him, and moves on.",
     "symbols": [
-      "Man hanging by right foot - conscious body bound; limited ability to act",
-      "Left foot crossing at 90 degrees - the ankh; strait and narrow path of return",
-      "Hands bound, dropping coins - expending meager resources of attention and observation; price of giving attention",
-      "Two limbless trees holding branch - two polarities supporting the incarnate experience",
-      "Fruit-yielding vines on each tree - both moral paths grow; life in third density inherently conflicted; we flit back and forth"
+      "Man hanging by the right foot from a branch held by two limbless trees - the conscious body, bound hand and foot; his freedom is to be the self he already is, not freedom of choice",
+      "Left leg crossed at 90 degrees and the circle of his arms - a stylized ankh, the narrow path back to the Creator, which requires a careful balance",
+      "Hands bound above his head, dropping four coins - all he can spend is attention and observation; paying attention to this moment costs something, and the payment bears fruit as catalyst",
+      "The two trees - the two moral paths; each is its own vine, and we have to choose which to nourish and which to neglect",
+      "A vine growing up each tree, never touching - both paths grow because third density is inherently conflicted, and we flit between serving others and serving ourselves",
+      "The theme of sacrifice - Dartez reads two kinds here: the daily sacrifice of spending limited time and energy (not the initiatory sacrifice of the Transformation) and the sacrifice of moral polarity, since effort on one path is neglect of the other"
     ],
     "levels": {
-      "personal": "Collection of biases regarding maintenance and persistence of body and environment. Static preference for engaging Catalyst and Experience processes in a certain way. We build a pattern of activity in which we act out our values on a daily basis.",
-      "interpersonal": "The Host who offers his way of living to others as a space to occupy and participate in creating. Recommending our way of life, presenting our judgment about what it means to efficiently meet the needs of the day.",
-      "social": "Cultural norms dictating power dynamics, patterns of energy flow, and acceptable methods for change. The Status Quo\u2014amenable to reform but resistant to revolution; a perpetually moving machine that must be repaired amid its own motion."
+      "personal": "Our collection of biases about maintaining the body and its environment: a settled way of engaging Catalyst and Experience, and a pattern of daily life in which we act out our values (time use, nutrition, how to get more resources). We present these biases to ourselves as an offering, the best we have.",
+      "interpersonal": "The Host, who offers his way of living to others as a place to take part in and recommends a view of the good life, including the moral values behind it.",
+      "social": "The Status Quo: the cultural norms that set power relations, energy flows and the acceptable ways to change them. It is open to reform and resistant to revolution, a moving machine repaired while running (Dartez's Neurath's-ship image), both essential and a rigid brake on change."
     },
     "polarizedExpressions": {
-      "rightHandPath": "The Shelterer - wants home to be welcoming and nourishing to those in need. Treats body and home with loving care for those who might be helped. Develops ever-deeper sensitivity to how action affects others and internal balance. Relationships based on trust, not transaction.",
-      "leftHandPath": "The Swindler - relationships based on profitable transaction. Intention to leave others indebted or dependent. Uses limited resources to leverage increasing power. Does not play fair but maintains reputation for playing fair. Ruthless in retaliating against boundary violations."
+      "rightHandPath": "The Shelterer. He keeps body and home in loving order for the sake of those who might be helped, treats his own needs as equal to others' because his ability to serve depends on his body, and builds relationships on trust rather than payment. He keeps those who abuse his generosity at arm's length.",
+      "leftHandPath": "The Swindler. He relates to his own unconscious and to others through profitable transaction, aiming to leave others indebted or dependent and to use limited resources to gain ever more power. He keeps a reputation for fair play because it makes people easier to cheat, ignores others' boundaries, and retaliates ruthlessly against those who ignore his. In the mixed form (the usual one) he feeds both vines: he wants to help and to be at the top of the ant hill, hopes self-interest will happen to serve others, and ends up sacrificing inner evolution because neither vine bears much fruit."
     },
     "distortions": [
-      "Rigidity - Refusing any change to established patterns",
-      "Neglect - Allowing the economy of body and home to fall into disrepair",
-      "Overwork - Spending all resources without allowing for recovery"
+      "Lack of attunement to the body and home - he misreads his body's signals and the meaning of events around him, so diet worsens, ailments pile up and the environment grows more unpleasant; the draft says a second distortion is still to be written"
     ],
     "raQuotes": [],
-    "jungian": "The Hanged Man represents what Jung called 'the sacrifice of the hero'\u2014the ego's surrender of control that enables renewal. The Homesteader is suspended, unable to act, forced into receptivity. This marks the body-Self's via negativa: knowing through what doesn't work, through resource depletion, through enforced stillness. The crossed limbs form the ankh, suggesting that limitation itself becomes the path to life. His domestic focus reflects the individuation task of this card: creating sustainable relationship with one's own nature, balancing expenditure and renewal, finding the 'economy of energy' that allows continued existence.",
-    "lacanian": "The Hanged Man figures the subject's confrontation with impasse\u2014the point where symbolic solutions fail and something must be surrendered. The Homesteader's 'economy of energy' reveals the libidinal calculus underlying all action: every investment forecloses alternatives. Dropping coins marks the necessary expenditure that cannot be recovered\u2014the sunk cost of subjectivity itself. The Shelterer/Swindler split reveals the two positions available when resources are scarce: genuine hospitality (symbolic debt based on trust) or exploitation (imaginary transaction that leaves others indebted). The suspension is the analytic position: waiting without acting, allowing something to emerge."
+    "jungian": "The Hanged Man is the hero's sacrifice: the ego is suspended, unable to act, and so receives. The Homesteader's labor of keeping an economy of energy in balance is the practical side of individuation, a sustainable relationship with one's own nature. The two vines that never touch image the conflict of opposites that the ego can only live through, not resolve. The ankh in the bound body suggests limitation itself is the path. This is an interpretive layer added for this app.",
+    "lacanian": "The Hanged Man is the subject at an impasse where the symbolic solution fails and something has to be given up. The four coins are the unrecoverable expenditure that comes with being a subject at all: every investment of attention excludes others. Shelterer and Swindler are the two ways to handle scarcity, hospitality built on trust and symbolic debt, or exchange that keeps others indebted. This is an interpretive layer added for this app.",
+    "sources": [
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), pp. 108-111",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Relationship #7, pp. 111-114",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Note: the draft leaves the Homesteader's virtues (p. 109) and a second distortion (p. 111) unfinished"
+    ]
   },
   "13": {
     "name": "Death",
@@ -484,26 +530,25 @@
     "cycle": "body",
     "position": "transformation",
     "framework": "The Transformation of the Body depicts the process of transition from one configuration of the Significator to the next. Like all Transformation archetypes, this has a transitional persona appearing at the threshold between two very different states of consciousness. The body transforms through reconstitution of both conscious and unconscious approaches, through opposition set in motion by critical distance between subjective witness and total conception of body as vehicle.",
-    "character": "The Reaper has come to see the error of their way. Their entire way of life has begun to seem unsustainable. The Reaper sees harmful patterns more clearly than ever and concludes that small reforms will no longer cut it. They need deep and lasting change\u2014a reconstitution from the ground up. They want to shut down the economy of their household, tear the entire house down, rebuild, and restart.",
+    "character": "The Reaper has seen their error. Their whole way of life is starting to look unsustainable, and small reforms no longer seem enough: they want to shut down the household economy, tear the house down and rebuild. The method is negative, drawing on every experience that has shown what they do not want. Dartez describes the before-state as a standoff between the sides of the self: the conscious side is tired of guilt and sure she will never forgive him; the unconscious side has been violated too often to accept another apology and wants the boundaries redrawn. Only by treating the old relationship as a corpse to be examined from a distance can they find an agreement both can accept as a promising path rather than an unhappy compromise. The draft's character heading calls this persona the Disgruntled, and Relationship #8 calls it the Malcontent. The Reaper's function is to reconstitute the economy of both body and physical environment; their motive is the conviction that no further progress or comfort is possible without deep change; their empowering capacity is examining the past without attachment; their virtues are discipline through the discomfort of change and objectivity about their traumas and offenses.",
     "symbols": [
-      "Skeleton with scythe - the Traveler stripped of all nonessential attachments; skeletal frame of mind; empty frame onto which new existence can be built",
-      "Reaping human heads, hands, feet (male and female) - harvesting and examining past mental approach, past actions and consequences, past way of life",
-      "Faces left - attention directed toward examining the past",
-      "Rainbow behind - rebirth after destructive storm; fertility of freshly rained ground; also seven energy centers affected by body's rebirth"
+      "Skeleton with a scythe - the Traveler stripped of every nonessential attachment (history, aspirations, worries, emotional biases), an empty frame ready for a new way of existing; the point of view of the card",
+      "Heads, hands and feet being reaped (male and female) - the previous mental approach (male heads: Catalyst; female heads: Experience), the previous actions and their observed consequences (hands), and the previous way of life as a whole, the old Significator (feet)",
+      "Reaping as collecting - Death does not just destroy the old ways but harvests and culls them so the useful can be sifted from the useless",
+      "Rainbow - rebirth after a destructive storm and the fertility of rained-on ground, and the seven energy centers: rebirth of the body touches every level of bodily concern from survival to the sacredness of each moment"
     ],
     "levels": {
-      "personal": "Judgment hardens that patterns of behavior toward body can continue no longer. Within this energy we find will to commit to radical change in diet, exercise, hygiene, or household maintenance. Often entered in response to major event\u2014illness or injury\u2014shaking witness into critical distance.",
-      "interpersonal": "Renegotiating relationships. Awareness that patterns of behavior in relationship have made it toxic. Instead of helping each other grow, constantly antagonizing. Ready to radically reconsider the relationship, including ending it altogether.",
-      "social": "The Revolutionary - experience has galvanized judgment that reform is no longer an option. The rot is at the foundation. The entire system must be remade, and to be remade it must first be torn down."
+      "personal": "The judgment hardens that our treatment of our body cannot continue, and we commit to radical change in diet, exercise, hygiene or household. Often an illness or injury triggers it; equally or more often it is a side effect of transformation in mind or spirit.",
+      "interpersonal": "Renegotiating a relationship whose pattern has become toxic. Where antagonism once seemed a useful source of catalyst, it is now a drain on both sides, and the possibility of ending it is on the table.",
+      "social": "The Revolutionary: a person or group convinced reform is no longer an option because the rot is in the foundation. The masculine side holds power and violates boundaries; the feminine side protests; escalation takes the form of mass protest, revolt or resignation."
     },
     "polarizedExpressions": {
-      "rightHandPath": "Commits to new respect for boundaries of self and other. Wants to let go of need to enforce will on others. Learns sensitivity to threshold between action that does and doesn't violate free will. Achieves change primarily through removal of temptations.",
-      "leftHandPath": "Takes stock to determine how they've been failing their own aspirations. Wants to identify weaknesses in circumstances that make them soft, and cut them out. Sees pattern of failed attempts to assert dominion. Wants to reinvent as stronger, more impervious to attack."
+      "rightHandPath": "Commits to a new respect for the boundaries of self and other and to letting go of the need to impose their will, learning where action stops respecting another's free will. Tries to answer calls for service as they are, not as one would like them to be. Change comes mainly through removing temptations and the daily habits that make violations comfortable, which might mean changing a diet, a job or a relationship, though Dartez cautions that the change need not be so drastic.",
+      "leftHandPath": "Takes stock of how they have failed their own aspirations, identifies the weaknesses that leave them soft, and cuts them out. Others' boundaries matter only as a measure of failed dominion. The feminine side wants consistency and decisive command and no more humoring of his weakness. Remakes daily patterns to seal the gaps in the armor, and she tightens her hold on the wayward parts of body and world."
     },
     "distortions": [
-      "Undisciplined Reaper - Frequently attempts radical change but cannot maintain new patterns; falls back into old ways",
-      "Avoiding the transformation - Knowing change is needed but refusing to face the death of the old way",
-      "Premature transformation - Attempting to transform before fully understanding what needs to change"
+      "The undisciplined Reaper - attempts radical change again and again but cannot stay in the new environment long enough for it to become habit and falls back; it is an initiation attempted before the critical distance between inner Homesteader and Traveler exists, and it hardens the Storyteller's story of impotence",
+      "Misjudging causality - the Reaper cannot tell which domain of life is troubled because the mind's attachment to a narrative distorts how the physical world is read, so the wrong parts are cut and the unhealthy habits kept; a downward spiral that only a mental or spiritual event can resolve"
     ],
     "raQuotes": [
       {
@@ -511,8 +556,12 @@
         "text": "Each moment, and certainly each diurnal period of the bodily incarnation, offers death and rebirth to one which is attempting to use the catalyst which is offered it."
       }
     ],
-    "jungian": "Death represents the archetype of transformation through dissolution\u2014what Jung called the nigredo, the blackening that precedes renewal. The Reaper has seen that the old self-structure is unsustainable; complete reconstitution is required. This is the body's wisdom demanding total change, not modification. The reaping of heads, hands, and feet examines mental approach, actions, and way of life\u2014nothing escapes review. The rainbow promises rebirth but only after the storm. This card marks the death-rebirth mystery at the somatic level: the body insisting that this way of living cannot continue, even when the mind resists.",
-    "lacanian": "Death figures the traversal of fantasy\u2014the dissolution of the frame through which the subject has organized desire. The Reaper confronts what Lacan calls 'subjective destitution': the falling away of identifications that reveals the subject as pure lack. The 'negative method' mirrors the via negativa of analysis\u2014knowing what one is not, what one does not want, before positive movement becomes possible. Reaping heads/hands/feet marks the dismemberment of the imaginary body\u2014the unified self-image that must fragment before restructuring. The Revolutionary aspect suggests the social dimension: personal transformation ripples outward into collective structures."
+    "jungian": "Death is dissolution before renewal, the nigredo of alchemy: the old self-structure is no longer livable and has to be taken apart, not adjusted. The Reaper's examining of heads, hands and feet means nothing in the old life is exempt from review. The rainbow is the promise that follows the storm. The body insists, often against the mind's resistance, that this way of living cannot go on. This is an interpretive layer added for this app.",
+    "lacanian": "Death is the end of a fantasy: the frame through which desire was organized falls away and the subject is left, for a moment, with only lack. The negative method is the analytic one of knowing what one does not want before anything positive can be said. The dismembered heads, hands and feet figure the breakup of the unified self-image. The Revolutionary level shows that what happens in one person also happens to a social order. This is an interpretive layer added for this app.",
+    "sources": [
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), pp. 114-118",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Relationship #8, pp. 122-124"
+    ]
   },
   "14": {
     "name": "The Alchemist",
@@ -520,36 +569,38 @@
     "cycle": "body",
     "position": "great-way",
     "framework": "The Great Way of the Body is an aspirational persona. When we become this persona, we are in a state of aspiring to be more than we are. The vision of what we might one day become nurtures our commitment to spend all our days approaching that ideal. Ra tells us that the Great Way differs notably from the Significator\u2014it represents the new environment of inner evolution after the veiling, where free will means choice between polarities.",
-    "character": "The Alchemist transmutes the raw materials of physical experience into spiritual gold. This ongoing work of refinement continues throughout incarnation. Unlike the transitional Transformation, the Great Way represents the enduring path\u2014the adaptable self consistently oriented toward maturation. It gracefully handles surprises by never losing focus on what is most important.",
+    "character": "Dartez credits the traditional names Temperance and the Alchemist, and takes Ra's 'athanor' remark as the reason for Alchemist. He argues 'temperance' is really a pun on tempering steel (heat that makes the metal less brittle and more durable), not on restraint, and the figure on the card is among the freest and least restrained of the Tarot. Like all Great Way archetypes it is a compound persona that exists only as a relationship between the conscious and unconscious body, and it aspires to be more than it is, so the work is never finished. The Alchemist shapes the body and surroundings into a vehicle through which the Logos can show itself from a peaceful unconscious all the way to action, pours psychic energy back and forth between the conscious and unconscious, and so purifies the mind and softens the 'prickly' behavior that blocks its intentions. Manifestation makes our inner states visible in ways we could not otherwise see: a thought sounds different spoken, a desire changes once satisfied. The sense of urgency (winged feet) comes from wanting the body to stop getting in the way of mental and spiritual work, from clumsiness toward grace. The function is to hold a constant view of the body as 'the instrument of manifestation for the fruits of mind and spirit'. The draft's empowering capacity and virtues are blank, and its distortions section is a one-line stub.",
     "symbols": [
-      "Pouring between two vessels - continuous transmutation; refining energies without giving or taking new ones",
-      "Wings - spiritual nature of physical alchemy; the body's capacity to serve spirit",
-      "One foot on land, one in water - bridging physical and emotional/unconscious realms",
-      "Triangle and square - spiritual and physical in harmonious balance",
-      "Temperate mixing - the middle way; neither excess nor deficiency"
+      "Androgynous winged figure, facing left, clothed only in a sash over the left shoulder - the union of the conscious and unconscious body, acting as one; the wings are the wings of spirit and mark spirit's incarnation through the mind, so we become messengers rather than recipients",
+      "Silver cup (unconscious) pouring into gold (conscious) - the 'stream of psychic energy' (Paul Case); content with the character of the unconscious, emotion, image and whole concept, being purified into subtle emotional states as its consequences play out in the manifest world",
+      "Sun behind the head and a tongue of fire above it - the Logos informing and acting through the mind; Dartez compares the Catalyst of the Mind",
+      "Winged feet - swift movement, in Hermes' manner; Fatham links it to the brevity of life and Dartez to a sense of urgency",
+      "The sash - the little protection the figure has, heavier on the left; Dartez links the minimal cover to the right-hand path's vulnerability, citing Ra's remark that there is 'no outward shelter' from quick and cruel catalyst (95.24)",
+      "Right and left hands - Dartez does not read them as the right- and left-hand paths here; they are the conscious (right) and unconscious (left) body"
     ],
     "levels": {
-      "personal": "The enduring approach to physical discipline and maintenance. Not sporadic effort but consistent, adaptable engagement with body and environment over the whole course of incarnation.",
-      "interpersonal": "Ongoing alchemy of physical relationships. How we consistently work with others to transmute shared experience into mutual benefit.",
-      "social": "The ongoing transmutation of material culture. How societies refine raw resources into civilization through sustained collective effort."
+      "personal": "An enduring commitment to treating the body and its environment as an instrument for higher use. Pleasure and pain are valued as instrumental, not as good or bad in themselves; this is being in the world but not of it, not forced moderation.",
+      "interpersonal": "The Consultant: someone who understands the subtle movements of the physical world in their domain, shows it by their own success there, and offers insight on how to use that domain to maximize whatever values we pursue.",
+      "social": "Joining groups only if their pursuit has meaning beyond material success; unimpressed by money-making, technological advancement or hedonism, and living as an example of using the material world in service of something higher."
     },
     "polarizedExpressions": {
-      "rightHandPath": "Transmuting physical experience to serve others. The alchemical work produces benefit that radiates outward.",
-      "leftHandPath": "Transmuting physical experience to consolidate power. The alchemical work produces benefit that concentrates inward."
+      "rightHandPath": "Puts honest self-expression and self-actualization above the body's comfort. Every hardship is a chance to know the self and the other, through cycles of harm, consequence, repentance, forgiveness and boundary-setting. Watches the link between belief and action (each mean-spirited thought will show up in the world) and tends body and environment so they support the ongoing revelation of self to self.",
+      "leftHandPath": "Puts dominating and possessing the minds of others above bodily pleasure. Reputation matters only as influence, money only as power, sensory pleasure only as a way to enjoy dominion. Also watches the link between belief and action, curating habits so that wayward beliefs show clearly in action and can be quickly struck down."
     },
-    "distortions": [
-      "Impatience - Rushing the alchemical process; wanting results before transmutation is complete",
-      "Imbalance - Overemphasis on one element at expense of others; losing the temperate middle",
-      "Stagnation - Allowing the process to halt; refusing to continue the work"
-    ],
+    "distortions": [],
     "raQuotes": [
       {
         "session": "81.14",
         "text": "The great way of the body must be seen, as are all the archetypes of the body, to be a mirror image of the thrust of the activity of the mind. The body is the creature of the mind and is the instrument of manifestation for the fruits of mind and spirit. Therefore, you may see the body as providing the athanor through which the alchemist manifests gold."
       }
     ],
-    "jungian": "Temperance represents the opus of embodied integration\u2014the slow, patient work of alchemical transformation. The Alchemist doesn't force change but facilitates it, creating conditions for natural transmutation. Pouring between vessels reflects the circulation of libido between conscious and unconscious that gradually refines psychic material. One foot on land, one in water marks the position between realms that the individuating ego must maintain. This is the Great Work at the body level: sustainable practice rather than dramatic breakthrough, the 'middle way' that avoids both excess and deficiency while consistently moving toward greater integration.",
-    "lacanian": "Temperance figures the endless work of symbolization\u2014the attempt to integrate jouissance into the signifying chain without eliminating it. The Alchemist's pouring represents the circulation of affect through representation: binding the Real through repeated working-over. This is the process Freud called 'Nachtr\u00e4glichkeit' (deferred action): meaning emerges retroactively through repeated traversal. The aspiration toward 'temperate mixing' is the analytic aim: neither drowning in affect (acting out) nor cutting off from it (intellectualization). The Great Way marks the ongoing nature of this work\u2014there is no final integration, only continued practice."
+    "jungian": "Temperance is the opus: the slow, repeated work of alchemy in which material is poured back and forth until it is refined. The pouring between silver and gold cups is the circulation of energy between unconscious and conscious that gradually changes psychic material. The androgynous figure points to the union of opposites that Jung placed at the goal of individuation. Because the Great Way is always unfinished, this is sustained practice rather than a single breakthrough. This is an interpretive layer added for this app.",
+    "lacanian": "Temperance is the unending work of symbolization: enjoyment poured through representation again and again without being exhausted. Meaning that arrives afterward, once something has been spoken or done, matches Freud's deferred action (Nachtr\u00e4glichkeit); this is why the Alchemist learns from manifestation and not from planning. There is no final integration, only continued working-over. This is an interpretive layer added for this app.",
+    "sources": [
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), pp. 118-122",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Relationship #8, pp. 122-124",
+      "Joseph Dartez, The Tarot According to Ra (Draft 1), Note: the draft leaves the Alchemist's empowering capacity and virtues (p. 121) and its distortions (p. 122) unfinished"
+    ]
   },
   "15": {
     "name": "The Devil",

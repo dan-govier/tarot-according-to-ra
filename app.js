@@ -856,7 +856,7 @@ function showCardDetail(archetypeNum) {
             card.distortions.map(dist => `<li style="margin-bottom: 12px;">${dist}</li>`).join('') + 
             '</ul>';
     } else {
-        distortionsDiv.innerHTML = '<p><em>Distortions will be added.</em></p>';
+        distortionsDiv.innerHTML = '<p><em>No distortions are listed for this archetype yet. The source draft has not finished this section, and none have been invented here.</em></p>';
     }
     
     // Jungian Analysis
