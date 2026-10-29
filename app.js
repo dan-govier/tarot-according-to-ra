@@ -2,6 +2,11 @@
 let tarotData = {};
 
 // Image path configuration
+// Small WebP versions for grid cells; the detail view uses the full image.
+function thumb(path) {
+    return path.replace(/\/([^\/]+)\.[a-z]+$/i, '/thumb/$1.webp');
+}
+
 const imagePaths = {
     1: {
         ra: "public/images/tarot/ra/magician.png",
@@ -243,11 +248,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function initializeTheme() {
-    // Check for saved theme preference or default to light mode
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-    }
+    // Dark is the default; only an explicit saved 'light' switches it off
+    let savedTheme = 'dark';
+    try { savedTheme = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+    document.body.classList.toggle('dark-mode', savedTheme !== 'light');
 }
 
 function handleMobileGrid() {
@@ -317,7 +321,7 @@ function handleMobileGrid() {
                 if (foundCard && foundNum) {
                     gridHTML += `
                         <div class="card-cell mobile-card" data-archetype="${foundNum}" data-cycle="${cycle}" data-position="${pos.key}">
-                            <img src="${foundCard.images.ra}" alt="${foundCard.name}">
+                            <img src="${thumb(foundCard.images.ra)}" alt="${foundCard.name}" decoding="async">
                             <span class="card-name">${foundCard.name}</span>
                         </div>
                     `;
@@ -392,11 +396,10 @@ function attachMobileEventListeners() {
 }
 
 function initializeTheme() {
-    // Check for saved theme preference or default to light mode
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-    }
+    // Dark is the default; only an explicit saved 'light' switches it off
+    let savedTheme = 'dark';
+    try { savedTheme = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+    document.body.classList.toggle('dark-mode', savedTheme !== 'light');
 }
 
 function initializeEventListeners() {
@@ -522,7 +525,12 @@ function showView(viewName) {
     document.querySelectorAll('.view').forEach(view => {
         view.classList.remove('active');
     });
-    document.getElementById(`${viewName}-view`).classList.add('active');
+    const viewEl = document.getElementById(`${viewName}-view`);
+    // Stagger index drives the entrance cascade in CSS
+    viewEl.querySelectorAll('.card-cell, .card-small').forEach((c, i) => {
+        c.style.setProperty('--i', Math.min(i, 28));
+    });
+    viewEl.classList.add('active');
     currentView = viewName;
 }
 
@@ -752,7 +760,7 @@ function addFocusedCard(num, card, container) {
     cardDiv.className = 'card-cell';
     cardDiv.dataset.archetype = num;
     cardDiv.innerHTML = `
-        <img src="${card.images.ra}" alt="${card.name}">
+        <img src="${thumb(card.images.ra)}" alt="${card.name}" decoding="async">
         <span class="card-name">${card.name}</span>
     `;
     cardDiv.addEventListener('click', (e) => {
@@ -910,7 +918,7 @@ function updateAllGridImages() {
         if (card && card.images) {
             const img = cell.querySelector('img');
             if (img) {
-                img.src = card.images[selectedDeck];
+                img.src = thumb(card.images[selectedDeck]);
             }
         }
     });
@@ -918,7 +926,7 @@ function updateAllGridImages() {
     // Update Fool card at bottom
     const foolCard = document.querySelector('#fool-bottom .card-small img');
     if (foolCard && tarotData['22'] && tarotData['22'].images) {
-        foolCard.src = tarotData['22'].images[selectedDeck];
+        foolCard.src = thumb(tarotData['22'].images[selectedDeck]);
     }
 }
 
