@@ -335,23 +335,7 @@ function handleMobileGrid() {
         
         gridContent.innerHTML = gridHTML;
         
-        // Apply styles directly via JavaScript after render
-        const isDark = document.body.classList.contains('dark-mode');
-        const bgColor = isDark ? '#1A1A2E' : '#FFFFFF';
-        const borderColor = isDark ? '#E8E8E8' : '#1A1A1A';
-        
-        document.querySelectorAll('.mobile-card').forEach(card => {
-            card.style.setProperty('background', bgColor, 'important');
-            card.style.setProperty('background-color', bgColor, 'important');
-            card.style.setProperty('border', `3px solid ${borderColor}`, 'important');
-        });
-        
-        document.querySelectorAll('.card-placeholder').forEach(card => {
-            const placeholderBg = isDark ? '#16213E' : '#E5E5E5';
-            card.style.setProperty('background', placeholderBg, 'important');
-            card.style.setProperty('background-color', placeholderBg, 'important');
-            card.style.setProperty('opacity', '0.3', 'important');
-        });
+        // Colours come from CSS variables, so the theme toggle works live
         
         // Reattach event listeners for mobile grid
         attachMobileEventListeners();

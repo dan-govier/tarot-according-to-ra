@@ -5,15 +5,16 @@
 }
 
 :root {
-    /* Memphis Color Palette */
-    --memphis-pink: #FF6B9D;
-    --memphis-yellow: #FFC857;
-    --memphis-cyan: #00D9FF;
-    --memphis-purple: #C724B1;
-    --memphis-orange: #FF8C42;
-    --memphis-green: #00F5A0;
-    --memphis-blue: #0066FF;
-    --memphis-red: #FF3366;
+    /* Pigments: Egyptian-earth palette, printed flat like a second ink */
+    --memphis-pink: #B5776B;     /* rose clay */
+    --memphis-yellow: #C9A24A;   /* gold */
+    --memphis-cyan: #4C8F8B;     /* faience */
+    --memphis-purple: #7A5680;   /* mulberry */
+    --memphis-orange: #C47A3C;   /* ochre */
+    --memphis-green: #5E8C61;    /* malachite */
+    --memphis-blue: #3F5F96;     /* lapis */
+    --memphis-red: #A5472F;      /* red ochre */
+    --paper: #F4ECD8;            /* card paper */
     
     /* Pastels */
     --pastel-pink: #FFB3D9;
@@ -22,14 +23,14 @@
     --pastel-purple: #E0BBE4;
     
     /* Light mode (default) */
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #E5E5E5;
-    --text-primary: #1A1A1A;
-    --text-secondary: #4A4A4A;
-    --border-color: #1A1A1A;
-    --ink: #1A1A1A;          /* dark text that sits on bright Memphis colors */
-    --solid: #1A1A1A;        /* strong filled blocks (labels, headings) */
-    --surface: #FFFFFF;      /* cards */
+    --bg-primary: #EDE4CE;
+    --bg-secondary: #E0D5B9;
+    --text-primary: #1D1812;
+    --text-secondary: #4F4637;
+    --border-color: #1D1812;
+    --ink: #1D1812;          /* ink: dark text on pigments, card names */
+    --solid: #2A2218;        /* strong filled blocks (labels, headings) */
+    --surface: #F4ECD8;      /* card paper */
     
     /* Neutrals */
     --black: #1A1A1A;
@@ -43,24 +44,16 @@
 
 /* Dark mode colors (default; the toggle switches to the light set above) */
 body.dark-mode {
-    /* Muted, tonal Memphis: same geometry, quieter colour on a slate-indigo ground */
-    --memphis-pink: #D07A93;
-    --memphis-yellow: #D2A85A;
-    --memphis-cyan: #5FA7AE;
-    --memphis-purple: #8B5E9B;
-    --memphis-orange: #CF8A5A;
-    --memphis-green: #6FAE8C;
-    --memphis-blue: #5578B0;
-    --memphis-red: #C4566B;
-
-    --bg-primary: #1C2033;
-    --bg-secondary: #262B45;
-    --surface: #232842;
-    --text-primary: #E8E3D8;
-    --text-secondary: #A8A59B;
-    --border-color: #BDB5A4;
-    --ink: #1B1C2B;
-    --solid: #353B63;
+    /* Umber night: warm dark ground, cream paper cards, pigment accents */
+    --bg-primary: #17130F;
+    --bg-secondary: #221C15;
+    --surface: #E9E0C9;
+    --text-primary: #EADFC6;
+    --text-secondary: #B3A68A;
+    --border-color: #CDBE98;
+    --ink: #17130F;
+    --solid: #3B3024;
+    --paper: #E9E0C9;
 }
 
 body {
@@ -1235,7 +1228,7 @@ body::after {
     .card-cell.mobile-card {
         padding: 6px !important;
         min-height: 140px !important;
-        background-color: #FFFFFF !important;
+        background-color: var(--surface) !important;
         box-shadow: 3px 3px 0 var(--border-color) !important;
         position: relative !important;
     }
@@ -1457,8 +1450,8 @@ body::after {
    Polish layer: dark-native depth, motion and accessibility
    ========================================================================== */
 
-html { background: #1C2033; color-scheme: dark; }
-html:has(body:not(.dark-mode)) { background: #fff; color-scheme: light; }
+html { background: #17130F; color-scheme: dark; }
+html:has(body:not(.dark-mode)) { background: #EDE4CE; color-scheme: light; }
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -1481,9 +1474,9 @@ html::before {
 html:has(body.dark-mode)::before {
     opacity: 1;
     background:
-        radial-gradient(60vmax 40vmax at 8% -5%, rgba(139, 94, 155, 0.16), transparent 60%),
-        radial-gradient(50vmax 40vmax at 100% 10%, rgba(85, 120, 176, 0.14), transparent 60%),
-        radial-gradient(50vmax 35vmax at 50% 110%, rgba(207, 138, 90, 0.08), transparent 60%),
+        radial-gradient(60vmax 40vmax at 8% -5%, rgba(165, 71, 47, 0.14), transparent 60%),
+        radial-gradient(50vmax 40vmax at 100% 10%, rgba(63, 95, 150, 0.12), transparent 60%),
+        radial-gradient(50vmax 35vmax at 50% 110%, rgba(201, 162, 74, 0.08), transparent 60%),
         radial-gradient(1.5px 1.5px at 12% 22%, rgba(232,227,216,.45), transparent),
         radial-gradient(1px 1px at 38% 64%, rgba(232,227,216,.3), transparent),
         radial-gradient(1.5px 1.5px at 71% 18%, rgba(232,227,216,.4), transparent),
@@ -1492,7 +1485,7 @@ html:has(body.dark-mode)::before {
 }
 
 body.dark-mode .app-header {
-    background: rgba(28, 32, 51, 0.86);
+    background: rgba(23, 19, 15, 0.88);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 6px 24px rgba(10, 12, 24, 0.35);
@@ -1501,16 +1494,14 @@ body.dark-mode .app-header {
 body.dark-mode #grid-view,
 body.dark-mode #detail-view,
 body.dark-mode #focused-view {
-    background: rgba(35, 40, 66, 0.78);
+    background: rgba(34, 28, 21, 0.8);
 }
 body.dark-mode #grid-view {
-    box-shadow: 14px 14px 0 var(--memphis-purple), 0 0 70px rgba(139, 94, 155, 0.16);
+    box-shadow: 14px 14px 0 var(--memphis-purple), 0 0 60px rgba(201, 162, 74, 0.10);
 }
 
 /* Cards: saturated offset shadows in dark, glow on hover */
-body.dark-mode .card-cell {
-    background: var(--surface);
-}
+
 body.dark-mode .card-cell[data-position="matrix"]       { --accent: var(--memphis-pink); }
 body.dark-mode .card-cell[data-position="potentiator"]  { --accent: var(--memphis-cyan); }
 body.dark-mode .card-cell[data-position="catalyst"]     { --accent: var(--memphis-yellow); }
@@ -1525,11 +1516,7 @@ body.dark-mode .card-cell[data-position]:hover {
     box-shadow: 10px 10px 0 var(--accent, var(--memphis-pink)),
                 0 0 26px color-mix(in srgb, var(--accent, #fff) 35%, transparent);
 }
-.card-cell img { background: #fff; }
-/* Dark: age the stark white card art to warm parchment so it sits in the palette */
-body.dark-mode img[src*="/ra/"] { filter: sepia(0.35) brightness(0.9) contrast(1.02); }
-body.dark-mode img:not([src*="/ra/"]) { filter: brightness(0.92) saturate(0.9); }
-body.dark-mode .card-cell:hover img { filter: none; transition: filter 0.25s ease; }
+
 
 /* Entrance: cards rise in a short cascade whenever a view is shown */
 @keyframes rise {
@@ -1556,7 +1543,7 @@ body.dark-mode .card-cell:hover img { filter: none; transition: filter 0.25s eas
 
 ::selection { background: var(--memphis-pink); color: var(--ink); }
 
-body.dark-mode { scrollbar-color: #3F4672 #1C2033; }
+body.dark-mode { scrollbar-color: #4A3D2C #17130F; }
 
 h1, h2, h3 { text-wrap: balance; }
 
@@ -1573,3 +1560,110 @@ h1, h2, h3 { text-wrap: balance; }
 
 body.dark-mode .theme-toggle { color: #F3EEE4; }
 body.dark-mode .app-title { text-shadow: none; }
+
+/* ==========================================================================
+   Ink & papyrus: taken from the Ra/Fathman art. Black pen-and-ink on cream
+   paper, fine hatching, arch frames, one flat pigment per label.
+   ========================================================================== */
+
+:root { --font-title: 'Cinzel', 'Archivo Black', Georgia, serif; --hatch: repeating-linear-gradient(135deg, rgba(23, 19, 15, 0.20) 0 1px, transparent 1px 4px); }
+
+/* Card art is printed on paper: multiply drops the PNG's white into the paper tone */
+.card-cell, .card-small, div.card-cell[data-archetype] {
+    background: var(--surface) !important;
+}
+.card-cell img, .card-small img {
+    mix-blend-mode: multiply;
+    border: 0;
+    background: transparent;
+}
+.card-cell .card-name,
+.card-small p {
+    color: var(--ink);
+    border-top: 2px solid var(--ink);
+    padding-top: 7px;
+    margin-top: 6px;
+}
+body.dark-mode .card-cell, body.dark-mode .card-small { border-color: var(--border-color); }
+.card-cell::before, .card-cell::after { background: var(--ink); }
+
+/* Plate for the large detail image */
+.card-plate {
+    background: var(--surface);
+    border: 5px solid var(--border-color);
+    box-shadow: 15px 15px 0 var(--memphis-red);
+    padding: 12px;
+    max-width: 450px;
+    width: 100%;
+}
+.card-plate #detail-card-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    box-shadow: none;
+    mix-blend-mode: multiply;
+}
+.card-image-container::before {
+    background: repeating-linear-gradient(0deg, var(--memphis-cyan) 0 10px, var(--memphis-yellow) 10px 20px);
+    opacity: 0.55;
+}
+
+/* Labels: flat pigment + fine hatch, like second-colour ink on the deck's plinths */
+body.dark-mode .column-header,
+body.dark-mode .row-header,
+body.dark-mode .card-description h3,
+.column-header, .row-header, .card-description h3 {
+    background-image: var(--hatch);
+}
+body.dark-mode .row-header,
+.row-header { color: #F4ECD8; }
+.column-header, .card-description h3 {
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+.app-title, #detail-title, #focused-title {
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+.app-title { letter-spacing: 0.22em; }
+.card-description h3 { letter-spacing: 0.14em; }
+
+/* Heavy black plinth under the title bar, echoing the base of each card */
+.app-header { border-bottom-width: 6px; }
+
+/* Quieter geometry accents in both themes */
+body.dark-mode #grid-view { box-shadow: 14px 14px 0 var(--memphis-red), 0 0 60px rgba(201, 162, 74, 0.10); }
+#grid-view { box-shadow: 14px 14px 0 var(--memphis-red); }
+body.dark-mode .card-cell[data-position]:hover {
+    box-shadow: 10px 10px 0 var(--accent, var(--memphis-pink)), 0 0 24px color-mix(in srgb, var(--accent, #fff) 30%, transparent);
+}
+.card-cell[data-position="matrix"]       { --accent: var(--memphis-pink); }
+.card-cell[data-position="potentiator"]  { --accent: var(--memphis-cyan); }
+.card-cell[data-position="catalyst"]     { --accent: var(--memphis-yellow); }
+.card-cell[data-position="experience"]   { --accent: var(--memphis-purple); }
+.card-cell[data-position="significator"] { --accent: var(--memphis-orange); }
+.card-cell[data-position="transformation"] { --accent: var(--memphis-green); }
+.card-cell[data-position="great-way"]    { --accent: var(--memphis-blue); }
+.card-cell[data-position] { box-shadow: 6px 6px 0 var(--accent, var(--memphis-pink)); }
+.card-cell[data-position]:hover { box-shadow: 10px 10px 0 var(--accent, var(--memphis-pink)); }
+body.dark-mode .theme-toggle { color: #F4ECD8; }
+
+/* Phones: border/colour used to be applied inline by JS; now pure CSS so the theme toggle works live */
+.card-cell.mobile-card {
+    border: 3px solid var(--border-color);
+}
+.grid-content.mobile-rebuilt .card-cell.mobile-card[data-position] {
+    box-shadow: 3px 3px 0 var(--accent, var(--border-color)) !important;
+}
+.card-placeholder { opacity: 0.3; }
+
+/* Cinzel runs wider than the old label face: keep the position labels inside their boxes */
+.column-header {
+    font-size: clamp(0.5rem, 0.82vw, 0.9rem);
+    letter-spacing: 0.04em;
+}
+
+body .row-header.mobile-position { color: var(--ink); }
+body .row-header.mobile-position[data-position="experience"],
+body .row-header.mobile-position[data-position="great-way"] { color: var(--paper); }
