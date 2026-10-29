@@ -77,13 +77,13 @@ body {
     right: 0;
     height: 70px;
     background: var(--bg-primary);
-    border-bottom: 4px solid var(--border-color);
+    border-bottom: 3px solid var(--border-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     z-index: 1000;
-    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .app-title {
@@ -100,7 +100,7 @@ body {
 .header-button {
     font-family: var(--font-display);
     background: var(--memphis-pink);
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
     color: var(--ink);
     padding: 12px 20px;
     cursor: pointer;
@@ -109,7 +109,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), border-color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 4px 4px 0 var(--border-color);
+    box-shadow: 3px 3px 0 var(--border-color);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -117,7 +117,7 @@ body {
 
 .header-button:hover {
     transform: translateY(-3px);
-    box-shadow: 6px 6px 0 var(--border-color);
+    box-shadow: 3px 3px 0 var(--border-color);
     background: var(--memphis-cyan);
 }
 
@@ -217,8 +217,8 @@ body::after {
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background: var(--bg-primary);
     padding: 15px;
-    border: 4px solid var(--border-color);
-    box-shadow: 8px 8px 0 var(--memphis-pink);
+    border: 2px solid var(--border-color);
+    box-shadow: 4px 4px 0 var(--memphis-pink);
     position: relative;
 }
 
@@ -231,18 +231,18 @@ body::after {
     background: var(--memphis-yellow);
     top: -15px;
     right: -15px;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 .card-small:hover {
     transform: scale(1.05) rotate(-2deg);
-    box-shadow: 12px 12px 0 var(--memphis-cyan);
+    box-shadow: 7px 7px 0 var(--memphis-cyan);
 }
 
 .card-small img {
     width: 120px;
     height: auto;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 .card-small p {
@@ -278,10 +278,10 @@ body::after {
 /* Grid View */
 #grid-view {
     background: var(--bg-primary);
-    border: 5px solid var(--border-color);
+    border: 2px solid var(--border-color);
     padding: 30px;
     position: relative;
-    box-shadow: 20px 20px 0 var(--memphis-purple);
+    box-shadow: 11px 11px 0 var(--memphis-purple);
 }
 
 #grid-view::before {
@@ -293,7 +293,7 @@ body::after {
     top: -12px;
     right: 100px;
     border-radius: 50%;
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 #grid-view::after {
@@ -312,8 +312,8 @@ body::after {
 .grid-header {
     display: grid;
     grid-template-columns: 120px repeat(7, minmax(0, 1fr));
-    gap: 12px;
-    margin-bottom: 25px;
+    gap: 18px;
+    margin-bottom: 28px;
 }
 
 .spacer {
@@ -332,7 +332,7 @@ body::after {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
     position: relative;
     overflow: hidden;
     word-wrap: break-word;
@@ -385,7 +385,7 @@ body::after {
 .grid-content {
     display: grid;
     grid-template-columns: 120px repeat(7, minmax(0, 1fr));
-    gap: 12px;
+    gap: 18px;
     align-items: stretch;
 }
 
@@ -427,7 +427,7 @@ body::after {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -472,7 +472,7 @@ body::after {
 
 .card-cell {
     background: var(--bg-primary);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     padding: 12px;
     text-align: center;
     cursor: pointer;
@@ -482,31 +482,31 @@ body::after {
 
 /* Pattern variations for each archetype position */
 .card-cell[data-position="matrix"] {
-    box-shadow: 6px 6px 0 var(--pastel-pink);
+    box-shadow: 3px 3px 0 var(--pastel-pink);
 }
 
 .card-cell[data-position="potentiator"] {
-    box-shadow: 6px 6px 0 var(--pastel-blue);
+    box-shadow: 3px 3px 0 var(--pastel-blue);
 }
 
 .card-cell[data-position="catalyst"] {
-    box-shadow: 6px 6px 0 var(--pastel-yellow);
+    box-shadow: 3px 3px 0 var(--pastel-yellow);
 }
 
 .card-cell[data-position="experience"] {
-    box-shadow: 6px 6px 0 var(--memphis-purple);
+    box-shadow: 3px 3px 0 var(--memphis-purple);
 }
 
 .card-cell[data-position="significator"] {
-    box-shadow: 6px 6px 0 var(--memphis-orange);
+    box-shadow: 3px 3px 0 var(--memphis-orange);
 }
 
 .card-cell[data-position="transformation"] {
-    box-shadow: 6px 6px 0 var(--memphis-green);
+    box-shadow: 3px 3px 0 var(--memphis-green);
 }
 
 .card-cell[data-position="great-way"] {
-    box-shadow: 6px 6px 0 var(--memphis-cyan);
+    box-shadow: 3px 3px 0 var(--memphis-cyan);
 }
 
 /* Decorative corners on cards */
@@ -536,7 +536,7 @@ body::after {
 
 .card-cell:hover {
     transform: translateY(-8px) rotate(-3deg);
-    box-shadow: 10px 10px 0 var(--border-color);
+    box-shadow: 6px 6px 0 var(--border-color);
     z-index: 100;
 }
 
@@ -577,10 +577,10 @@ body::after {
 /* Focused View */
 #focused-view {
     background: var(--bg-primary);
-    border: 5px solid var(--border-color);
+    border: 2px solid var(--border-color);
     padding: 40px;
     position: relative;
-    box-shadow: 15px 15px 0 var(--memphis-cyan);
+    box-shadow: 8px 8px 0 var(--memphis-cyan);
 }
 
 #focused-title {
@@ -663,10 +663,10 @@ body::after {
 /* Detail View */
 #detail-view {
     background: var(--bg-primary);
-    border: 5px solid var(--border-color);
+    border: 2px solid var(--border-color);
     padding: 40px;
     position: relative;
-    box-shadow: 20px 20px 0 var(--memphis-yellow);
+    box-shadow: 11px 11px 0 var(--memphis-yellow);
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -685,7 +685,7 @@ body::after {
     );
     top: -30px;
     left: -30px;
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     transform: rotate(15deg);
 }
 
@@ -709,14 +709,14 @@ body::after {
 
 .nav-arrow {
     background: var(--memphis-pink);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     color: var(--ink);
     font-size: 1.8rem;
     font-weight: bold;
     padding: 15px 25px;
     cursor: pointer;
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), border-color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 5px 5px 0 var(--border-color);
+    box-shadow: 3px 3px 0 var(--border-color);
 }
 
 .nav-arrow:hover {
@@ -740,7 +740,7 @@ body::after {
     margin-bottom: 30px;
     padding: 25px;
     background: var(--bg-secondary);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     position: relative;
 }
 
@@ -753,7 +753,7 @@ body::after {
     top: -15px;
     right: -15px;
     border-radius: 50%;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 /* Grid view deck selector */
@@ -765,7 +765,7 @@ body::after {
     margin-bottom: 25px;
     padding: 15px;
     background: var(--bg-secondary);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 .grid-deck-selector label {
@@ -795,7 +795,7 @@ body::after {
     height: 24px;
     background: var(--memphis-pink);
     cursor: pointer;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 50%;
 }
 
@@ -804,7 +804,7 @@ body::after {
     height: 24px;
     background: var(--memphis-pink);
     cursor: pointer;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 50%;
 }
 
@@ -850,7 +850,7 @@ body::after {
     height: 30px;
     background: var(--memphis-pink);
     cursor: pointer;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 50%;
 }
 
@@ -859,7 +859,7 @@ body::after {
     height: 30px;
     background: var(--memphis-pink);
     cursor: pointer;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 50%;
 }
 
@@ -897,15 +897,15 @@ body::after {
     right: 20%;
     z-index: -1;
     transform: rotate(-15deg);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 #detail-card-image {
     max-width: 450px;
     width: 100%;
     height: auto;
-    border: 5px solid var(--border-color);
-    box-shadow: 15px 15px 0 var(--memphis-purple);
+    border: 2px solid var(--border-color);
+    box-shadow: 8px 8px 0 var(--memphis-purple);
 }
 
 .card-description {
@@ -924,7 +924,7 @@ body::after {
     padding: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     position: relative;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -938,7 +938,7 @@ body::after {
     background: var(--memphis-yellow);
     top: -24px;
     left: 12px;
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
     transform: rotate(45deg);
 }
 
@@ -958,7 +958,7 @@ body::after {
     color: var(--text-primary);
     padding: 25px;
     background: var(--bg-secondary);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     margin-bottom: 25px;
     font-size: 1.1rem;
     word-wrap: break-word;
@@ -982,7 +982,7 @@ body::after {
 .nav-button {
     font-family: var(--font-display);
     background: var(--memphis-green);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     color: var(--ink);
     padding: 15px 30px;
     cursor: pointer;
@@ -991,13 +991,13 @@ body::after {
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), background-color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), border-color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 5px 5px 0 var(--border-color);
+    box-shadow: 3px 3px 0 var(--border-color);
 }
 
 .nav-button:hover {
     transform: translateX(-5px) translateY(-5px);
     background: var(--memphis-orange);
-    box-shadow: 8px 8px 0 var(--border-color);
+    box-shadow: 4px 4px 0 var(--border-color);
 }
 
 /* Responsive Design */
@@ -1053,7 +1053,7 @@ body::after {
     
     .card-cell {
         padding: 6px;
-        border: 3px solid var(--border-color);
+        border: 2px solid var(--border-color);
     }
     
 }
@@ -1205,7 +1205,7 @@ body::after {
        decorative circle sits on the frame instead of covering the deck label */
     #grid-view {
         padding: 12px 8px;
-        box-shadow: 8px 8px 0 var(--memphis-purple);
+        box-shadow: 4px 4px 0 var(--memphis-purple);
     }
 
     #grid-view::before {
@@ -1497,7 +1497,7 @@ body.dark-mode #focused-view {
     background: rgba(34, 28, 21, 0.8);
 }
 body.dark-mode #grid-view {
-    box-shadow: 14px 14px 0 var(--memphis-purple), 0 0 60px rgba(201, 162, 74, 0.10);
+    box-shadow: 8px 8px 0 var(--memphis-purple), 0 0 60px rgba(201, 162, 74, 0.10);
 }
 
 /* Cards: saturated offset shadows in dark, glow on hover */
@@ -1510,10 +1510,10 @@ body.dark-mode .card-cell[data-position="significator"] { --accent: var(--memphi
 body.dark-mode .card-cell[data-position="transformation"] { --accent: var(--memphis-green); }
 body.dark-mode .card-cell[data-position="great-way"]    { --accent: var(--memphis-blue); }
 body.dark-mode .card-cell[data-position] {
-    box-shadow: 6px 6px 0 var(--accent, var(--memphis-pink));
+    box-shadow: 3px 3px 0 var(--accent, var(--memphis-pink));
 }
 body.dark-mode .card-cell[data-position]:hover {
-    box-shadow: 10px 10px 0 var(--accent, var(--memphis-pink)),
+    box-shadow: 6px 6px 0 var(--accent, var(--memphis-pink)),
                 0 0 26px color-mix(in srgb, var(--accent, #fff) 35%, transparent);
 }
 
@@ -1590,8 +1590,8 @@ body.dark-mode .card-cell, body.dark-mode .card-small { border-color: var(--bord
 /* Plate for the large detail image */
 .card-plate {
     background: var(--surface);
-    border: 5px solid var(--border-color);
-    box-shadow: 15px 15px 0 var(--memphis-red);
+    border: 2px solid var(--border-color);
+    box-shadow: 8px 8px 0 var(--memphis-red);
     padding: 12px;
     max-width: 450px;
     width: 100%;
@@ -1630,13 +1630,13 @@ body.dark-mode .row-header,
 .card-description h3 { letter-spacing: 0.14em; }
 
 /* Heavy black plinth under the title bar, echoing the base of each card */
-.app-header { border-bottom-width: 6px; }
+.app-header { border-bottom-width: 3px; }
 
 /* Quieter geometry accents in both themes */
-body.dark-mode #grid-view { box-shadow: 14px 14px 0 var(--memphis-red), 0 0 60px rgba(201, 162, 74, 0.10); }
-#grid-view { box-shadow: 14px 14px 0 var(--memphis-red); }
+body.dark-mode #grid-view { box-shadow: 8px 8px 0 var(--memphis-red), 0 0 60px rgba(201, 162, 74, 0.10); }
+#grid-view { box-shadow: 8px 8px 0 var(--memphis-red); }
 body.dark-mode .card-cell[data-position]:hover {
-    box-shadow: 10px 10px 0 var(--accent, var(--memphis-pink)), 0 0 24px color-mix(in srgb, var(--accent, #fff) 30%, transparent);
+    box-shadow: 6px 6px 0 var(--accent, var(--memphis-pink)), 0 0 24px color-mix(in srgb, var(--accent, #fff) 30%, transparent);
 }
 .card-cell[data-position="matrix"]       { --accent: var(--memphis-pink); }
 .card-cell[data-position="potentiator"]  { --accent: var(--memphis-cyan); }
@@ -1645,13 +1645,13 @@ body.dark-mode .card-cell[data-position]:hover {
 .card-cell[data-position="significator"] { --accent: var(--memphis-orange); }
 .card-cell[data-position="transformation"] { --accent: var(--memphis-green); }
 .card-cell[data-position="great-way"]    { --accent: var(--memphis-blue); }
-.card-cell[data-position] { box-shadow: 6px 6px 0 var(--accent, var(--memphis-pink)); }
-.card-cell[data-position]:hover { box-shadow: 10px 10px 0 var(--accent, var(--memphis-pink)); }
+.card-cell[data-position] { box-shadow: 3px 3px 0 var(--accent, var(--memphis-pink)); }
+.card-cell[data-position]:hover { box-shadow: 6px 6px 0 var(--accent, var(--memphis-pink)); }
 body.dark-mode .theme-toggle { color: #F4ECD8; }
 
 /* Phones: border/colour used to be applied inline by JS; now pure CSS so the theme toggle works live */
 .card-cell.mobile-card {
-    border: 3px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 .grid-content.mobile-rebuilt .card-cell.mobile-card[data-position] {
     box-shadow: 3px 3px 0 var(--accent, var(--border-color)) !important;
@@ -1667,3 +1667,123 @@ body.dark-mode .theme-toggle { color: #F4ECD8; }
 body .row-header.mobile-position { color: var(--ink); }
 body .row-header.mobile-position[data-position="experience"],
 body .row-header.mobile-position[data-position="great-way"] { color: var(--paper); }
+
+/* ==========================================================================
+   Refinement: finer line weights, more air, Memphis-Milano confetti.
+   Hierarchy: 3px for the main frames, 2px for everything inside them,
+   a hairline inset ring on the big frames, offsets kept small and exact.
+   ========================================================================== */
+
+:root { --panel: #EDE4CE; --line: rgba(29, 24, 18, 0.45); }
+body.dark-mode { --panel: #1F1A14; --line: rgba(205, 190, 152, 0.45); }
+
+#grid-view, #focused-view .focused-frame, #detail-view {
+    border-width: 3px;
+}
+#grid-view {
+    background: var(--panel);
+    padding: 44px 40px;
+}
+body.dark-mode #grid-view, body.dark-mode #detail-view, body.dark-mode #focused-view { background: var(--panel); }
+
+/* hairline ring inside the big frames */
+#grid-view {
+    box-shadow:
+        inset 0 0 0 9px var(--panel),
+        inset 0 0 0 10px var(--line),
+        10px 10px 0 var(--memphis-red);
+}
+body.dark-mode #grid-view {
+    box-shadow:
+        inset 0 0 0 9px var(--panel),
+        inset 0 0 0 10px var(--line),
+        10px 10px 0 var(--memphis-red);
+}
+
+/* cards: lighter outline, a clean 5px offset, more padding inside */
+.card-cell { border-width: 2px; padding: 14px; }
+.card-cell[data-position] { box-shadow: 5px 5px 0 var(--accent, var(--memphis-pink)); }
+.card-cell[data-position]:hover,
+body.dark-mode .card-cell[data-position]:hover { box-shadow: 8px 8px 0 var(--accent, var(--memphis-pink)); }
+.card-cell::before, .card-cell::after { width: 8px; height: 8px; }
+.card-cell::before { top: 7px; left: 7px; }
+.card-cell::after { bottom: 7px; right: 7px; top: auto; left: auto; }
+.card-cell .card-name, .card-small p {
+    border-top-width: 1px;
+    letter-spacing: 0.14em;
+    font-size: 0.72rem;
+    padding-top: 9px;
+    margin-top: 10px;
+}
+
+/* labels */
+.column-header, .row-header { border-width: 2px; }
+.column-header { padding: 14px 4px; }
+.header-button { border-width: 2px; box-shadow: 3px 3px 0 var(--border-color); }
+.grid-deck-selector, .deck-selector { border-width: 2px; background: transparent; }
+.grid-deck-selector { margin-bottom: 34px; }
+#grid-deck-slider, #deck-slider { height: 4px; }
+.card-plate { border-width: 3px; box-shadow: 8px 8px 0 var(--memphis-red); padding: 14px; }
+.card-description h3 { border-width: 2px; padding: 16px 20px; margin: 48px 0 22px; }
+.card-description h3::before { width: 22px; height: 22px; border-width: 2px; top: -16px; left: 14px; }
+.card-description div { border-width: 2px; }
+
+/* Memphis-Milano confetti on the ground: tiny terrazzo flecks + hairline squiggle bands */
+html:has(body.dark-mode)::before {
+    background:
+        radial-gradient(60vmax 40vmax at 8% -5%, rgba(165, 71, 47, 0.12), transparent 60%),
+        radial-gradient(50vmax 40vmax at 100% 10%, rgba(63, 95, 150, 0.10), transparent 60%),
+        radial-gradient(3px 3px at 9% 31%, rgba(201,162,74,.55), transparent),
+        radial-gradient(2px 2px at 23% 72%, rgba(76,143,139,.6), transparent),
+        radial-gradient(3px 3px at 47% 14%, rgba(181,119,107,.5), transparent),
+        radial-gradient(2px 2px at 63% 83%, rgba(196,122,60,.55), transparent),
+        radial-gradient(3px 3px at 78% 41%, rgba(122,86,128,.65), transparent),
+        radial-gradient(2px 2px at 92% 66%, rgba(94,140,97,.55), transparent),
+        radial-gradient(2px 2px at 35% 52%, rgba(201,162,74,.4), transparent);
+}
+html:has(body:not(.dark-mode))::before {
+    opacity: 1;
+    background:
+        radial-gradient(3px 3px at 9% 31%, rgba(165,71,47,.35), transparent),
+        radial-gradient(2px 2px at 23% 72%, rgba(76,143,139,.4), transparent),
+        radial-gradient(3px 3px at 47% 14%, rgba(201,162,74,.5), transparent),
+        radial-gradient(2px 2px at 63% 83%, rgba(63,95,150,.35), transparent),
+        radial-gradient(3px 3px at 78% 41%, rgba(122,86,128,.4), transparent),
+        radial-gradient(2px 2px at 92% 66%, rgba(94,140,97,.4), transparent);
+}
+
+@media (max-width: 1000px) {
+    #grid-view { padding: 30px 22px; }
+    .card-cell { padding: 8px; }
+}
+
+/* terrazzo confetti inside the main frames (shows in the gutters between cards) */
+#grid-view, #detail-view, #focused-view {
+    background-image:
+        radial-gradient(3px 3px at 14% 22%, color-mix(in srgb, var(--memphis-yellow) 60%, transparent), transparent),
+        radial-gradient(2px 2px at 61% 12%, color-mix(in srgb, var(--memphis-cyan) 65%, transparent), transparent),
+        radial-gradient(3px 3px at 83% 47%, color-mix(in srgb, var(--memphis-pink) 55%, transparent), transparent),
+        radial-gradient(2px 2px at 37% 68%, color-mix(in srgb, var(--memphis-orange) 60%, transparent), transparent),
+        radial-gradient(3px 3px at 72% 90%, color-mix(in srgb, var(--memphis-purple) 70%, transparent), transparent),
+        radial-gradient(2px 2px at 9% 84%, color-mix(in srgb, var(--memphis-green) 60%, transparent), transparent);
+    background-size: 380px 380px;
+}
+
+@media (max-width: 500px), (max-width: 768px) and (orientation: portrait) {
+    #grid-view,
+    body.dark-mode #grid-view {
+        padding: 20px 12px;
+        box-shadow:
+            inset 0 0 0 5px var(--panel),
+            inset 0 0 0 6px var(--line),
+            5px 5px 0 var(--memphis-red);
+    }
+    .card-cell.mobile-card { padding: 6px !important; }
+    .card-cell.mobile-card .card-name {
+        letter-spacing: 0.04em;
+        font-size: 0.55rem;
+        padding-top: 6px;
+        margin-top: 6px;
+    }
+    .grid-deck-selector { margin-bottom: 22px; padding: 12px; }
+}
