@@ -1178,8 +1178,8 @@ body::after {
         letter-spacing: 0;
         font-size: 0.52rem;
         overflow-wrap: break-word;
-        -webkit-hyphens: auto;
-        hyphens: auto;
+        -webkit-hyphens: manual;
+        hyphens: manual;
         color: var(--black, #1A1A1A);
     }
 
@@ -1253,8 +1253,8 @@ body::after {
         line-height: 1.15;
         letter-spacing: 0;
         overflow-wrap: break-word;
-        -webkit-hyphens: auto;
-        hyphens: auto;
+        -webkit-hyphens: manual;
+        hyphens: manual;
     }
     
     .card-placeholder {
@@ -1276,9 +1276,9 @@ body::after {
         word-wrap: break-word;
         overflow-wrap: break-word;
         word-break: break-word;
-        hyphens: auto;
-        -webkit-hyphens: auto;
-        -ms-hyphens: auto;
+        hyphens: manual;
+        -webkit-hyphens: manual;
+        -ms-hyphens: manual;
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -1786,4 +1786,48 @@ html:has(body:not(.dark-mode))::before {
         margin-top: 6px;
     }
     .grid-deck-selector { margin-bottom: 22px; padding: 12px; }
+}
+
+/* ==========================================================================
+   Fixed type: labels and card names keep one size at every width and never
+   hyphenate. When the seven columns no longer fit, the matrix scrolls
+   sideways instead of squeezing its text. Phones keep the 3-column layout.
+   ========================================================================== */
+@media (min-width: 769px), (min-width: 501px) and (orientation: landscape) {
+    .grid-scroll {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 16px 16px 20px;
+        margin: -16px -16px -20px;
+        scrollbar-width: thin;
+        scrollbar-color: var(--memphis-yellow) transparent;
+    }
+    .grid-header,
+    .grid-content {
+        grid-template-columns: 112px repeat(7, minmax(136px, 1fr));
+        gap: 16px;
+        min-width: 1176px;
+    }
+    .column-header {
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+        padding: 14px 6px;
+        white-space: nowrap;
+        min-height: 54px;
+    }
+    .row-header { font-size: 1.1rem; padding: 12px; }
+    .card-cell { padding: 14px; }
+    .card-cell .card-name {
+        font-size: 0.72rem;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+}
+.column-header, .card-name, .row-header { hyphens: none; -webkit-hyphens: none; }
+
+@media (min-width: 769px) and (max-width: 1360px) {
+    #grid-view { padding-left: 24px; padding-right: 24px; }
+}
+@media (min-width: 769px), (min-width: 501px) and (orientation: landscape) {
+    .card-cell .card-name { letter-spacing: 0.1em; }
 }
